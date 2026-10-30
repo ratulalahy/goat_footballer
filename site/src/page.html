@@ -1,0 +1,355 @@
+<title>Greatest of All Time</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Football's greatest players compared: 21 legends, 16 criteria, a weighted ranking you control, and a Monte Carlo test of how stable it is.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Big+Shoulders+Display:wght@700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap">
+<style>
+/* Layout: dashboard. Pitch-green top bar, a sticky settings rail on the left, a 12-column grid of panels on the right; one column on phones. */
+:root {
+  --bg: #eef1ed;
+  --surface: #fcfcfa;
+  --surface-2: #eaeee9;
+  --ink: #0f1a15;
+  --ink-2: #3c4943;
+  --muted: #627069;
+  --rule: #d6ddd7;
+  --grid: #e3e8e4;
+  --axis: #b6c0ba;
+  --pitch: #0f3d2d;
+  --pitch-2: #114431;
+  --chalk: #edf3ee;
+  --chalk-2: #bcd0c3;
+  --cr7: #c8102e;
+  --peer: #a4ada7;
+  --sel: #0f1a15;
+  --seq-lo: #eef4ef;
+  --seq-hi: #0e5a3a;
+  --focus: #0e5a3a;
+  --tip-bg: #fcfcfa;
+  --cell-ink-hi: #ffffff;
+  --shadow: 0 1px 2px rgba(15, 26, 21, .05), 0 10px 30px rgba(15, 26, 21, .07);
+  --font-display: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
+  --font-text: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-ui: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --r: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0f0c; --surface: #121915; --surface-2: #19221d; --ink: #e8eee9; --ink-2: #b8c3bc; --muted: #8a978f;
+    --rule: #25302a; --grid: #1e2823; --axis: #36433c; --pitch: #0c2b20; --pitch-2: #0e3125; --chalk: #e6eee8; --chalk-2: #a9bfb1;
+    --cr7: #f04a5e; --peer: #56625b; --sel: #e8eee9; --seq-lo: #16201b; --seq-hi: #3aa673; --focus: #5cc792; --tip-bg: #19221d; --cell-ink-hi: #0b100d;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px rgba(0, 0, 0, .35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0a0f0c; --surface: #121915; --surface-2: #19221d; --ink: #e8eee9; --ink-2: #b8c3bc; --muted: #8a978f;
+  --rule: #25302a; --grid: #1e2823; --axis: #36433c; --pitch: #0c2b20; --pitch-2: #0e3125; --chalk: #e6eee8; --chalk-2: #a9bfb1;
+  --cr7: #f04a5e; --peer: #56625b; --sel: #e8eee9; --seq-lo: #16201b; --seq-hi: #3aa673; --focus: #5cc792; --tip-bg: #19221d; --cell-ink-hi: #0b100d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px rgba(0, 0, 0, .35);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-ui); font-size: 14px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.num { font-variant-numeric: tabular-nums; }
+button { font: inherit; color: inherit; }
+
+/* ---------- Top bar ---------- */
+.topbar { color: var(--chalk); background: repeating-linear-gradient(90deg, var(--pitch) 0 84px, var(--pitch-2) 84px 168px); }
+.topbar-in { max-width: 1520px; margin: 0 auto; padding-block: 16px 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 24px; }
+.topbar h1 { margin: 0; font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(30px, 4vw, 44px); line-height: .9; letter-spacing: .005em; }
+.topbar .meta { margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--chalk-2); }
+.top-links { display: flex; flex-wrap: wrap; gap: 4px; }
+.top-links a { color: var(--chalk); text-decoration: none; font-size: 13px; font-weight: 600; padding: 5px 10px; border: 1px solid rgba(237, 243, 238, .25); border-radius: 999px; }
+.top-links a:hover { background: rgba(237, 243, 238, .1); }
+
+/* ---------- App frame ---------- */
+.app { max-width: 1520px; margin: 0 auto; padding-block: 18px 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 1080px) { .app { grid-template-columns: minmax(0, 1fr); } }
+.side { position: sticky; top: calc(12px + env(safe-area-inset-top, 0px)); max-height: calc(100vh - 24px); overflow-y: auto; scrollbar-width: thin; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); }
+@media (max-width: 1080px) { .side { position: static; max-height: none; } }
+.side > details > summary { list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 700; font-size: 14px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--rule); }
+.side > details > summary::-webkit-details-marker { display: none; }
+.side > details > summary::after { content: "Hide"; font-size: 12px; font-weight: 600; color: var(--muted); }
+.side > details:not([open]) > summary::after { content: "Show"; }
+.side > details:not([open]) > summary { border-bottom: 0; }
+.ctl { padding: 12px 16px; border-bottom: 1px solid var(--grid); display: grid; gap: 8px; }
+.ctl h2 { margin: 0; font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.hint { margin: 0; font-size: 12px; color: var(--muted); }
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--rule); border-radius: 6px; padding: 2px; background: var(--surface-2); gap: 2px; }
+.seg button { font-size: 12.5px; font-weight: 600; border: 0; background: transparent; color: var(--ink-2); padding: 5px 9px; border-radius: 4px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, .14); }
+.seg button:hover { color: var(--ink); }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12.5px; font-weight: 600; border: 1px solid var(--rule); background: var(--surface); color: var(--ink-2); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+.chip:hover { border-color: var(--axis); color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.fam { border: 0; margin: 0; padding: 10px 0 2px; }
+.fam + .fam { border-top: 1px solid var(--grid); }
+.fam legend { padding: 0; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.crit { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 4px 0; }
+.crit .c-name { font-size: 13px; line-height: 1.25; color: var(--ink); }
+.crit .c-name small { display: block; font-size: 11.5px; color: var(--muted); margin-top: 1px; }
+.crit.off .c-name { color: var(--muted); }
+.wt { display: inline-flex; border: 1px solid var(--rule); border-radius: 5px; overflow: hidden; }
+.wt label { position: relative; cursor: pointer; }
+.wt input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.wt span { display: block; padding: 3px 7px; font-size: 11.5px; font-weight: 700; color: var(--muted); background: var(--surface); min-width: 28px; text-align: center; }
+.wt label + label span { border-left: 1px solid var(--rule); }
+.wt input:checked + span { background: var(--ink); color: var(--bg); }
+.wt input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: -2px; }
+.btn { font-size: 12.5px; font-weight: 600; border: 1px solid var(--rule); background: var(--surface); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.btn:hover { border-color: var(--axis); }
+
+/* ---------- Panel grid ---------- */
+.dash { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; align-items: start; min-width: 0; }
+.span-12 { grid-column: span 12; } .span-7 { grid-column: span 7; } .span-6 { grid-column: span 6; } .span-5 { grid-column: span 5; }
+@media (max-width: 1240px) { .span-7, .span-6, .span-5 { grid-column: span 12; } }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 16px 18px 14px; min-width: 0; }
+.ph { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px 16px; margin-bottom: 12px; }
+.ph-text { display: grid; gap: 3px; min-width: 0; flex: 1 1 260px; }
+.ph h3 { margin: 0; font-size: 15px; font-weight: 700; line-height: 1.3; }
+.ph .sub { margin: 0; font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+.linkbtn { border: 0; background: none; padding: 0; color: var(--ink-2); text-decoration: underline; cursor: pointer; font-weight: 600; font-size: inherit; }
+.ph-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; min-width: 0; max-width: 100%; }
+.group-title { margin: 10px 0 -4px; font-family: var(--font-display); font-weight: 800; font-size: 26px; text-transform: uppercase; letter-spacing: .01em; }
+.source { margin: 10px 0 0; font-size: 11.5px; color: var(--muted); line-height: 1.45; }
+.cite { font-size: 11.5px; color: var(--muted); }
+.cite a { color: var(--ink-2); }
+select { font: inherit; font-size: 13px; font-weight: 600; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 5px 8px; max-width: 100%; }
+.chart { position: relative; width: 100%; min-width: 0; }
+.chart svg { display: block; overflow: visible; }
+.chart text { font-family: var(--font-ui); fill: var(--muted); font-size: 12px; }
+.chart .tick line { stroke: var(--grid); }
+.chart .domain { stroke: var(--axis); }
+.chart .lbl-strong { fill: var(--ink); font-weight: 700; }
+.chart .lbl-2 { fill: var(--ink-2); }
+.chart .lbl-sel { fill: var(--ink); font-weight: 700; text-decoration: underline; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--ink-2); margin: 0 0 10px; padding: 0; list-style: none; }
+.legend li { display: inline-flex; align-items: center; gap: 7px; }
+.legend .sw { width: 12px; height: 12px; border-radius: 3px; background: var(--c); }
+.legend .ln { width: 16px; height: 2px; border-radius: 2px; background: var(--c); }
+.legend .shape { width: 11px; height: 11px; background: var(--ink-2); }
+.legend .shape.circ { border-radius: 50%; } .legend .shape.sq { border-radius: 2px; }
+.legend-note { font-size: 12px; color: var(--muted); }
+.tog { font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 2px 9px 2px 7px; cursor: pointer; }
+.tog:hover { border-color: var(--axis); }
+.tog[aria-pressed="false"] { color: var(--muted); background: transparent; border-style: dashed; }
+.tog[aria-pressed="false"] .ln { background: var(--grid); }
+details.table-view { margin-top: 8px; font-size: 12.5px; }
+details.table-view summary { cursor: pointer; color: var(--ink-2); font-weight: 600; width: max-content; }
+.tbl-wrap { overflow-x: auto; margin-top: 8px; }
+table.data { border-collapse: collapse; width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+table.data th, table.data td { padding: 5px 8px; border-bottom: 1px solid var(--grid); text-align: right; white-space: nowrap; }
+table.data th:first-child, table.data td:first-child { text-align: left; }
+table.data thead th { color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--axis); }
+
+/* Tooltip */
+.tip { position: fixed; z-index: 50; pointer-events: none; background: var(--tip-bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; box-shadow: var(--shadow); padding: 10px 12px; font-size: 13px; line-height: 1.4; max-width: 290px; opacity: 0; transform: translateY(4px); transition: opacity .12s, transform .12s; }
+.tip.on { opacity: 1; transform: none; }
+.tip .t-h { font-weight: 700; margin-bottom: 6px; }
+.tip .t-row { display: grid; grid-template-columns: 14px 1fr auto; align-items: center; gap: 8px; }
+.tip .t-row .key { width: 14px; height: 2px; border-radius: 2px; background: var(--c); }
+.tip .t-row .v { font-weight: 700; font-variant-numeric: tabular-nums; text-align: right; }
+.tip .t-row .n { color: var(--ink-2); }
+.tip .t-note { margin-top: 6px; color: var(--muted); font-size: 12px; }
+
+/* ---------- Ranking ---------- */
+.rank-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+.rank-row { display: grid; grid-template-columns: 24px minmax(110px, 160px) minmax(0, 1fr) 52px; align-items: center; gap: 10px; min-height: 26px; font-size: 13px; }
+.rank-row .rk { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; font-weight: 600; }
+.rank-row .nm { border: 0; background: none; padding: 0; text-align: left; cursor: pointer; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rank-row .nm:hover { text-decoration: underline; }
+.rank-row.me .nm { font-weight: 700; }
+.rank-row.sel .nm { text-decoration: underline; text-decoration-thickness: 2px; }
+.rank-row .bar { height: 12px; position: relative; }
+.rank-row .bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 0 4px 4px 0; background: var(--c); transition: width .3s ease; }
+.rank-row .sc { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) {
+  .rank-row { grid-template-columns: 22px minmax(0, 1fr) 50px; grid-template-areas: "rk nm sc" ". bar bar"; row-gap: 3px; padding: 3px 0; }
+  .rank-row .rk { grid-area: rk; } .rank-row .nm { grid-area: nm; } .rank-row .sc { grid-area: sc; }
+  .rank-row .bar { grid-area: bar; height: 8px; margin-right: 50px; }
+}
+.na-note { margin: 10px 0 0; font-size: 12px; color: var(--muted); }
+.statline { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12.5px; color: var(--ink-2); margin: 0 0 10px; }
+.statline b { color: var(--ink); }
+
+/* ---------- Matrix ---------- */
+.matrix-wrap { overflow-x: auto; }
+table.matrix { border-collapse: separate; border-spacing: 0; font-size: 12.5px; font-variant-numeric: tabular-nums; width: 100%; }
+table.matrix th, table.matrix td { padding: 0; border-bottom: 1px solid var(--surface); border-right: 2px solid var(--surface); }
+table.matrix thead th { vertical-align: bottom; background: var(--surface); }
+table.matrix thead th button { all: unset; box-sizing: border-box; display: block; width: 100%; padding: 8px 5px 7px; font-size: 11.5px; font-weight: 600; color: var(--ink-2); line-height: 1.2; text-align: center; cursor: pointer; min-width: 64px; white-space: normal; }
+table.matrix thead th button:hover { color: var(--ink); }
+table.matrix thead th button:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+table.matrix thead th button[aria-sort] { color: var(--ink); text-decoration: underline; }
+table.matrix thead th .fam-tag { display: block; font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-bottom: 2px; }
+table.matrix tbody th { position: sticky; left: 0; z-index: 1; background: var(--surface); text-align: left; padding: 0 10px 0 2px; white-space: nowrap; font-weight: 500; min-width: 140px; height: 30px; }
+table.matrix tbody th button { border: 0; background: none; padding: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; color: var(--ink); }
+table.matrix tbody th button::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+table.matrix tbody th button:hover { text-decoration: underline; }
+table.matrix tbody tr.me th button { font-weight: 700; }
+table.matrix tbody tr.sel th button { text-decoration: underline; text-decoration-thickness: 2px; }
+table.matrix td { text-align: center; height: 30px; min-width: 64px; color: var(--ink); background: var(--cell); }
+table.matrix td.hi { color: var(--cell-ink-hi); }
+table.matrix td.lead { font-weight: 800; box-shadow: inset 0 0 0 2px var(--ink); }
+table.matrix td.na { color: var(--muted); background: transparent; }
+table.matrix tr.me td, table.matrix tr.me th { border-top: 2px solid var(--cr7); border-bottom: 2px solid var(--cr7); }
+.matrix-key { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-top: 10px; font-size: 12px; color: var(--muted); }
+.ramp { display: inline-block; width: 110px; height: 9px; border-radius: 2px; background: linear-gradient(90deg, var(--seq-lo), var(--seq-hi)); vertical-align: middle; margin: 0 6px; border: 1px solid var(--rule); }
+.lead-key { display: inline-block; width: 13px; height: 13px; box-shadow: inset 0 0 0 2px var(--ink); border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+
+/* ---------- Tables ---------- */
+table.lt { border-collapse: collapse; width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+table.lt th, table.lt td { padding: 6px 8px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top; }
+table.lt thead th { font-size: 11.5px; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--axis); }
+table.lt td.r { text-align: right; white-space: nowrap; }
+table.lt td.strong { font-weight: 700; }
+table.lt tr.grp td { padding-top: 14px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; border-bottom: 1px solid var(--axis); }
+table.lt td a { color: var(--ink-2); }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--c); margin-right: 6px; vertical-align: 1px; }
+@media (max-width: 640px) { table.lt .hide-sm { display: none; } }
+
+/* ---------- Methods ---------- */
+.methods { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 32px; }
+@media (max-width: 900px) { .methods { grid-template-columns: minmax(0, 1fr); } }
+.methods h4 { margin: 0 0 6px; font-size: 13.5px; font-weight: 700; }
+.methods p, .methods li { margin: 0 0 8px; font-family: var(--font-text); font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+.methods ul, .methods ol { padding-left: 1.1em; margin: 0; }
+.formula { font-size: 13px; background: var(--surface-2); border-radius: 4px; padding: 8px 10px; color: var(--ink); overflow-x: auto; margin: 6px 0 10px; }
+.refs li { font-size: 14px; }
+.refs .use { display: block; font-family: var(--font-ui); font-size: 12px; color: var(--muted); margin-top: 2px; }
+footer.foot { max-width: 1520px; margin: 0 auto; padding-block: 0 36px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); font-size: 12px; color: var(--muted); }
+footer.foot p { margin: 0 0 4px; }
+</style>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div>
+      <h1>Greatest of All Time</h1>
+      <p class="meta"><span id="meta-players">21 players</span><span id="meta-criteria">16 criteria</span><span id="meta-date">Data to 29 October 2026</span></p>
+    </div>
+    <nav class="top-links" aria-label="Panels">
+      <a href="#p-ranking">Ranking</a><a href="#p-matrix">Matrix</a><a href="#p-age">Age</a><a href="#p-alltime">All-time lists</a><a href="#p-ronaldo">Ronaldo</a><a href="#p-methods">Methods</a>
+    </nav>
+  </div>
+</header>
+
+<div class="app">
+  <aside class="side" aria-label="Settings">
+    <details id="settings" open>
+      <summary>Settings</summary>
+      <div class="ctl"><h2>Compare</h2><div class="seg" id="group-seg" role="group" aria-label="Comparison group"></div><p class="hint" id="group-hint"></p></div>
+      <div class="ctl"><h2>Normalisation</h2><div class="seg" id="norm-seg" role="group" aria-label="Normalisation method"></div><p class="hint" id="norm-hint"></p></div>
+      <div class="ctl"><h2>Presets</h2><div class="presets" id="presets" role="group" aria-label="Presets"></div></div>
+      <div class="ctl"><h2>Criteria and weights</h2><div id="crit-list"></div></div>
+      <div class="ctl" style="border-bottom:0"><button type="button" class="btn" id="reset">Reset all settings</button></div>
+    </details>
+  </aside>
+
+  <main class="dash">
+    <section class="panel span-6" id="p-ranking">
+      <div class="ph"><div class="ph-text"><h3>Overall ranking</h3><p class="sub" id="rank-sub"></p></div></div>
+      <div class="statline" id="rank-stat"></div>
+      <ol class="rank-list" id="rank-list"></ol>
+      <p class="na-note" id="na-note"></p>
+    </section>
+
+    <section class="panel span-6" id="p-stability">
+      <div class="ph"><div class="ph-text"><h3>Rank stability</h3><p class="sub">5,000 Monte Carlo runs. Each run draws random weights for the selected criteria and one of the four normalisation methods. Dot: median rank. Line: 5th to 95th percentile.</p></div></div>
+      <div class="statline" id="stab-stat"></div>
+      <div class="chart" id="chart-stab"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-stab"></div></details>
+      <p class="cite">Method: uncertainty analysis after Saisana, Saltelli &amp; Tarantola (2005); weights uniform over the simplex (Rubin 1981).</p>
+    </section>
+
+    <section class="panel span-12" id="p-matrix">
+      <div class="ph"><div class="ph-text"><h3>Criteria matrix</h3><p class="sub" id="matrix-sub">Shading shows each player's normalised score on that criterion. Click a heading to sort; click a name to select a player.</p></div>
+        <div class="ph-tools"><div class="seg" id="matrix-mode" role="group" aria-label="Matrix values"></div></div></div>
+      <div class="matrix-wrap"><table class="matrix" id="matrix-table"></table></div>
+      <div class="matrix-key"><span>Normalised score: low<span class="ramp"></span>high</span><span><span class="lead-key"></span>Best value in the group</span><span>— no comparable data</span></div>
+      <p class="source" id="matrix-source"></p>
+    </section>
+
+    <section class="panel span-7" id="p-explorer">
+      <div class="ph"><div class="ph-text"><h3 id="explore-title">Criterion</h3><p class="sub" id="explore-sub"></p></div>
+        <div class="ph-tools"><label class="sr-only" for="explore-sel">Criterion</label><select id="explore-sel"></select></div></div>
+      <div class="chart" id="chart-explore"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-explore"></div></details>
+    </section>
+
+    <section class="panel span-5" id="p-leaders">
+      <div class="ph"><div class="ph-text"><h3>Leaders by criterion</h3><p class="sub" id="leaders-sub"></p></div></div>
+      <div class="tbl-wrap" style="margin-top:0"><table class="lt" id="leaders-table"></table></div>
+    </section>
+
+    <section class="panel span-12" id="p-age">
+      <div class="ph"><div class="ph-text"><h3>Official goals by age</h3><p class="sub">Cumulative goals at each age. Hover for every player's total at that age; click a name to hide or show a line.</p></div></div>
+      <ul class="legend" id="age-legend"></ul>
+      <div class="chart" id="chart-age"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-age"></div></details>
+      <p class="source" id="age-source"></p>
+    </section>
+
+    <section class="panel span-12" id="p-alltime">
+      <div class="ph"><div class="ph-text"><h3 id="alltime-title">All-time lists</h3><p class="sub" id="alltime-sub"></p></div>
+        <div class="ph-tools"><div class="seg" id="alltime-seg" role="group" aria-label="All-time list"></div></div></div>
+      <div id="alltime-body"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-alltime"></div></details>
+      <p class="source" id="alltime-source"></p>
+    </section>
+
+    <h2 class="group-title span-12" id="p-ronaldo">Cristiano Ronaldo, match by match</h2>
+
+    <section class="panel span-6" id="p-ucl">
+      <div class="ph"><div class="ph-text"><h3>Champions League goals by round</h3><p class="sub">Goals and games in each round; competition records marked.</p></div></div>
+      <div class="chart" id="chart-ucl"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-ucl"></div></details>
+      <p class="source">Sources: match-by-match records; records from Wikipedia, European Cup and Champions League records and statistics.</p>
+    </section>
+
+    <section class="panel span-6" id="p-types">
+      <div class="ph"><div class="ph-text"><h3>Goals by body part</h3><p class="sub" id="types-sub"></p></div></div>
+      <ul class="legend"><li><span class="sw" style="--c:var(--peer)"></span>Right foot</li><li><span class="sw" style="--c:var(--cr7)"></span>Left foot</li><li><span class="sw" style="--c:color-mix(in oklab, var(--cr7) 55%, var(--surface))"></span>Header</li><li><span class="sw" style="--c:var(--axis)"></span>Other</li></ul>
+      <div class="chart" id="chart-types"></div>
+      <div class="statline" id="types-stat" style="margin-top:12px"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-types"></div></details>
+      <p class="source">Source: match-by-match records, goal by goal. Penalty-shootout kicks excluded.</p>
+    </section>
+
+    <section class="panel span-12" id="p-tourn">
+      <div class="ph"><div class="ph-text"><h3>Major tournaments, 2004 to 2026</h3><p class="sub">World Cups and European Championships. Number: goals. Empty outline: played, no goal.</p></div></div>
+      <ul class="legend"><li><span class="shape circ"></span>World Cup</li><li><span class="shape sq"></span>European Championship</li></ul>
+      <div class="chart" id="chart-tourn"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-tourn"></div></details>
+      <p class="source">Source: match-by-match records. Also 2 goals at the 2017 Confederations Cup.</p>
+    </section>
+
+    <section class="panel span-5" id="p-clubs">
+      <div class="ph"><div class="ph-text"><h3>Goals by club</h3><p class="sub">Official goals, all club competitions. Line: 100 goals.</p></div></div>
+      <div class="chart" id="chart-clubs"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-clubs"></div></details>
+      <p class="source">Source: match-by-match records.</p>
+    </section>
+
+    <section class="panel span-7" id="p-records">
+      <div class="ph"><div class="ph-text"><h3>Records held outright</h3><p class="sub" id="records-sub"></p></div></div>
+      <div class="tbl-wrap" style="margin-top:0"><table class="lt" id="records-table"></table></div>
+    </section>
+
+    <section class="panel span-12" id="p-methods">
+      <div class="ph"><div class="ph-text"><h3>Methods, sources and references</h3><p class="sub">How every number on this page was built, and the published methods it follows.</p></div></div>
+      <div class="methods" id="methods"></div>
+    </section>
+  </main>
+</div>
+
+<footer class="foot" id="footer-body"></footer>
+<div class="tip" id="tip" role="tooltip"></div>

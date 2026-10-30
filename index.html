@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Greatest of All Time">
+<meta property="og:description" content="21 football legends, 16 criteria, a ranking you control and a Monte Carlo test of how stable it is.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0f3d2d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%230f3d2d%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2216%22 fill=%22none%22 stroke=%22%23edf3ee%22 stroke-width=%225%22/%3E%3Cline x1=%2232%22 y1=%220%22 x2=%2232%22 y2=%2264%22 stroke=%22%23edf3ee%22 stroke-width=%225%22/%3E%3C/svg%3E">
+<title>Greatest of All Time</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Football's greatest players compared: 21 legends, 16 criteria, a weighted ranking you control, and a Monte Carlo test of how stable it is.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Big+Shoulders+Display:wght@700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap">
+<style>
+/* Layout: dashboard. Pitch-green top bar, a sticky settings rail on the left, a 12-column grid of panels on the right; one column on phones. */
+:root {
+  --bg: #eef1ed;
+  --surface: #fcfcfa;
+  --surface-2: #eaeee9;
+  --ink: #0f1a15;
+  --ink-2: #3c4943;
+  --muted: #627069;
+  --rule: #d6ddd7;
+  --grid: #e3e8e4;
+  --axis: #b6c0ba;
+  --pitch: #0f3d2d;
+  --pitch-2: #114431;
+  --chalk: #edf3ee;
+  --chalk-2: #bcd0c3;
+  --cr7: #c8102e;
+  --peer: #a4ada7;
+  --sel: #0f1a15;
+  --seq-lo: #eef4ef;
+  --seq-hi: #0e5a3a;
+  --focus: #0e5a3a;
+  --tip-bg: #fcfcfa;
+  --cell-ink-hi: #ffffff;
+  --shadow: 0 1px 2px rgba(15, 26, 21, .05), 0 10px 30px rgba(15, 26, 21, .07);
+  --font-display: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
+  --font-text: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-ui: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --r: 8px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a0f0c; --surface: #121915; --surface-2: #19221d; --ink: #e8eee9; --ink-2: #b8c3bc; --muted: #8a978f;
+    --rule: #25302a; --grid: #1e2823; --axis: #36433c; --pitch: #0c2b20; --pitch-2: #0e3125; --chalk: #e6eee8; --chalk-2: #a9bfb1;
+    --cr7: #f04a5e; --peer: #56625b; --sel: #e8eee9; --seq-lo: #16201b; --seq-hi: #3aa673; --focus: #5cc792; --tip-bg: #19221d; --cell-ink-hi: #0b100d;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px rgba(0, 0, 0, .35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0a0f0c; --surface: #121915; --surface-2: #19221d; --ink: #e8eee9; --ink-2: #b8c3bc; --muted: #8a978f;
+  --rule: #25302a; --grid: #1e2823; --axis: #36433c; --pitch: #0c2b20; --pitch-2: #0e3125; --chalk: #e6eee8; --chalk-2: #a9bfb1;
+  --cr7: #f04a5e; --peer: #56625b; --sel: #e8eee9; --seq-lo: #16201b; --seq-hi: #3aa673; --focus: #5cc792; --tip-bg: #19221d; --cell-ink-hi: #0b100d;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 30px rgba(0, 0, 0, .35);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; animation: none !important; } }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-ui); font-size: 14px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.num { font-variant-numeric: tabular-nums; }
+button { font: inherit; color: inherit; }
+
+/* ---------- Top bar ---------- */
+.topbar { color: var(--chalk); background: repeating-linear-gradient(90deg, var(--pitch) 0 84px, var(--pitch-2) 84px 168px); }
+.topbar-in { max-width: 1520px; margin: 0 auto; padding-block: 16px 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 24px; }
+.topbar h1 { margin: 0; font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(30px, 4vw, 44px); line-height: .9; letter-spacing: .005em; }
+.topbar .meta { margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--chalk-2); }
+.top-links { display: flex; flex-wrap: wrap; gap: 4px; }
+.top-links a { color: var(--chalk); text-decoration: none; font-size: 13px; font-weight: 600; padding: 5px 10px; border: 1px solid rgba(237, 243, 238, .25); border-radius: 999px; }
+.top-links a:hover { background: rgba(237, 243, 238, .1); }
+
+/* ---------- App frame ---------- */
+.app { max-width: 1520px; margin: 0 auto; padding-block: 18px 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 1080px) { .app { grid-template-columns: minmax(0, 1fr); } }
+.side { position: sticky; top: calc(12px + env(safe-area-inset-top, 0px)); max-height: calc(100vh - 24px); overflow-y: auto; scrollbar-width: thin; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); }
+@media (max-width: 1080px) { .side { position: static; max-height: none; } }
+.side > details > summary { list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 700; font-size: 14px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--rule); }
+.side > details > summary::-webkit-details-marker { display: none; }
+.side > details > summary::after { content: "Hide"; font-size: 12px; font-weight: 600; color: var(--muted); }
+.side > details:not([open]) > summary::after { content: "Show"; }
+.side > details:not([open]) > summary { border-bottom: 0; }
+.ctl { padding: 12px 16px; border-bottom: 1px solid var(--grid); display: grid; gap: 8px; }
+.ctl h2 { margin: 0; font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.hint { margin: 0; font-size: 12px; color: var(--muted); }
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--rule); border-radius: 6px; padding: 2px; background: var(--surface-2); gap: 2px; }
+.seg button { font-size: 12.5px; font-weight: 600; border: 0; background: transparent; color: var(--ink-2); padding: 5px 9px; border-radius: 4px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0, 0, 0, .14); }
+.seg button:hover { color: var(--ink); }
+.presets { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12.5px; font-weight: 600; border: 1px solid var(--rule); background: var(--surface); color: var(--ink-2); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+.chip:hover { border-color: var(--axis); color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.fam { border: 0; margin: 0; padding: 10px 0 2px; }
+.fam + .fam { border-top: 1px solid var(--grid); }
+.fam legend { padding: 0; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.crit { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 4px 0; }
+.crit .c-name { font-size: 13px; line-height: 1.25; color: var(--ink); }
+.crit .c-name small { display: block; font-size: 11.5px; color: var(--muted); margin-top: 1px; }
+.crit.off .c-name { color: var(--muted); }
+.wt { display: inline-flex; border: 1px solid var(--rule); border-radius: 5px; overflow: hidden; }
+.wt label { position: relative; cursor: pointer; }
+.wt input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.wt span { display: block; padding: 3px 7px; font-size: 11.5px; font-weight: 700; color: var(--muted); background: var(--surface); min-width: 28px; text-align: center; }
+.wt label + label span { border-left: 1px solid var(--rule); }
+.wt input:checked + span { background: var(--ink); color: var(--bg); }
+.wt input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: -2px; }
+.btn { font-size: 12.5px; font-weight: 600; border: 1px solid var(--rule); background: var(--surface); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.btn:hover { border-color: var(--axis); }
+
+/* ---------- Panel grid ---------- */
+.dash { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; align-items: start; min-width: 0; }
+.span-12 { grid-column: span 12; } .span-7 { grid-column: span 7; } .span-6 { grid-column: span 6; } .span-5 { grid-column: span 5; }
+@media (max-width: 1240px) { .span-7, .span-6, .span-5 { grid-column: span 12; } }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--r); padding: 16px 18px 14px; min-width: 0; }
+.ph { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 8px 16px; margin-bottom: 12px; }
+.ph-text { display: grid; gap: 3px; min-width: 0; flex: 1 1 260px; }
+.ph h3 { margin: 0; font-size: 15px; font-weight: 700; line-height: 1.3; }
+.ph .sub { margin: 0; font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+.linkbtn { border: 0; background: none; padding: 0; color: var(--ink-2); text-decoration: underline; cursor: pointer; font-weight: 600; font-size: inherit; }
+.ph-tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; min-width: 0; max-width: 100%; }
+.group-title { margin: 10px 0 -4px; font-family: var(--font-display); font-weight: 800; font-size: 26px; text-transform: uppercase; letter-spacing: .01em; }
+.source { margin: 10px 0 0; font-size: 11.5px; color: var(--muted); line-height: 1.45; }
+.cite { font-size: 11.5px; color: var(--muted); }
+.cite a { color: var(--ink-2); }
+select { font: inherit; font-size: 13px; font-weight: 600; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 5px 8px; max-width: 100%; }
+.chart { position: relative; width: 100%; min-width: 0; }
+.chart svg { display: block; overflow: visible; }
+.chart text { font-family: var(--font-ui); fill: var(--muted); font-size: 12px; }
+.chart .tick line { stroke: var(--grid); }
+.chart .domain { stroke: var(--axis); }
+.chart .lbl-strong { fill: var(--ink); font-weight: 700; }
+.chart .lbl-2 { fill: var(--ink-2); }
+.chart .lbl-sel { fill: var(--ink); font-weight: 700; text-decoration: underline; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--ink-2); margin: 0 0 10px; padding: 0; list-style: none; }
+.legend li { display: inline-flex; align-items: center; gap: 7px; }
+.legend .sw { width: 12px; height: 12px; border-radius: 3px; background: var(--c); }
+.legend .ln { width: 16px; height: 2px; border-radius: 2px; background: var(--c); }
+.legend .shape { width: 11px; height: 11px; background: var(--ink-2); }
+.legend .shape.circ { border-radius: 50%; } .legend .shape.sq { border-radius: 2px; }
+.legend-note { font-size: 12px; color: var(--muted); }
+.tog { font-size: 12.5px; font-weight: 600; display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 2px 9px 2px 7px; cursor: pointer; }
+.tog:hover { border-color: var(--axis); }
+.tog[aria-pressed="false"] { color: var(--muted); background: transparent; border-style: dashed; }
+.tog[aria-pressed="false"] .ln { background: var(--grid); }
+details.table-view { margin-top: 8px; font-size: 12.5px; }
+details.table-view summary { cursor: pointer; color: var(--ink-2); font-weight: 600; width: max-content; }
+.tbl-wrap { overflow-x: auto; margin-top: 8px; }
+table.data { border-collapse: collapse; width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+table.data th, table.data td { padding: 5px 8px; border-bottom: 1px solid var(--grid); text-align: right; white-space: nowrap; }
+table.data th:first-child, table.data td:first-child { text-align: left; }
+table.data thead th { color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--axis); }
+
+/* Tooltip */
+.tip { position: fixed; z-index: 50; pointer-events: none; background: var(--tip-bg); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; box-shadow: var(--shadow); padding: 10px 12px; font-size: 13px; line-height: 1.4; max-width: 290px; opacity: 0; transform: translateY(4px); transition: opacity .12s, transform .12s; }
+.tip.on { opacity: 1; transform: none; }
+.tip .t-h { font-weight: 700; margin-bottom: 6px; }
+.tip .t-row { display: grid; grid-template-columns: 14px 1fr auto; align-items: center; gap: 8px; }
+.tip .t-row .key { width: 14px; height: 2px; border-radius: 2px; background: var(--c); }
+.tip .t-row .v { font-weight: 700; font-variant-numeric: tabular-nums; text-align: right; }
+.tip .t-row .n { color: var(--ink-2); }
+.tip .t-note { margin-top: 6px; color: var(--muted); font-size: 12px; }
+
+/* ---------- Ranking ---------- */
+.rank-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+.rank-row { display: grid; grid-template-columns: 24px minmax(110px, 160px) minmax(0, 1fr) 52px; align-items: center; gap: 10px; min-height: 26px; font-size: 13px; }
+.rank-row .rk { color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; font-weight: 600; }
+.rank-row .nm { border: 0; background: none; padding: 0; text-align: left; cursor: pointer; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rank-row .nm:hover { text-decoration: underline; }
+.rank-row.me .nm { font-weight: 700; }
+.rank-row.sel .nm { text-decoration: underline; text-decoration-thickness: 2px; }
+.rank-row .bar { height: 12px; position: relative; }
+.rank-row .bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 0 4px 4px 0; background: var(--c); transition: width .3s ease; }
+.rank-row .sc { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) {
+  .rank-row { grid-template-columns: 22px minmax(0, 1fr) 50px; grid-template-areas: "rk nm sc" ". bar bar"; row-gap: 3px; padding: 3px 0; }
+  .rank-row .rk { grid-area: rk; } .rank-row .nm { grid-area: nm; } .rank-row .sc { grid-area: sc; }
+  .rank-row .bar { grid-area: bar; height: 8px; margin-right: 50px; }
+}
+.na-note { margin: 10px 0 0; font-size: 12px; color: var(--muted); }
+.statline { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12.5px; color: var(--ink-2); margin: 0 0 10px; }
+.statline b { color: var(--ink); }
+
+/* ---------- Matrix ---------- */
+.matrix-wrap { overflow-x: auto; }
+table.matrix { border-collapse: separate; border-spacing: 0; font-size: 12.5px; font-variant-numeric: tabular-nums; width: 100%; }
+table.matrix th, table.matrix td { padding: 0; border-bottom: 1px solid var(--surface); border-right: 2px solid var(--surface); }
+table.matrix thead th { vertical-align: bottom; background: var(--surface); }
+table.matrix thead th button { all: unset; box-sizing: border-box; display: block; width: 100%; padding: 8px 5px 7px; font-size: 11.5px; font-weight: 600; color: var(--ink-2); line-height: 1.2; text-align: center; cursor: pointer; min-width: 64px; white-space: normal; }
+table.matrix thead th button:hover { color: var(--ink); }
+table.matrix thead th button:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+table.matrix thead th button[aria-sort] { color: var(--ink); text-decoration: underline; }
+table.matrix thead th .fam-tag { display: block; font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-bottom: 2px; }
+table.matrix tbody th { position: sticky; left: 0; z-index: 1; background: var(--surface); text-align: left; padding: 0 10px 0 2px; white-space: nowrap; font-weight: 500; min-width: 140px; height: 30px; }
+table.matrix tbody th button { border: 0; background: none; padding: 0; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; color: var(--ink); }
+table.matrix tbody th button::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+table.matrix tbody th button:hover { text-decoration: underline; }
+table.matrix tbody tr.me th button { font-weight: 700; }
+table.matrix tbody tr.sel th button { text-decoration: underline; text-decoration-thickness: 2px; }
+table.matrix td { text-align: center; height: 30px; min-width: 64px; color: var(--ink); background: var(--cell); }
+table.matrix td.hi { color: var(--cell-ink-hi); }
+table.matrix td.lead { font-weight: 800; box-shadow: inset 0 0 0 2px var(--ink); }
+table.matrix td.na { color: var(--muted); background: transparent; }
+table.matrix tr.me td, table.matrix tr.me th { border-top: 2px solid var(--cr7); border-bottom: 2px solid var(--cr7); }
+.matrix-key { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-top: 10px; font-size: 12px; color: var(--muted); }
+.ramp { display: inline-block; width: 110px; height: 9px; border-radius: 2px; background: linear-gradient(90deg, var(--seq-lo), var(--seq-hi)); vertical-align: middle; margin: 0 6px; border: 1px solid var(--rule); }
+.lead-key { display: inline-block; width: 13px; height: 13px; box-shadow: inset 0 0 0 2px var(--ink); border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+
+/* ---------- Tables ---------- */
+table.lt { border-collapse: collapse; width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+table.lt th, table.lt td { padding: 6px 8px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top; }
+table.lt thead th { font-size: 11.5px; color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--axis); }
+table.lt td.r { text-align: right; white-space: nowrap; }
+table.lt td.strong { font-weight: 700; }
+table.lt tr.grp td { padding-top: 14px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 700; border-bottom: 1px solid var(--axis); }
+table.lt td a { color: var(--ink-2); }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--c); margin-right: 6px; vertical-align: 1px; }
+@media (max-width: 640px) { table.lt .hide-sm { display: none; } }
+
+/* ---------- Methods ---------- */
+.methods { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 32px; }
+@media (max-width: 900px) { .methods { grid-template-columns: minmax(0, 1fr); } }
+.methods h4 { margin: 0 0 6px; font-size: 13.5px; font-weight: 700; }
+.methods p, .methods li { margin: 0 0 8px; font-family: var(--font-text); font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+.methods ul, .methods ol { padding-left: 1.1em; margin: 0; }
+.formula { font-size: 13px; background: var(--surface-2); border-radius: 4px; padding: 8px 10px; color: var(--ink); overflow-x: auto; margin: 6px 0 10px; }
+.refs li { font-size: 14px; }
+.refs .use { display: block; font-family: var(--font-ui); font-size: 12px; color: var(--muted); margin-top: 2px; }
+footer.foot { max-width: 1520px; margin: 0 auto; padding-block: 0 36px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); font-size: 12px; color: var(--muted); }
+footer.foot p { margin: 0 0 4px; }
+</style>
+</head>
+<body>
+
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div>
+      <h1>Greatest of All Time</h1>
+      <p class="meta"><span id="meta-players">21 players</span><span id="meta-criteria">16 criteria</span><span id="meta-date">Data to 29 October 2026</span></p>
+    </div>
+    <nav class="top-links" aria-label="Panels">
+      <a href="#p-ranking">Ranking</a><a href="#p-matrix">Matrix</a><a href="#p-age">Age</a><a href="#p-alltime">All-time lists</a><a href="#p-ronaldo">Ronaldo</a><a href="#p-methods">Methods</a>
+    </nav>
+  </div>
+</header>
+
+<div class="app">
+  <aside class="side" aria-label="Settings">
+    <details id="settings" open>
+      <summary>Settings</summary>
+      <div class="ctl"><h2>Compare</h2><div class="seg" id="group-seg" role="group" aria-label="Comparison group"></div><p class="hint" id="group-hint"></p></div>
+      <div class="ctl"><h2>Normalisation</h2><div class="seg" id="norm-seg" role="group" aria-label="Normalisation method"></div><p class="hint" id="norm-hint"></p></div>
+      <div class="ctl"><h2>Presets</h2><div class="presets" id="presets" role="group" aria-label="Presets"></div></div>
+      <div class="ctl"><h2>Criteria and weights</h2><div id="crit-list"></div></div>
+      <div class="ctl" style="border-bottom:0"><button type="button" class="btn" id="reset">Reset all settings</button></div>
+    </details>
+  </aside>
+
+  <main class="dash">
+    <section class="panel span-6" id="p-ranking">
+      <div class="ph"><div class="ph-text"><h3>Overall ranking</h3><p class="sub" id="rank-sub"></p></div></div>
+      <div class="statline" id="rank-stat"></div>
+      <ol class="rank-list" id="rank-list"></ol>
+      <p class="na-note" id="na-note"></p>
+    </section>
+
+    <section class="panel span-6" id="p-stability">
+      <div class="ph"><div class="ph-text"><h3>Rank stability</h3><p class="sub">5,000 Monte Carlo runs. Each run draws random weights for the selected criteria and one of the four normalisation methods. Dot: median rank. Line: 5th to 95th percentile.</p></div></div>
+      <div class="statline" id="stab-stat"></div>
+      <div class="chart" id="chart-stab"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-stab"></div></details>
+      <p class="cite">Method: uncertainty analysis after Saisana, Saltelli &amp; Tarantola (2005); weights uniform over the simplex (Rubin 1981).</p>
+    </section>
+
+    <section class="panel span-12" id="p-matrix">
+      <div class="ph"><div class="ph-text"><h3>Criteria matrix</h3><p class="sub" id="matrix-sub">Shading shows each player's normalised score on that criterion. Click a heading to sort; click a name to select a player.</p></div>
+        <div class="ph-tools"><div class="seg" id="matrix-mode" role="group" aria-label="Matrix values"></div></div></div>
+      <div class="matrix-wrap"><table class="matrix" id="matrix-table"></table></div>
+      <div class="matrix-key"><span>Normalised score: low<span class="ramp"></span>high</span><span><span class="lead-key"></span>Best value in the group</span><span>— no comparable data</span></div>
+      <p class="source" id="matrix-source"></p>
+    </section>
+
+    <section class="panel span-7" id="p-explorer">
+      <div class="ph"><div class="ph-text"><h3 id="explore-title">Criterion</h3><p class="sub" id="explore-sub"></p></div>
+        <div class="ph-tools"><label class="sr-only" for="explore-sel">Criterion</label><select id="explore-sel"></select></div></div>
+      <div class="chart" id="chart-explore"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-explore"></div></details>
+    </section>
+
+    <section class="panel span-5" id="p-leaders">
+      <div class="ph"><div class="ph-text"><h3>Leaders by criterion</h3><p class="sub" id="leaders-sub"></p></div></div>
+      <div class="tbl-wrap" style="margin-top:0"><table class="lt" id="leaders-table"></table></div>
+    </section>
+
+    <section class="panel span-12" id="p-age">
+      <div class="ph"><div class="ph-text"><h3>Official goals by age</h3><p class="sub">Cumulative goals at each age. Hover for every player's total at that age; click a name to hide or show a line.</p></div></div>
+      <ul class="legend" id="age-legend"></ul>
+      <div class="chart" id="chart-age"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-age"></div></details>
+      <p class="source" id="age-source"></p>
+    </section>
+
+    <section class="panel span-12" id="p-alltime">
+      <div class="ph"><div class="ph-text"><h3 id="alltime-title">All-time lists</h3><p class="sub" id="alltime-sub"></p></div>
+        <div class="ph-tools"><div class="seg" id="alltime-seg" role="group" aria-label="All-time list"></div></div></div>
+      <div id="alltime-body"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-alltime"></div></details>
+      <p class="source" id="alltime-source"></p>
+    </section>
+
+    <h2 class="group-title span-12" id="p-ronaldo">Cristiano Ronaldo, match by match</h2>
+
+    <section class="panel span-6" id="p-ucl">
+      <div class="ph"><div class="ph-text"><h3>Champions League goals by round</h3><p class="sub">Goals and games in each round; competition records marked.</p></div></div>
+      <div class="chart" id="chart-ucl"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-ucl"></div></details>
+      <p class="source">Sources: match-by-match records; records from Wikipedia, European Cup and Champions League records and statistics.</p>
+    </section>
+
+    <section class="panel span-6" id="p-types">
+      <div class="ph"><div class="ph-text"><h3>Goals by body part</h3><p class="sub" id="types-sub"></p></div></div>
+      <ul class="legend"><li><span class="sw" style="--c:var(--peer)"></span>Right foot</li><li><span class="sw" style="--c:var(--cr7)"></span>Left foot</li><li><span class="sw" style="--c:color-mix(in oklab, var(--cr7) 55%, var(--surface))"></span>Header</li><li><span class="sw" style="--c:var(--axis)"></span>Other</li></ul>
+      <div class="chart" id="chart-types"></div>
+      <div class="statline" id="types-stat" style="margin-top:12px"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-types"></div></details>
+      <p class="source">Source: match-by-match records, goal by goal. Penalty-shootout kicks excluded.</p>
+    </section>
+
+    <section class="panel span-12" id="p-tourn">
+      <div class="ph"><div class="ph-text"><h3>Major tournaments, 2004 to 2026</h3><p class="sub">World Cups and European Championships. Number: goals. Empty outline: played, no goal.</p></div></div>
+      <ul class="legend"><li><span class="shape circ"></span>World Cup</li><li><span class="shape sq"></span>European Championship</li></ul>
+      <div class="chart" id="chart-tourn"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-tourn"></div></details>
+      <p class="source">Source: match-by-match records. Also 2 goals at the 2017 Confederations Cup.</p>
+    </section>
+
+    <section class="panel span-5" id="p-clubs">
+      <div class="ph"><div class="ph-text"><h3>Goals by club</h3><p class="sub">Official goals, all club competitions. Line: 100 goals.</p></div></div>
+      <div class="chart" id="chart-clubs"></div>
+      <details class="table-view"><summary>Data table</summary><div class="tbl-wrap" id="tbl-clubs"></div></details>
+      <p class="source">Source: match-by-match records.</p>
+    </section>
+
+    <section class="panel span-7" id="p-records">
+      <div class="ph"><div class="ph-text"><h3>Records held outright</h3><p class="sub" id="records-sub"></p></div></div>
+      <div class="tbl-wrap" style="margin-top:0"><table class="lt" id="records-table"></table></div>
+    </section>
+
+    <section class="panel span-12" id="p-methods">
+      <div class="ph"><div class="ph-text"><h3>Methods, sources and references</h3><p class="sub">How every number on this page was built, and the published methods it follows.</p></div></div>
+      <div class="methods" id="methods"></div>
+    </section>
+  </main>
+</div>
+
+<footer class="foot" id="footer-body"></footer>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+window.FG = {"meta":{"asOfLabel":"29 October 2026","generated":"2026-10-30","matrixSource":"Sources: Wikipedia career-statistics tables and honours sections (fetched 30 October 2026); FIFA tournament records; match-by-match records for Ronaldo and Messi. Goals from age 30 and 35 are exact for Ronaldo and Messi and estimated from season totals for everyone else.","ageSource":"Sources: match-by-match records for Ronaldo and Messi (exact age on match day); Wikipedia season tables for everyone else (season totals placed at each season's end). Active players are shown to 30 October 2026.","leaguesSource":"Source: Wikipedia honours sections (fetched 30 October 2026). Shared awards count. Brazilian state championships and the colonial Mozambique league are excluded.","uclSource":"Source: Wikipedia, list of European Cup and Champions League top scorers (updated 21 October 2026).","intlSource":"Source: Wikipedia, list of men's footballers with 50 or more international goals (as of 2026-10-07).","wcSource":"Sources: FIFA World Cup records and 2026 match reports; Wikipedia player articles. Uwe Seeler, Miroslav Klose and Ivan Perišić, outside this comparison, also scored at four World Cups."},"players":[{"id":"ronaldo","name":"Cristiano Ronaldo","short":"Ronaldo","nation":"Portugal","role":"cr","active":true,"born":"1985-02-05","debut":2002},{"id":"messi","name":"Lionel Messi","short":"Messi","nation":"Argentina","role":"pe","active":true,"born":"1987-06-24","debut":2004},{"id":"pele","name":"Pelé","short":"Pelé","nation":"Brazil","role":"pe","active":false,"born":"1940-10-23","debut":1956},{"id":"maradona","name":"Diego Maradona","short":"Maradona","nation":"Argentina","role":"pe","active":false,"born":"1960-10-30","debut":1976},{"id":"distefano","name":"Alfredo Di Stéfano","short":"Di Stéfano","nation":"Argentina / Spain","role":"pe","active":false,"born":"1926-07-04","debut":1945},{"id":"puskas","name":"Ferenc Puskás","short":"Puskás","nation":"Hungary / Spain","role":"pe","active":false,"born":"1927-04-01","debut":1943},{"id":"eusebio","name":"Eusébio","short":"Eusébio","nation":"Portugal","role":"pe","active":false,"born":"1942-01-25","debut":1957},{"id":"muller","name":"Gerd Müller","short":"G. Müller","nation":"West Germany","role":"pe","active":false,"born":"1945-11-03","debut":1962},{"id":"cruyff","name":"Johan Cruyff","short":"Cruyff","nation":"Netherlands","role":"pe","active":false,"born":"1947-04-25","debut":1964},{"id":"romario","name":"Romário","short":"Romário","nation":"Brazil","role":"pe","active":false,"born":"1966-01-29","debut":1985},{"id":"ronaldo_nazario","name":"Ronaldo Nazário","short":"R. Nazário","nation":"Brazil","role":"pe","active":false,"born":"1976-09-18","debut":1993},{"id":"zidane","name":"Zinedine Zidane","short":"Zidane","nation":"France","role":"pe","active":false,"born":"1972-06-23","debut":1988},{"id":"henry","name":"Thierry Henry","short":"Henry","nation":"France","role":"pe","active":false,"born":"1977-08-17","debut":1994},{"id":"ibrahimovic","name":"Zlatan Ibrahimović","short":"Ibrahimović","nation":"Sweden","role":"pe","active":false,"born":"1981-10-03","debut":1999},{"id":"lewandowski","name":"Robert Lewandowski","short":"Lewandowski","nation":"Poland","role":"pe","active":true,"born":"1988-08-21","debut":2004},{"id":"suarez","name":"Luis Suárez","short":"Suárez","nation":"Uruguay","role":"pe","active":true,"born":"1987-01-24","debut":2005},{"id":"benzema","name":"Karim Benzema","short":"Benzema","nation":"France","role":"pe","active":true,"born":"1987-12-19","debut":2004},{"id":"neymar","name":"Neymar","short":"Neymar","nation":"Brazil","role":"pe","active":true,"born":"1992-02-05","debut":2009},{"id":"kane","name":"Harry Kane","short":"Kane","nation":"England","role":"pe","active":true,"born":"1993-07-28","debut":2010},{"id":"mbappe","name":"Kylian Mbappé","short":"Mbappé","nation":"France","role":"pe","active":true,"born":"1998-12-20","debut":2015},{"id":"haaland","name":"Erling Haaland","short":"Haaland","nation":"Norway","role":"pe","active":true,"born":"2000-07-21","debut":2016}],"families":[{"id":"volume","label":"Goals","short":"Goals"},{"id":"stage","label":"Big stage","short":"Big stage"},{"id":"intl","label":"International","short":"Intl"},{"id":"longevity","label":"Longevity","short":"Longevity"},{"id":"range","label":"Range","short":"Range"}],"metrics":[{"id":"goals","label":"Official goals","short":"Official goals","family":"volume","desc":"Senior first-team club goals plus full international goals","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo"]},{"id":"gpg","label":"Goals per game","short":"Goals/game","family":"volume","desc":"Official goals divided by official matches","better":"high","dec":2,"defaultW":0,"leaders":["puskas"]},{"id":"uclGoals","label":"European Cup and Champions League goals","short":"UCL goals","family":"stage","desc":"Europe's top club competition since 1955, qualifiers excluded","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo"]},{"id":"uclTitles","label":"European Cup and Champions League titles","short":"UCL titles","family":"stage","desc":"Wins of Europe's top club competition","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo","distefano","benzema"]},{"id":"uclFinalGoals","label":"Goals in European Cup and Champions League finals","short":"Final goals","family":"stage","desc":"Every final since 1956","better":"high","dec":0,"defaultW":0,"leaders":["distefano","puskas"]},{"id":"intlGoals","label":"International goals","short":"Intl goals","family":"intl","desc":"Goals in full senior internationals","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo"]},{"id":"caps","label":"International caps","short":"Caps","family":"intl","desc":"Full senior international appearances","better":"high","dec":0,"defaultW":0,"leaders":["ronaldo"]},{"id":"wcScored","label":"World Cups with a goal","short":"World Cups scored","family":"intl","desc":"Different World Cup tournaments in which he scored","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo"]},{"id":"goals30","label":"Goals from age 30","short":"Goals 30+","family":"longevity","desc":"Ronaldo and Messi exact to the day; others from season totals","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo"]},{"id":"goals35","label":"Goals from age 35","short":"Goals 35+","family":"longevity","desc":"Ronaldo and Messi exact to the day; others from season totals","better":"high","dec":0,"defaultW":0,"leaders":["ronaldo"]},{"id":"seasons30","label":"Club seasons with 30+ goals","short":"30-goal seasons","family":"longevity","desc":"Club seasons with at least 30 official goals","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo"]},{"id":"apps","label":"Official matches","short":"Matches","family":"longevity","desc":"Senior first-team club and full international matches","better":"high","dec":0,"defaultW":0,"leaders":["ronaldo"]},{"id":"leaguesTop","label":"Leagues where he was top scorer","short":"Leagues topped","family":"range","desc":"Different top-flight national leagues in which he won the scoring title","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo"]},{"id":"clubs100","label":"Clubs with 100+ goals","short":"100-goal clubs","family":"range","desc":"Clubs for which he scored at least 100 official goals","better":"high","dec":0,"defaultW":1,"leaders":["ronaldo"]},{"id":"countriesTitle","label":"Countries with a league title","short":"Title countries","family":"range","desc":"Different countries in which he won the top-flight league","better":"high","dec":0,"defaultW":0,"leaders":["ronaldo","ibrahimovic","suarez"]},{"id":"leaguesScored","label":"Countries whose top league he scored in","short":"Leagues scored in","family":"range","desc":"Top-flight national leagues with at least one league goal","better":"high","dec":0,"defaultW":0,"leaders":["ibrahimovic"]}],"presets":[{"id":"core","label":"Core criteria","weights":{"goals":1,"uclGoals":1,"uclTitles":1,"intlGoals":1,"wcScored":1,"goals30":1,"seasons30":1,"leaguesTop":1,"clubs100":1}},{"id":"stage","label":"Big stage","weights":{"uclGoals":1,"uclTitles":1,"uclFinalGoals":1}},{"id":"intl","label":"International","weights":{"intlGoals":1,"caps":1,"wcScored":1}},{"id":"longevity","label":"Longevity","weights":{"goals30":1,"goals35":1,"seasons30":1,"apps":1}},{"id":"range","label":"Range","weights":{"leaguesTop":1,"clubs100":1,"countriesTitle":1,"leaguesScored":1}},{"id":"all","label":"Everything","weights":{"goals":1,"gpg":1,"uclGoals":1,"uclTitles":1,"uclFinalGoals":1,"intlGoals":1,"caps":1,"wcScored":1,"goals30":1,"goals35":1,"seasons30":1,"apps":1,"leaguesTop":1,"clubs100":1,"countriesTitle":1,"leaguesScored":1}}],"values":{"ronaldo":{"goals":985,"gpg":0.73,"intlGoals":146,"caps":234,"apps":1343,"wcScored":6,"uclFinalGoals":4,"goals30":522,"goals35":263,"goals40":62,"seasons30":15,"clubs100":4,"leaguesScored":5,"uclGoals":140,"uclTitles":5,"leaguesTop":4,"countriesTitle":4},"messi":{"goals":936,"gpg":0.79,"intlGoals":126,"caps":208,"apps":1183,"wcScored":5,"uclFinalGoals":2,"goals30":371,"goals35":167,"goals40":0,"seasons30":14,"clubs100":2,"leaguesScored":3,"uclGoals":129,"uclTitles":4,"leaguesTop":2,"countriesTitle":3},"pele":{"goals":787,"gpg":0.92,"intlGoals":77,"caps":92,"apps":859,"wcScored":4,"uclFinalGoals":null,"goals30":139,"goals35":66,"goals40":0,"seasons30":12,"clubs100":1,"leaguesScored":2,"uclGoals":null,"uclTitles":null,"leaguesTop":1,"countriesTitle":2},"maradona":{"goals":345,"gpg":0.51,"intlGoals":34,"caps":91,"apps":680,"wcScored":3,"uclFinalGoals":0,"goals30":26,"goals35":7,"goals40":0,"seasons30":1,"clubs100":2,"leaguesScored":3,"uclGoals":2,"uclTitles":0,"leaguesTop":2,"countriesTitle":2},"distefano":{"goals":509,"gpg":0.72,"intlGoals":29,"caps":37,"apps":706,"wcScored":0,"uclFinalGoals":7,"goals30":264,"goals35":75,"goals40":0,"seasons30":5,"clubs100":1,"leaguesScored":3,"uclGoals":49,"uclTitles":5,"leaguesTop":3,"countriesTitle":3},"puskas":{"goals":753,"gpg":1.01,"intlGoals":83,"caps":88,"apps":747,"wcScored":1,"uclFinalGoals":7,"goals30":242,"goals35":126,"goals40":0,"seasons30":11,"clubs100":2,"leaguesScored":2,"uclGoals":36,"uclTitles":3,"leaguesTop":2,"countriesTitle":2},"eusebio":{"goals":622,"gpg":0.98,"intlGoals":41,"caps":64,"apps":636,"wcScored":1,"uclFinalGoals":3,"goals30":129,"goals35":10,"goals40":0,"seasons30":9,"clubs100":1,"leaguesScored":3,"uclGoals":46,"uclTitles":1,"leaguesTop":1,"countriesTitle":2},"muller":{"goals":724,"gpg":0.93,"intlGoals":68,"caps":62,"apps":780,"wcScored":2,"uclFinalGoals":3,"goals30":168,"goals35":21,"goals40":0,"seasons30":14,"clubs100":1,"leaguesScored":2,"uclGoals":34,"uclTitles":3,"leaguesTop":1,"countriesTitle":1},"cruyff":{"goals":433,"gpg":0.57,"intlGoals":33,"caps":48,"apps":761,"wcScored":1,"uclFinalGoals":2,"goals30":95,"goals35":29,"goals40":0,"seasons30":5,"clubs100":1,"leaguesScored":3,"uclGoals":19,"uclTitles":3,"leaguesTop":1,"countriesTitle":2},"romario":{"goals":745,"gpg":0.77,"intlGoals":55,"caps":70,"apps":963,"wcScored":1,"uclFinalGoals":0,"goals30":439,"goals35":191,"goals40":44,"seasons30":13,"clubs100":3,"leaguesScored":4,"uclGoals":20,"uclTitles":0,"leaguesTop":3,"countriesTitle":3},"ronaldo_nazario":{"goals":414,"gpg":0.67,"intlGoals":62,"caps":99,"apps":617,"wcScored":3,"uclFinalGoals":0,"goals30":48,"goals35":0,"goals40":0,"seasons30":5,"clubs100":1,"leaguesScored":4,"uclGoals":14,"uclTitles":0,"leaguesTop":2,"countriesTitle":1},"zidane":{"goals":156,"gpg":0.19,"intlGoals":31,"caps":108,"apps":803,"wcScored":2,"uclFinalGoals":1,"goals30":50,"goals35":0,"goals40":0,"seasons30":0,"clubs100":0,"leaguesScored":3,"uclGoals":14,"uclTitles":1,"leaguesTop":0,"countriesTitle":2},"henry":{"goals":411,"gpg":0.45,"intlGoals":51,"caps":123,"apps":917,"wcScored":2,"uclFinalGoals":0,"goals30":110,"goals35":35,"goals40":0,"seasons30":5,"clubs100":1,"leaguesScored":5,"uclGoals":50,"uclTitles":1,"leaguesTop":1,"countriesTitle":3},"ibrahimovic":{"goals":573,"gpg":0.58,"intlGoals":62,"caps":122,"apps":988,"wcScored":0,"uclFinalGoals":0,"goals30":344,"goals35":119,"goals40":9,"seasons30":6,"clubs100":1,"leaguesScored":7,"uclGoals":48,"uclTitles":0,"leaguesTop":2,"countriesTitle":4},"lewandowski":{"goals":749,"gpg":0.67,"intlGoals":92,"caps":170,"apps":1111,"wcScored":1,"uclFinalGoals":0,"goals30":357,"goals35":104,"goals40":0,"seasons30":11,"clubs100":3,"leaguesScored":4,"uclGoals":109,"uclTitles":1,"leaguesTop":3,"countriesTitle":3},"suarez":{"goals":616,"gpg":0.58,"intlGoals":69,"caps":143,"apps":1060,"wcScored":3,"uclFinalGoals":1,"goals30":265,"goals35":112,"goals40":0,"seasons30":6,"clubs100":2,"leaguesScored":6,"uclGoals":27,"uclTitles":1,"leaguesTop":3,"countriesTitle":4},"benzema":{"goals":524,"gpg":0.53,"intlGoals":37,"caps":97,"apps":996,"wcScored":1,"uclFinalGoals":1,"goals30":251,"goals35":98,"goals40":0,"seasons30":6,"clubs100":1,"leaguesScored":3,"uclGoals":90,"uclTitles":5,"leaguesTop":2,"countriesTitle":3},"neymar":{"goals":461,"gpg":0.59,"intlGoals":80,"caps":130,"apps":776,"wcScored":4,"uclFinalGoals":1,"goals30":63,"goals35":0,"goals40":0,"seasons30":4,"clubs100":3,"leaguesScored":3,"uclGoals":43,"uclTitles":1,"leaguesTop":0,"countriesTitle":3},"kane":{"goals":543,"gpg":0.69,"intlGoals":91,"caps":125,"apps":784,"wcScored":3,"uclFinalGoals":0,"goals30":185,"goals35":0,"goals40":0,"seasons30":8,"clubs100":2,"leaguesScored":2,"uclGoals":58,"uclTitles":0,"leaguesTop":2,"countriesTitle":1},"mbappe":{"goals":450,"gpg":0.76,"intlGoals":67,"caps":107,"apps":591,"wcScored":3,"uclFinalGoals":0,"goals30":0,"goals35":0,"goals40":0,"seasons30":8,"clubs100":2,"leaguesScored":2,"uclGoals":73,"uclTitles":0,"leaguesTop":2,"countriesTitle":1},"haaland":{"goals":375,"gpg":0.83,"intlGoals":65,"caps":59,"apps":450,"wcScored":1,"uclFinalGoals":0,"goals30":0,"goals35":0,"goals40":0,"seasons30":6,"clubs100":1,"leaguesScored":4,"uclGoals":61,"uclTitles":1,"leaguesTop":1,"countriesTitle":2}},"valueNotes":{"ronaldo":{"goals":"839 club + 146 international, in 1343 matches. Excludes Sporting CP B 2002–03","clubs100":"Al-Nassr, Juventus, Manchester United, Real Madrid","seasons30":"2007–08, 2009–10, 2010–11, 2011–12, 2012–13, 2013–14, 2014–15, 2015–16, 2016–17, 2017–18, 2019–20, 2020–21, 2023–24, 2024–25, 2025–26","wcScored":"2006, 2010, 2014, 2018, 2022, 2026","uclFinalGoals":"2008, 2014 and two in 2017; the record for the Champions League era","leaguesScored":"England, Italy, Portugal, Saudi Arabia, Spain","caps":"146 goals in 234 internationals","apps":"1109 club + 234 international","goals30":"Exact: goals on or after his 30th birthday","goals35":"Exact: goals on or after his 35th birthday","uclGoals":"140 goals in 183 games","uclTitles":"2007–08, 2013–14, 2015–16, 2016–17, 2017–18","leaguesTop":"Premier League ×1; La Liga ×3; Serie A ×1; Saudi Pro League ×2","countriesTitle":"England, Spain, Italy, Saudi Arabia"},"messi":{"goals":"810 club + 126 international, in 1183 matches. Excludes Barcelona C 2003–04, Barcelona B 2003–04, Barcelona B 2004–05","clubs100":"Barcelona, Inter Miami","seasons30":"2008–09, 2009–10, 2010–11, 2011–12, 2012–13, 2013–14, 2014–15, 2015–16, 2016–17, 2017–18, 2018–19, 2019–20, 2020–21, 2025","wcScored":"2006, 2014, 2018, 2022, 2026","uclFinalGoals":"2009 and 2011","leaguesScored":"France, Spain, United States","caps":"126 goals in 208 internationals","apps":"975 club + 208 international","goals30":"Exact: goals on or after his 30th birthday","goals35":"Exact: goals on or after his 35th birthday","goals40":"Has not turned 40 yet","uclGoals":"129 goals in 163 games","uclTitles":"2005–06, 2008–09, 2010–11, 2014–15","leaguesTop":"La Liga ×8; Major League Soccer ×1","countriesTitle":"Spain, France, United States"},"pele":{"goals":"710 club (Santos and New York Cosmos) + 77 for Brazil, from the season rows; the tables' stated club total is 709. Excludes friendlies and exhibition games, which take some counts above 1,200","clubs100":"Santos","seasons30":"1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1968, 1969, 1973","wcScored":"1958, 1962, 1966, 1970","uclFinalGoals":"Never played in the competition","leaguesScored":"Brazil, United States","caps":"77 goals in 92 internationals","apps":"767 club + 92 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","leaguesTop":"Counts the Taça Brasil, later merged into Brazil's national championship by the CBF; state championships excluded","uclGoals":"Never played in the European Cup or Champions League","uclTitles":"Never played in the European Cup or Champions League","countriesTitle":"Brazil, United States"},"maradona":{"goals":"311 club + 34 international, in 680 matches","clubs100":"Argentinos Juniors, Napoli","seasons30":"1980","wcScored":"1982, 1986, 1994","uclFinalGoals":"Never reached a final","leaguesScored":"Argentina, Italy, Spain","caps":"34 goals in 91 internationals","apps":"589 club + 91 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"2 goals in 6 games","uclTitles":"No titles","leaguesTop":"Argentine Primera División ×5; Serie A ×1","countriesTitle":"Argentina, Italy"},"distefano":{"goals":"Includes Millonarios 1949–52, when Colombia's league played outside FIFA","clubs100":"Real Madrid","seasons30":"1951, 1956–57, 1957–58, 1958–59, 1960–61","wcScored":"None. Never played at a World Cup","uclFinalGoals":"Scored in five finals, 1956–1960, three of them in 1960","leaguesScored":"Argentina, Colombia, Spain","caps":"29 goals in 37 internationals","apps":"669 club + 37 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"49 goals in 58 games","uclTitles":"1955–56, 1956–57, 1957–58, 1958–59, 1959–60","leaguesTop":"Argentine Primera División ×1; Categoría Primera A (Campeonato Profesional) ×2; La Liga ×5","countriesTitle":"Argentina, Colombia, Spain"},"puskas":{"goals":"670 club + 83 international, in 747 matches","clubs100":"Kispest/Budapesti Honvéd SE, Real Madrid","seasons30":"1945–46, 1946–47, 1947–48, 1948–49, 1949–50, 1953, 1954, 1959–60, 1960–61, 1961–62, 1962–63","wcScored":"1954","uclFinalGoals":"Four in 1960, three in 1962","leaguesScored":"Hungary, Spain","caps":"83 goals in 88 internationals","apps":"659 club + 88 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","intlGoals":"Year rows sum to 83; the table's stated Hungary total is 84","uclGoals":"36 goals in 41 games","uclTitles":"1958–59, 1959–60, 1965–66","leaguesTop":"Nemzeti Bajnokság I ×4; La Liga ×4","countriesTitle":"Hungary, Spain"},"eusebio":{"goals":"581 club + 41 international, in 636 matches. Excludes Buffalo Stallions (indoor) 1979–80","clubs100":"Benfica","seasons30":"1960, 1962–63, 1963–64, 1964–65, 1965–66, 1966–67, 1967–68, 1970–71, 1972–73","wcScored":"1966","uclFinalGoals":"Two in 1962, one in 1963","leaguesScored":"Mexico, Portugal, United States","caps":"41 goals in 64 internationals","apps":"572 club + 64 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"46 goals in 65 games","uclTitles":"1961–62","leaguesTop":"Primeira Liga / Primeira Divisão ×7","countriesTitle":"Portugal, United States"},"muller":{"goals":"656 club + 68 international, in 780 matches","clubs100":"Bayern Munich","seasons30":"1963–64, 1964–65, 1966–67, 1967–68, 1968–69, 1969–70, 1970–71, 1971–72, 1972–73, 1973–74, 1974–75, 1975–76, 1976–77, 1977–78","wcScored":"1970, 1974","uclFinalGoals":"Two in the 1974 replay, one in 1975","leaguesScored":"Germany, United States","caps":"68 goals in 62 internationals","apps":"718 club + 62 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"34 goals in 35 games","uclTitles":"1973–74, 1974–75, 1975–76","leaguesTop":"Bundesliga ×7","countriesTitle":"Germany"},"cruyff":{"goals":"400 club + 33 international, in 761 matches","clubs100":"Ajax","seasons30":"1966–67, 1967–68, 1968–69, 1969–70, 1971–72","wcScored":"1974","uclFinalGoals":"Both goals in the 1972 final","leaguesScored":"Netherlands, Spain, United States","caps":"33 goals in 48 internationals","apps":"713 club + 48 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"19 goals in 49 games","uclTitles":"1970–71, 1971–72, 1972–73","leaguesTop":"Eredivisie ×2","countriesTitle":"Netherlands, Spain"},"romario":{"goals":"690 club + 55 international, in 963 matches","clubs100":"Flamengo, PSV, Vasco da Gama","seasons30":"1989–90, 1990–91, 1992–93, 1993–94, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2005","wcScored":"1994. Also played in 1990 without scoring","uclFinalGoals":"Played the 1994 final","leaguesScored":"Australia, Brazil, Netherlands, Spain","caps":"55 goals in 70 internationals","apps":"893 club + 70 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"20 goals in 32 games","uclTitles":"No titles","leaguesTop":"Eredivisie ×3; La Liga ×1; Campeonato Brasileiro Série A ×3","countriesTitle":"Brazil, Netherlands, Spain"},"ronaldo_nazario":{"goals":"352 club + 62 international, in 617 matches","clubs100":"Real Madrid","seasons30":"1994–95, 1996–97, 1997–98, 2002–03, 2003–04","wcScored":"1998, 2002, 2006","uclFinalGoals":"Never reached a final","leaguesScored":"Brazil, Italy, Netherlands, Spain","caps":"62 goals in 99 internationals","apps":"518 club + 99 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"14 goals in 40 games","uclTitles":"No titles","leaguesTop":"Eredivisie ×1; La Liga ×2","countriesTitle":"Spain"},"zidane":{"goals":"125 club + 31 international, in 803 matches","clubs100":"None","seasons30":"None","wcScored":"1998, 2006","uclFinalGoals":"2002","leaguesScored":"France, Italy, Spain","caps":"31 goals in 108 internationals","apps":"695 club + 108 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"14 goals in 80 games","uclTitles":"2001–02","leaguesTop":"Never a league's top scorer","countriesTitle":"Italy, Spain"},"henry":{"goals":"360 club + 51 international, in 917 matches. Excludes Monaco B 1994–95","clubs100":"Arsenal","seasons30":"2001–02, 2002–03, 2003–04, 2004–05, 2005–06","wcScored":"1998, 2006","uclFinalGoals":"Played the 2006 final","leaguesScored":"England, France, Italy, Spain, United States","caps":"51 goals in 123 internationals","apps":"794 club + 123 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"50 goals in 112 games","uclTitles":"2008–09","leaguesTop":"Premier League ×4","countriesTitle":"France, England, Spain"},"ibrahimovic":{"goals":"511 club + 62 international, in 988 matches","clubs100":"Paris Saint-Germain","seasons30":"2011–12, 2012–13, 2013–14, 2014–15, 2015–16, 2019","wcScored":"None. Played the 2002 and 2006 World Cups without scoring","uclFinalGoals":"Never reached a final","leaguesScored":"England, France, Italy, Netherlands, Spain, Sweden, United States","caps":"62 goals in 122 internationals","apps":"866 club + 122 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Estimated from season totals placed at each season's end","uclGoals":"48 goals in 124 games","uclTitles":"No titles","leaguesTop":"Serie A ×2; Ligue 1 ×3","countriesTitle":"Netherlands, Italy, Spain, France"},"lewandowski":{"goals":"657 club + 92 international, in 1111 matches. Excludes Legia Warsaw II 2005–06, Znicz II Pruszków 2006–07","clubs100":"Barcelona, Bayern Munich, Borussia Dortmund","seasons30":"2011–12, 2012–13, 2015–16, 2016–17, 2017–18, 2018–19, 2019–20, 2020–21, 2021–22, 2022–23, 2024–25","wcScored":"2022. Poland lost the 2026 play-off final to Sweden","uclFinalGoals":"Played the 2013 and 2020 finals","leaguesScored":"Germany, Poland, Spain, United States","caps":"92 goals in 170 internationals","apps":"941 club + 170 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Has not turned 40 yet","uclGoals":"109 goals in 144 games","uclTitles":"2019–20","leaguesTop":"Ekstraklasa ×1; Bundesliga ×7; La Liga ×1","countriesTitle":"Poland, Germany, Spain"},"suarez":{"goals":"547 club + 69 international, in 1060 matches","clubs100":"Ajax, Barcelona","seasons30":"2009–10, 2012–13, 2013–14, 2015–16, 2016–17, 2017–18","wcScored":"2010, 2014, 2018","uclFinalGoals":"2015","leaguesScored":"Brazil, England, Netherlands, Spain, United States, Uruguay","caps":"69 goals in 143 internationals","apps":"917 club + 143 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Has not turned 40 yet","uclGoals":"27 goals in 73 games","uclTitles":"2014–15","leaguesTop":"Eredivisie ×1; Premier League ×1; La Liga ×1","countriesTitle":"Uruguay, Netherlands, Spain, United States"},"benzema":{"goals":"487 club + 37 international, in 996 matches. Excludes Lyon II 2004–05, Lyon II 2005–06","clubs100":"Real Madrid","seasons30":"2007–08, 2011–12, 2018–19, 2020–21, 2021–22, 2022–23","wcScored":"2014","uclFinalGoals":"2018","leaguesScored":"France, Saudi Arabia, Spain","caps":"37 goals in 97 internationals","apps":"899 club + 97 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Estimated from season totals placed at each season's end","goals40":"Has not turned 40 yet","uclGoals":"90 goals in 152 games","uclTitles":"2013–14, 2015–16, 2016–17, 2017–18, 2021–22","leaguesTop":"La Liga ×1; Ligue 1 ×1","countriesTitle":"France, Spain, Saudi Arabia"},"neymar":{"goals":"381 club + 80 international, in 776 matches","clubs100":"Barcelona, Paris Saint-Germain, Santos","seasons30":"2010, 2012, 2014–15, 2015–16","wcScored":"2014, 2018, 2022, 2026","uclFinalGoals":"2015","leaguesScored":"Brazil, France, Spain","caps":"80 goals in 130 internationals","apps":"646 club + 130 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Has not turned 35 yet","goals40":"Has not turned 40 yet","uclGoals":"43 goals in 81 games","uclTitles":"2014–15","leaguesTop":"Never a league's top scorer","countriesTitle":"Spain, France, Saudi Arabia"},"kane":{"goals":"452 club + 91 international, in 784 matches","clubs100":"Bayern Munich, Tottenham Hotspur","seasons30":"2014–15, 2016–17, 2017–18, 2020–21, 2022–23, 2023–24, 2024–25, 2025–26","wcScored":"2018, 2022, 2026","uclFinalGoals":"Played the 2019 final","leaguesScored":"England, Germany","caps":"91 goals in 125 internationals","apps":"659 club + 125 international","goals30":"Estimated from season totals placed at each season's end","goals35":"Has not turned 35 yet","goals40":"Has not turned 40 yet","uclGoals":"58 goals in 73 games","uclTitles":"No titles","leaguesTop":"Premier League ×3; Bundesliga ×3","countriesTitle":"Germany"},"mbappe":{"goals":"383 club + 67 international, in 591 matches. Excludes Monaco II 2015–16, Monaco II 2016–17","clubs100":"Paris Saint-Germain, Real Madrid","seasons30":"2018–19, 2019–20, 2020–21, 2021–22, 2022–23, 2023–24, 2024–25, 2025–26","wcScored":"2018, 2022, 2026","uclFinalGoals":"Played the 2020 final","leaguesScored":"France, Spain","caps":"67 goals in 107 internationals","apps":"484 club + 107 international","goals30":"Has not turned 30 yet","goals35":"Has not turned 35 yet","goals40":"Has not turned 40 yet","uclGoals":"73 goals in 101 games","uclTitles":"No titles","leaguesTop":"La Liga ×2; Ligue 1 ×6","countriesTitle":"France"},"haaland":{"goals":"310 club + 65 international, in 450 matches. Excludes Bryne 2 2015, Bryne 2 2016, Molde 2 2017","clubs100":"Manchester City","seasons30":"2019–20, 2020–21, 2022–23, 2023–24, 2024–25, 2025–26","wcScored":"2026","uclFinalGoals":"Played the 2023 final","leaguesScored":"Austria, England, Germany, Norway","caps":"65 goals in 59 internationals","apps":"391 club + 59 international","goals30":"Has not turned 30 yet","goals35":"Has not turned 35 yet","goals40":"Has not turned 40 yet","uclGoals":"61 goals in 60 games","uclTitles":"2022–23","leaguesTop":"Premier League ×3","countriesTitle":"Austria, England"}},"ageCurves":{"ronaldo":[[17.52,0],[17.646,0],[17.72,3],[17.816,4],[17.876,5],[17.969,5],[17.999,5],[18.119,5],[18.215,5],[18.295,5],[18.317,5],[18.566,5],[18.623,5],[18.716,5],[18.815,6],[18.886,6],[18.985,6],[19.061,7],[19.149,8],[19.226,9],[19.31,11],[19.398,13],[19.409,13],[19.565,13],[19.636,15],[19.732,17],[19.809,18],[19.894,19],[19.981,21],[20.058,24],[20.146,26],[20.214,27],[20.288,27],[20.337,29],[20.559,30],[20.641,30],[20.729,31],[20.816,32],[20.901,34],[20.94,34],[21.057,39],[21.142,42],[21.227,42],[21.304,43],[21.383,44],[21.419,44],[21.553,45],[21.638,46],[21.725,49],[21.813,52],[21.898,59],[21.985,61],[22.059,63],[22.147,67],[22.224,71],[22.281,72],[22.541,73],[22.645,76],[22.722,81],[22.807,86],[22.894,93],[22.982,102],[23.048,104],[23.144,110],[23.228,113],[23.316,117],[23.368,118],[23.65,120],[23.729,123],[23.817,127],[23.896,128],[23.987,132],[24.053,135],[24.148,137],[24.228,142],[24.304,145],[24.332,145],[24.562,146],[24.649,154],[24.677,154],[24.814,154],[24.868,158],[24.967,160],[25.06,164],[25.139,169],[25.213,172],[25.296,178],[25.394,179],[25.561,179],[25.643,180],[25.731,193],[25.813,199],[25.876,206],[25.983,213],[26.057,216],[26.114,219],[26.221,224],[26.287,235],[26.325,235],[26.558,240],[26.64,247],[26.727,251],[26.804,261],[26.862,266],[26.977,272],[27.064,278],[27.149,288],[27.228,298],[27.302,301],[27.39,304],[27.563,307],[27.65,315],[27.727,324],[27.801,325],[27.877,329],[27.984,339],[28.058,346],[28.146,351],[28.231,358],[28.277,362],[28.343,363],[28.554,364],[28.644,376],[28.732,385],[28.797,396],[28.877,398],[28.978,403],[29.057,407],[29.142,417],[29.227,422],[29.296,424],[29.386,425],[29.55,428],[29.641,438],[29.717,447],[29.813,453],[29.871,459],[29.966,463],[30.046,465],[30.142,469],[30.226,477],[30.292,488],[30.35,491],[30.561,491],[30.648,501],[30.733,504],[30.812,507],[30.897,516],[30.985,521],[31.059,525],[31.144,533],[31.204,539],[31.308,543],[31.398,547],[31.426,548],[31.642,551],[31.73,560],[31.806,567],[31.866,571],[31.981,575],[32.058,578],[32.14,584],[32.228,590],[32.288,598],[32.392,604],[32.567,608],[32.639,612],[32.729,615],[32.803,619],[32.88,624],[32.975,628],[33.052,636],[33.134,647],[33.216,652],[33.301,654],[33.397,658],[33.55,658],[33.646,661],[33.723,665],[33.808,668],[33.895,673],[33.983,675],[34.051,679],[34.131,682],[34.221,685],[34.281,686],[34.339,689],[34.566,690],[34.643,697],[34.73,702],[34.804,706],[34.875,712],[34.971,720],[35.056,725],[35.086,725],[35.398,728],[35.478,735],[35.502,737],[35.642,742],[35.68,742],[35.801,749],[35.878,756],[35.984,760],[36.061,766],[36.146,771],[36.217,773],[36.283,777],[36.39,783],[36.543,783],[36.647,790],[36.732,796],[36.811,799],[36.899,803],[36.962,803],[37.058,804],[37.142,807],[37.225,812],[37.249,813],[37.34,815],[37.556,815],[37.641,816],[37.731,818],[37.81,819],[37.843,819],[37.972,819],[38.054,827],[38.134,832],[38.224,835],[38.303,837],[38.369,838],[38.481,839],[38.561,849],[38.646,854],[38.733,862],[38.807,867],[38.897,873],[39.054,877],[39.147,882],[39.223,885],[39.316,893],[39.388,895],[39.412,895],[39.557,899],[39.65,904],[39.73,907],[39.815,915],[39.834,916],[39.984,921],[40.064,925],[40.127,929],[40.231,934],[40.302,936],[40.338,938],[40.562,940],[40.639,946],[40.726,950],[40.798,954],[40.899,957],[40.984,961],[41.063,965],[41.227,970],[41.288,973],[41.389,975],[41.414,976],[41.559,978],[41.633,979],[41.728,985]],"messi":[[17.345,0],[17.495,0],[17.816,0],[17.854,1],[18.15,1],[18.262,1],[18.341,1],[18.429,3],[18.492,3],[18.601,7],[18.675,9],[18.703,10],[18.933,10],[19.001,11],[19.179,12],[19.269,14],[19.354,15],[19.387,15],[19.683,15],[19.768,20],[19.847,22],[19.921,24],[20.014,30],[20.058,32],[20.173,32],[20.266,38],[20.345,42],[20.428,46],[20.477,46],[20.605,46],[20.679,49],[20.696,49],[20.849,49],[20.898,50],[20.989,51],[21.189,51],[21.263,55],[21.339,60],[21.435,67],[21.495,68],[21.602,75],[21.673,78],[21.761,84],[21.846,88],[21.925,92],[21.963,92],[22.18,94],[22.267,100],[22.355,101],[22.434,104],[22.489,109],[22.604,115],[22.681,117],[22.768,127],[22.845,133],[22.894,140],[23.009,140],[23.026,140],[23.182,144],[23.267,148],[23.352,155],[23.434,165],[23.494,169],[23.601,179],[23.677,185],[23.754,188],[23.85,195],[23.927,196],[23.99,197],[24.061,197],[24.181,203],[24.263,211],[24.348,217],[24.433,225],[24.485,228],[24.597,235],[24.685,245],[24.77,258],[24.849,267],[24.92,275],[24.961,279],[25.183,286],[25.268,291],[25.345,301],[25.424,310],[25.498,319],[25.605,328],[25.679,333],[25.766,341],[25.843,343],[25.884,345],[25.975,348],[26.18,350],[26.265,361],[26.35,362],[26.382,364],[26.593,368],[26.667,376],[26.763,386],[26.842,390],[26.897,391],[27.004,396],[27.053,396],[27.187,398],[27.27,402],[27.338,407],[27.437,416],[27.491,422],[27.598,430],[27.683,437],[27.743,442],[27.845,448],[27.932,457],[28.009,458],[28.028,458],[28.181,461],[28.258,467],[28.43,470],[28.518,474],[28.603,482],[28.682,491],[28.767,499],[28.852,502],[28.926,503],[29.008,508],[29.181,511],[29.246,517],[29.35,523],[29.43,529],[29.487,533],[29.602,539],[29.679,545],[29.747,552],[29.849,560],[29.925,565],[29.961,565],[30.174,568],[30.262,577],[30.355,584],[30.426,584],[30.5,587],[30.599,595],[30.673,598],[30.769,604],[30.848,611],[30.933,616],[31.018,617],[31.171,619],[31.267,625],[31.324,629],[31.431,632],[31.497,638],[31.604,644],[31.68,650],[31.765,658],[31.842,663],[31.919,668],[32.012,671],[32.034,671],[32.253,671],[32.348,676],[32.428,683],[32.493,688],[32.603,692],[32.674,696],[32.704,697],[33.019,700],[33.071,703],[33.148,704],[33.263,705],[33.356,708],[33.435,712],[33.498,715],[33.608,721],[33.682,729],[33.742,734],[33.849,739],[33.895,743],[34.013,747],[34.046,748],[34.183,748],[34.265,752],[34.35,755],[34.432,756],[34.498,758],[34.607,758],[34.678,759],[34.763,760],[34.848,762],[34.908,764],[34.949,769],[35.103,770],[35.188,773],[35.262,779],[35.349,785],[35.437,788],[35.486,793],[35.601,794],[35.678,798],[35.76,803],[35.85,805],[35.924,806],[35.976,807],[36.086,810],[36.184,818],[36.242,819],[36.327,821],[36.411,821],[36.674,822],[36.721,826],[36.844,832],[36.932,834],[37.006,837],[37.06,838],[37.268,841],[37.34,849],[37.408,850],[37.676,852],[37.764,855],[37.852,858],[37.936,865],[38.016,866],[38.101,874],[38.188,877],[38.27,884],[38.336,891],[38.435,896],[38.454,896],[38.665,896],[38.769,902],[38.837,905],[38.917,910],[39.01,917],[39.07,919],[39.182,927],[39.262,931],[39.346,936]],"pele":[[16.104,1],[16.688,3],[17.104,44],[17.687,53],[18.103,119],[18.686,130],[19.102,183],[19.688,187],[20.104,220],[20.688,220],[21.104,282],[21.687,290],[22.103,338],[22.686,345],[23.102,396],[23.688,398],[24.105,442],[24.688,451],[25.104,515],[25.687,520],[26.103,535],[26.686,535],[27.103,561],[27.688,565],[28.105,595],[28.688,602],[29.104,640],[29.687,648],[30.103,659],[30.686,660],[31.103,667],[32.105,681],[33.104,711],[34.103,721],[35.103,738],[36.105,764],[37.104,787]],"maradona":[[16.085,2],[16.668,2],[17.085,21],[17.668,21],[18.084,47],[18.667,50],[19.083,76],[19.669,83],[20.085,126],[20.668,127],[21.085,155],[21.668,157],[22.582,180],[22.667,180],[23.584,195],[23.669,195],[24.584,212],[24.669,218],[25.583,231],[25.668,238],[26.582,255],[26.667,259],[27.584,280],[27.669,281],[28.584,300],[28.669,300],[29.583,318],[29.668,319],[30.582,329],[30.667,329],[31.669,329],[32.584,336],[32.669,336],[33.583,336],[33.668,338],[35.585,343],[36.584,343],[37.583,345]],"distefano":[[19.409,0],[20.408,10],[20.992,16],[21.408,44],[22.41,62],[23.409,85],[24.408,109],[25.408,140],[26.41,164],[27.907,191],[28.907,216],[29.909,245],[30.908,288],[30.993,295],[31.908,331],[31.992,332],[32.907,366],[32.992,372],[33.909,395],[33.994,401],[34.908,431],[34.993,434],[35.908,456],[36.907,478],[37.909,495],[38.908,504],[39.908,509]],"puskas":[[17.167,13],[18.166,24],[18.251,27],[19.165,63],[19.25,66],[20.165,98],[20.25,103],[21.167,153],[21.252,160],[22.166,206],[22.251,217],[23.165,248],[23.25,260],[23.666,285],[24.25,289],[24.666,318],[25.252,328],[25.668,356],[26.251,362],[26.667,411],[27.25,419],[27.667,456],[28.25,466],[28.666,493],[29.252,497],[29.668,511],[32.165,536],[33.167,583],[34.166,627],[34.251,627],[35.166,667],[35.251,667],[36.165,698],[37.167,726],[38.166,743],[39.166,753]],"eusebio":[[15.847,9],[16.846,20],[17.846,41],[18.848,77],[19.346,79],[19.431,80],[20.345,109],[20.43,111],[21.345,149],[21.43,149],[22.347,195],[22.432,199],[23.346,247],[23.431,254],[24.345,291],[24.43,303],[25.345,345],[25.43,348],[26.347,398],[26.432,399],[27.346,428],[27.431,430],[28.346,456],[28.43,456],[29.345,491],[29.43,493],[30.347,521],[30.432,525],[31.346,567],[31.431,570],[32.346,589],[33.345,591],[33.846,593],[34.347,594],[34.848,612],[35.346,615],[35.847,617],[36.346,620],[36.847,622],[37.846,622]],"muller":[[17.572,4],[18.574,51],[19.573,92],[20.573,108],[20.658,108],[21.572,151],[21.657,157],[22.574,187],[22.659,189],[23.573,226],[23.658,235],[24.573,277],[24.658,290],[25.572,329],[25.657,341],[26.574,391],[26.659,404],[27.573,470],[27.658,477],[28.573,520],[28.658,526],[29.572,556],[30.574,591],[31.574,639],[32.573,671],[33.572,684],[34.073,703],[35.075,719],[36.075,724]],"cruyff":[[18.1,4],[19.1,29],[19.185,30],[20.099,71],[20.184,72],[21.101,106],[21.186,106],[22.1,140],[22.185,141],[23.1,174],[23.185,176],[24.099,203],[24.184,209],[25.101,242],[25.186,247],[26.1,270],[26.185,276],[27.1,303],[27.185,311],[28.099,325],[28.184,325],[29.101,336],[29.186,338],[30.101,363],[30.185,364],[31.1,375],[32.6,390],[33.602,400],[34.101,402],[34.602,404],[35.1,411],[36.099,420],[37.101,433]],"romario":[[19.836,11],[20.835,40],[21.419,44],[21.835,68],[22.421,70],[22.837,86],[23.335,112],[23.42,116],[24.335,147],[24.419,147],[25.334,177],[25.419,177],[26.336,186],[26.421,186],[27.335,218],[27.42,220],[28.335,252],[28.419,262],[29.334,269],[29.419,269],[29.835,306],[30.421,306],[30.837,337],[31.335,341],[31.42,360],[31.836,395],[32.335,397],[32.42,400],[32.836,435],[33.419,435],[33.835,481],[34.421,488],[34.837,554],[35.42,557],[35.836,597],[36.42,597],[36.836,639],[37.334,639],[37.419,639],[37.835,657],[38.421,657],[38.837,670],[39.42,671],[39.837,701],[40.836,729],[41.334,730],[41.835,745],[43.837,745]],"ronaldo_nazario":[[17.2,20],[17.783,21],[18.199,45],[18.697,80],[18.782,83],[19.699,102],[19.784,107],[20.699,154],[20.783,169],[21.698,203],[21.783,208],[22.697,223],[22.782,230],[23.699,233],[23.784,233],[24.699,233],[24.784,233],[25.698,240],[25.783,251],[26.697,281],[26.782,284],[27.699,315],[27.784,321],[28.699,345],[28.784,346],[29.698,361],[29.783,366],[30.697,377],[30.782,377],[31.699,379],[31.784,379],[32.784,379],[33.2,402],[33.783,402],[34.199,414],[34.782,414],[35.199,414]],"zidane":[[16.937,0],[17.936,0],[18.935,1],[19.937,6],[20.937,17],[21.936,25],[22.021,27],[22.935,35],[23.02,37],[23.938,49],[24.022,50],[24.937,57],[25.022,58],[25.936,69],[26.021,74],[26.936,76],[27.02,77],[27.938,82],[28.022,86],[28.937,92],[29.022,94],[29.936,106],[30.021,107],[30.936,119],[31.02,122],[31.938,132],[32.023,136],[32.937,142],[33.022,144],[33.936,153],[34.021,156]],"henry":[[17.785,3],[18.788,6],[19.787,16],[19.872,16],[20.786,27],[20.871,30],[21.786,34],[21.87,34],[22.788,60],[22.872,65],[23.787,87],[23.872,90],[24.786,122],[24.871,125],[25.786,157],[25.87,168],[26.788,207],[26.873,210],[27.787,240],[27.872,243],[28.786,276],[28.871,284],[29.786,296],[29.871,301],[30.788,320],[30.873,324],[31.787,350],[31.872,353],[32.786,357],[32.871,357],[33.287,359],[34.287,374],[34.788,376],[35.289,391],[36.288,401],[37.288,411]],"ibrahimovic":[[18.158,1],[19.16,15],[19.743,16],[20.159,19],[20.658,28],[20.742,30],[21.657,51],[21.742,54],[22.659,69],[22.744,77],[23.658,96],[23.743,100],[24.658,110],[24.742,110],[25.657,125],[25.742,125],[26.659,147],[26.744,149],[27.658,178],[27.743,180],[28.658,201],[28.743,204],[29.657,226],[29.742,229],[30.659,264],[30.744,275],[31.658,310],[31.743,319],[32.658,360],[32.743,363],[33.657,393],[33.742,404],[34.659,454],[34.744,454],[35.659,482],[35.743,482],[36.658,483],[36.743,483],[37.159,505],[37.742,505],[38.158,536],[38.659,547],[38.744,547],[39.659,564],[39.743,564],[40.658,572],[40.743,572],[41.657,573],[41.742,573]],"lewandowski":[[16.775,4],[18.774,21],[19.776,42],[19.861,44],[20.775,64],[20.86,65],[21.775,86],[21.859,92],[22.774,101],[22.859,105],[23.776,135],[23.861,137],[24.775,173],[24.86,176],[25.775,204],[25.86,209],[26.774,234],[26.859,245],[27.776,287],[27.861,295],[28.775,338],[28.86,347],[29.775,388],[29.86,392],[30.774,432],[30.859,438],[31.776,493],[31.861,495],[32.775,543],[32.86,554],[33.775,604],[33.86,608],[34.774,641],[34.859,645],[35.776,671],[35.861,673],[36.776,715],[36.86,719],[37.775,738],[37.86,742],[38.191,749]],"suarez":[[18.85,0],[19.349,12],[20.348,27],[20.433,29],[21.35,51],[21.435,55],[22.35,83],[22.434,86],[23.349,135],[23.434,142],[24.348,158],[24.433,168],[25.35,185],[25.435,189],[26.35,219],[26.434,228],[27.349,259],[27.434,264],[28.348,289],[28.433,289],[29.35,348],[29.435,351],[30.35,388],[30.435,390],[31.349,421],[31.434,427],[32.348,452],[32.433,456],[33.35,477],[33.435,481],[34.35,502],[34.435,504],[35.349,517],[35.434,520],[35.85,528],[36.433,528],[36.849,557],[37.435,558],[37.852,583],[38.851,600],[39.765,616]],"benzema":[[17.449,0],[18.448,4],[19.447,12],[19.532,15],[20.449,46],[20.534,48],[21.449,71],[21.534,74],[22.448,83],[22.533,86],[23.447,112],[23.532,114],[24.45,146],[24.534,148],[25.449,168],[25.534,171],[26.448,195],[26.533,202],[27.448,224],[27.532,226],[28.45,254],[28.534,254],[29.449,273],[29.534,273],[30.448,285],[30.533,285],[31.448,315],[31.532,315],[32.45,342],[32.535,342],[33.449,372],[33.534,381],[34.448,425],[34.533,426],[35.448,457],[36.45,473],[37.449,498],[38.448,523],[38.865,524]],"neymar":[[17.818,14],[18.401,15],[18.818,57],[19.401,64],[19.817,88],[20.403,97],[20.819,140],[21.402,150],[21.818,163],[22.317,178],[22.402,193],[23.316,232],[23.401,236],[24.318,267],[24.403,271],[25.317,291],[25.402,294],[26.317,322],[26.402,329],[27.316,352],[27.401,353],[28.318,372],[28.403,375],[29.318,392],[29.402,398],[30.317,411],[30.402,418],[31.316,436],[31.401,438],[32.318,439],[32.403,439],[33.318,439],[33.402,439],[33.819,450],[34.402,451],[34.733,461]],"kane":[[17.84,5],[18.842,15],[19.842,17],[20.841,21],[21.84,52],[21.925,55],[22.842,83],[22.927,85],[23.842,120],[23.927,127],[24.841,168],[24.926,176],[25.84,200],[25.925,212],[26.842,236],[26.927,236],[27.842,269],[27.927,285],[28.841,312],[28.926,317],[29.84,349],[29.925,358],[30.843,402],[30.927,409],[31.842,450],[31.927,459],[32.841,520],[32.926,533],[33.257,543]],"mbappe":[[17.446,1],[18.445,27],[18.53,28],[19.445,49],[19.529,58],[20.444,97],[20.529,100],[21.446,130],[21.531,133],[22.445,175],[22.53,183],[23.445,222],[23.53,234],[24.444,275],[24.529,285],[25.446,329],[25.531,331],[26.445,375],[26.53,382],[27.445,424],[27.53,436],[27.861,450]],"haaland":[[16.362,0],[17.361,4],[18.36,20],[18.859,21],[18.944,21],[19.861,65],[19.946,71],[20.86,112],[20.945,118],[21.859,147],[21.944,156],[22.859,208],[22.944,214],[23.861,252],[23.946,263],[24.86,297],[24.945,314],[25.86,352],[25.944,362],[26.276,375]]},"profile":{"career":{"apps":1343,"goals":985,"assists":261,"minsPlayed":109812,"pens":184,"pensMissed":37,"hatTricks":67,"freeKicks":65,"insideBox":664,"outsideBox":72,"left":188,"right":634,"head":160,"other":3,"npg":801},"intl":{"apps":234,"goals":146,"assists":37,"minsPlayed":18620,"pens":23,"pensMissed":10,"hatTricks":10,"freeKicks":11,"insideBox":100,"outsideBox":12,"left":33,"right":85,"head":28,"other":0,"npg":123},"intlCompetitive":{"apps":178,"goals":124,"assists":28,"minsPlayed":15042,"pens":22,"pensMissed":7,"hatTricks":10,"freeKicks":10,"insideBox":81,"outsideBox":11,"left":26,"right":76,"head":22,"other":0,"npg":102},"firstMatch":"2002-08-14","uclRounds":{"Group":{"goals":73,"apps":98},"R16":{"goals":25,"apps":36},"QF":{"goals":25,"apps":22},"SF":{"goals":13,"apps":21},"F":{"goals":4,"apps":6}},"uclTotal":{"goals":140,"apps":183},"uclKnockout":{"goals":67,"apps":85},"uclTitles":5,"uclTopScorer":7,"tournaments":[{"name":"Euro 2004","year":2004,"type":"cont","goals":2,"apps":6,"result":"Runners-up"},{"name":"World Cup 2006","year":2006,"type":"wc","goals":1,"apps":6,"result":"Fourth place"},{"name":"Euro 2008","year":2008,"type":"cont","goals":1,"apps":3,"result":"Quarter-finals"},{"name":"World Cup 2010","year":2010,"type":"wc","goals":1,"apps":4,"result":"Round of 16"},{"name":"Euro 2012","year":2012,"type":"cont","goals":3,"apps":5,"result":"Semi-finals"},{"name":"World Cup 2014","year":2014,"type":"wc","goals":1,"apps":3,"result":"Group stage"},{"name":"Euro 2016","year":2016,"type":"cont","goals":3,"apps":7,"result":"Winners"},{"name":"World Cup 2018","year":2018,"type":"wc","goals":4,"apps":4,"result":"Round of 16"},{"name":"Euro 2020 (played 2021)","year":2021,"type":"cont","goals":5,"apps":4,"result":"Round of 16"},{"name":"World Cup 2022","year":2022,"type":"wc","goals":1,"apps":5,"result":"Quarter-finals"},{"name":"Euro 2024","year":2024,"type":"cont","goals":0,"apps":5,"result":"Quarter-finals"},{"name":"World Cup 2026","year":2026,"type":"wc","goals":3,"apps":5,"result":"Round of 16 (lost 1–0 to Spain)"}],"goalTypes":{"strong":634,"weak":188,"head":160,"other":3,"total":985,"pens":184,"fk":65,"nonDominantShare":0.3533},"perfectHatTricks":11,"pens":{"scored":184,"taken":221,"rate":0.8326},"clubs":[{"player":"ronaldo","club":"Sporting CP","years":"2002–03","goals":5,"apps":31},{"player":"ronaldo","club":"Manchester United","years":"2003–09, 2021–22","goals":145,"apps":346},{"player":"ronaldo","club":"Real Madrid","years":"2009–18","goals":450,"apps":438},{"player":"ronaldo","club":"Juventus","years":"2018–21","goals":101,"apps":134},{"player":"ronaldo","club":"Al Nassr","years":"2023–","goals":138,"apps":160}],"opponents":211,"competitions":29,"decisive":{"matches":270,"per100":20.1,"points_added":532,"knockout":54,"ucl_knockout":22},"from30":522,"from35":263,"from40":62,"euroGoals":14,"wcGoals":11},"leaderboards":{"intl":[{"player":"Cristiano Ronaldo","country":"Portugal","goals":146,"caps":234,"role":"cr","status":"active"},{"player":"Lionel Messi","country":"Argentina","goals":126,"caps":208,"role":"pe","status":"retired"},{"player":"Ali Daei","country":"Iran","goals":108,"caps":148,"role":"pe","status":"retired"},{"player":"Sunil Chhetri","country":"India","goals":95,"caps":157,"role":"pe","status":"retired"},{"player":"Romelu Lukaku","country":"Belgium","goals":94,"caps":135,"role":"pe","status":"active"},{"player":"Robert Lewandowski","country":"Poland","goals":92,"caps":170,"role":"pe","status":"active"},{"player":"Harry Kane","country":"England","goals":91,"caps":125,"role":"pe","status":"active"},{"player":"Mokhtar Dahari","country":"Malaysia","goals":89,"caps":142,"role":"pe","status":"retired"},{"player":"Ali Mabkhout","country":"United Arab Emirates","goals":85,"caps":115,"role":"pe","status":"retired"},{"player":"Ferenc Puskás","country":"Hungary / Spain","goals":84,"caps":89,"role":"pe","status":"retired"},{"player":"Neymar","country":"Brazil","goals":80,"caps":130,"role":"pe","status":"retired"},{"player":"Godfrey Chitalu","country":"Zambia","goals":79,"caps":111,"role":"pe","status":"retired"},{"player":"Hussein Saeed","country":"Iraq","goals":78,"caps":137,"role":"pe","status":"retired"},{"player":"Pelé","country":"Brazil","goals":77,"caps":92,"role":"pe","status":"retired"},{"player":"Vivian Woodward","country":"England (incl. England amateurs)","goals":75,"caps":53,"role":"pe","status":"retired"},{"player":"Sándor Kocsis","country":"Hungary","goals":75,"caps":68,"role":"pe","status":"retired"},{"player":"Kunishige Kamamoto","country":"Japan","goals":75,"caps":76,"role":"pe","status":"retired"},{"player":"Bashar Abdullah","country":"Kuwait","goals":75,"caps":134,"role":"pe","status":"retired"}],"ucl":[{"player":"Cristiano Ronaldo","goals":140,"apps":183,"role":"cr"},{"player":"Lionel Messi","goals":129,"apps":163,"role":"pe"},{"player":"Robert Lewandowski","goals":109,"apps":144,"role":"pe"},{"player":"Karim Benzema","goals":90,"apps":152,"role":"pe"},{"player":"Kylian Mbappé","goals":73,"apps":101,"role":"pe"},{"player":"Raúl","goals":71,"apps":142,"role":"pe"},{"player":"Erling Haaland","goals":61,"apps":60,"role":"pe"},{"player":"Harry Kane","goals":58,"apps":73,"role":"pe"},{"player":"Thomas Müller","goals":57,"apps":163,"role":"pe"},{"player":"Ruud van Nistelrooy","goals":56,"apps":73,"role":"pe"},{"player":"Mohamed Salah","goals":50,"apps":98,"role":"pe"},{"player":"Thierry Henry","goals":50,"apps":112,"role":"pe"},{"player":"Alfredo Di Stéfano","goals":49,"apps":58,"role":"pe"},{"player":"Andriy Shevchenko","goals":48,"apps":100,"role":"pe"},{"player":"Zlatan Ibrahimović","goals":48,"apps":124,"role":"pe"}],"career":[{"id":"5g_career_goals_iffhs_method_top10","label":"IFFHS method","desc":"Top-level official matches: league, cup, continental and international","asOf":"2026-10-29","source":"https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals","rows":[{"player":"Cristiano Ronaldo","goals":985,"plus":false,"role":"cr"},{"player":"Lionel Messi","goals":936,"plus":false,"role":"pe"},{"player":"Pelé","goals":762,"plus":false,"role":"pe"},{"player":"Romário","goals":756,"plus":false,"role":"pe"},{"player":"Ferenc Puskás","goals":725,"plus":false,"role":"pe"},{"player":"Josef Bican","goals":722,"plus":false,"role":"pe"},{"player":"Robert Lewandowski","goals":707,"plus":false,"role":"pe"},{"player":"Jimmy Jones","goals":639,"plus":false,"role":"pe"}]},{"id":"5g_career_goals_rsssf_official_top_level_top10","label":"RSSSF, top level","desc":"Official matches at top level","asOf":"2026-07-19","source":"https://www.rsssf.org/players/prolific.html","rows":[{"player":"Cristiano Ronaldo","goals":978,"plus":false,"role":"cr"},{"player":"Lionel Messi","goals":921,"plus":false,"role":"pe"},{"player":"Pelé","goals":770,"plus":false,"role":"pe"},{"player":"Romário","goals":761,"plus":false,"role":"pe"},{"player":"Ferenc Puskás","goals":760,"plus":false,"role":"pe"},{"player":"Josef Bican","goals":743,"plus":false,"role":"pe"},{"player":"Robert Lewandowski","goals":697,"plus":false,"role":"pe"},{"player":"Jimmy Jones","goals":659,"plus":false,"role":"pe"}]},{"id":"5g_career_goals_rsssf_official_all_levels_top10","label":"RSSSF, all levels","desc":"Official matches at every level, including reserve and regional selections","asOf":"2026-07-19","source":"https://www.rsssf.org/players/prolific.html","rows":[{"player":"Cristiano Ronaldo","goals":994,"plus":false,"role":"cr"},{"player":"Erwin Helmchen","goals":989,"plus":true,"role":"pe"},{"player":"Josef Bican","goals":950,"plus":true,"role":"pe"},{"player":"Lionel Messi","goals":948,"plus":false,"role":"pe"},{"player":"Ronald Rooke","goals":940,"plus":true,"role":"pe"},{"player":"Jimmy Jones","goals":840,"plus":true,"role":"pe"},{"player":"Ferenc Puskás","goals":802,"plus":false,"role":"pe"},{"player":"Ferenc Deák","goals":795,"plus":true,"role":"pe"}]}],"guinness":{"player":"Pelé","goals":1279,"apps":1363,"source":"https://www.guinnessworldrecords.com/world-records/most-career-goals-(football)"},"intlAsOf":"2026-10-07","intlSource":"https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals","uclAsOf":"2026-10-21","uclSource":"https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers"},"leagueTopScorer":{"leagues":[{"id":"Premier League","label":"Premier League"},{"id":"La Liga","label":"La Liga"},{"id":"Serie A","label":"Serie A"},{"id":"Bundesliga","label":"Bundesliga"},{"id":"Ligue 1","label":"Ligue 1"},{"id":"Eredivisie","label":"Eredivisie"},{"id":"Primeira Liga","label":"Primeira Liga"},{"id":"Saudi Pro League","label":"Saudi Pro League"},{"id":"MLS","label":"MLS"},{"id":"Brazil Série A","label":"Brazil Série A"},{"id":"Argentina Primera","label":"Argentina Primera"},{"id":"Colombia Primera A","label":"Colombia Primera A"},{"id":"Hungary NB I","label":"Hungary NB I"},{"id":"Ekstraklasa","label":"Ekstraklasa"}],"rows":[{"id":"ronaldo","counts":{"Premier League":1,"La Liga":3,"Serie A":1,"Saudi Pro League":2},"seasons":{"Premier League":["2007–08"],"La Liga":["2010–11","2013–14","2014–15"],"Serie A":["2020–21"],"Saudi Pro League":["2023–24","2024–25"]}},{"id":"lewandowski","counts":{"Ekstraklasa":1,"Bundesliga":7,"La Liga":1},"seasons":{"Ekstraklasa":["2009–10"],"Bundesliga":["2013–14","2015–16","2017–18","2018–19","2019–20","2020–21","2021–22"],"La Liga":["2022–23"]}},{"id":"distefano","counts":{"Argentina Primera":1,"Colombia Primera A":2,"La Liga":5},"seasons":{"Argentina Primera":["1947"],"Colombia Primera A":["1951","1952"],"La Liga":["1953–54","1955–56","1956–57","1957–58","1958–59"]}},{"id":"romario","counts":{"Eredivisie":3,"La Liga":1,"Brazil Série A":3},"seasons":{"Eredivisie":["1988–89","1989–90","1990–91"],"La Liga":["1993–94"],"Brazil Série A":["2000","2001","2005"]}},{"id":"suarez","counts":{"Eredivisie":1,"Premier League":1,"La Liga":1},"seasons":{"Eredivisie":["2009–10"],"Premier League":["2013–14"],"La Liga":["2015–16"]}},{"id":"messi","counts":{"La Liga":8,"MLS":1},"seasons":{"La Liga":["2009–10","2011–12","2012–13","2016–17","2017–18","2018–19","2019–20","2020–21"],"MLS":["2025"]}},{"id":"puskas","counts":{"Hungary NB I":4,"La Liga":4},"seasons":{"Hungary NB I":["1947–48","1949–50","1950","1953"],"La Liga":["1959–60","1960–61","1962–63","1963–64"]}},{"id":"mbappe","counts":{"La Liga":2,"Ligue 1":6},"seasons":{"La Liga":["2024–25","2025–26"],"Ligue 1":["2018–19","2019–20","2020–21","2021–22","2022–23","2023–24"]}},{"id":"maradona","counts":{"Argentina Primera":5,"Serie A":1},"seasons":{"Argentina Primera":["1978 Metropolitano","1979 Metropolitano","1979 Nacional","1980 Metropolitano","1980 Nacional"],"Serie A":["1987–88"]}},{"id":"kane","counts":{"Premier League":3,"Bundesliga":3},"seasons":{"Premier League":["2015–16","2016–17","2020–21"],"Bundesliga":["2023–24","2024–25","2025–26"]}},{"id":"ibrahimovic","counts":{"Serie A":2,"Ligue 1":3},"seasons":{"Serie A":["2008–09","2011–12"],"Ligue 1":["2012–13","2013–14","2015–16"]}},{"id":"ronaldo_nazario","counts":{"Eredivisie":1,"La Liga":2},"seasons":{"Eredivisie":["1994–95"],"La Liga":["1996–97","2003–04"]}},{"id":"benzema","counts":{"La Liga":1,"Ligue 1":1},"seasons":{"La Liga":["2021–22"],"Ligue 1":["2007–08"]}},{"id":"eusebio","counts":{"Primeira Liga":7},"seasons":{"Primeira Liga":["1963–64","1964–65","1965–66","1966–67","1967–68","1969–70","1972–73"]}},{"id":"muller","counts":{"Bundesliga":7},"seasons":{"Bundesliga":["1966–67","1968–69","1969–70","1971–72","1972–73","1973–74","1977–78"]}},{"id":"henry","counts":{"Premier League":4},"seasons":{"Premier League":["2001–02","2003–04","2004–05","2005–06"]}},{"id":"pele","counts":{"Brazil Série A":3},"seasons":{"Brazil Série A":["1961","1963","1964"]}},{"id":"haaland","counts":{"Premier League":3},"seasons":{"Premier League":["2022–23","2023–24","2025–26"]}},{"id":"cruyff","counts":{"Eredivisie":2},"seasons":{"Eredivisie":["1966–67","1971–72"]}},{"id":"zidane","counts":{},"seasons":{}},{"id":"neymar","counts":{},"seasons":{}}]},"headline":[{"value":"985","label":"Official goals","note":"Most ever, on IFFHS and RSSSF counts"},{"value":"146","label":"International goals","note":"Men's all-time record"},{"value":"140","label":"Champions League goals","note":"All-time record"},{"value":"6","label":"World Cups with a goal","note":"The only player to score at six"}],"records":[{"group":"Career","record":"Most official goals","value":"985","next":"Lionel Messi, 936","source":"IFFHS method via Wikipedia (29 Oct 2026); RSSSF","href":"https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals"},{"group":"International","record":"Most international goals, men","value":"146","next":"Lionel Messi, 126","source":"Wikipedia list (7 Oct 2026)","href":"https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals"},{"group":"International","record":"Most international caps, men","value":"234","next":"Lionel Messi, 208","source":"Wikipedia list (6 Oct 2026)","href":"https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps"},{"group":"International","record":"Most World Cups with a goal","value":"6","next":"Lionel Messi, 5","source":"FIFA (23 Jun 2026)","href":"https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-portugal-goal-record"},{"group":"International","record":"Most European Championships with a goal","value":"5","next":"Robert Lewandowski and Luka Modrić, 4","source":"Wikipedia","href":"https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"},{"group":"International","record":"Most European Championship goals","value":"14","next":"Michel Platini, 9","source":"Wikipedia","href":"https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"},{"group":"Champions League","record":"Most goals","value":"140","next":"Lionel Messi, 129","source":"Wikipedia records (21 Oct 2026)","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most matches won","value":"115","next":"Thomas Müller, 111","source":"Wikipedia records","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most seasons as top scorer","value":"7","next":"Lionel Messi, 6","source":"Wikipedia records","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most goals in the knockout rounds","value":"67","next":"Lionel Messi, 49","source":"Wikipedia records","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most quarter-final goals","value":"25","next":null,"source":"Wikipedia records","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most semi-final goals","value":"13","next":null,"source":"Wikipedia records","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most goals in finals since 1992","value":"4","next":null,"source":"Wikipedia records","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most away goals","value":"63","next":null,"source":"Wikipedia records","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most direct free-kick goals","value":"12","next":null,"source":"Wikipedia records","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most consecutive matches with a goal","value":"11","next":null,"source":"Wikipedia records (2017–18)","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"},{"group":"Champions League","record":"Most goals against one opponent","value":"10","next":null,"source":"Wikipedia records (against Juventus)","href":"https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"}],"references":[{"key":"OECD/JRC 2008","text":"OECD & European Commission Joint Research Centre (2008). Handbook on Constructing Composite Indicators: Methodology and User Guide. OECD Publishing. ISBN 978-92-64-04345-9.","href":"https://knowledge4policy.ec.europa.eu/sites/default/files/jrc47008_handbook_final.pdf","use":"Normalisation options, linear weighted aggregation, missing-data treatment"},{"key":"Saisana et al. 2005","text":"Saisana, M., Saltelli, A. & Tarantola, S. (2005). Uncertainty and sensitivity analysis techniques as tools for the quality assessment of composite indicators. Journal of the Royal Statistical Society: Series A, 168(2), 307–323. doi:10.1111/j.1467-985X.2005.00350.x","href":"https://doi.org/10.1111/j.1467-985X.2005.00350.x","use":"Monte Carlo uncertainty analysis of the ranking"},{"key":"Rubin 1981","text":"Rubin, D. B. (1981). The Bayesian bootstrap. The Annals of Statistics, 9(1), 130–134.","href":"https://doi.org/10.1214/aos/1176345338","use":"Random weights drawn uniformly over the simplex (flat Dirichlet)"},{"key":"Dendir 2016","text":"Dendir, S. (2016). When do soccer players peak? A note. Journal of Sports Analytics, 2(2).","href":"https://www.radford.edu/content/radfordcore/home/news/releases/2016/october/at-what-age-do-soccer-players-peak--ask-an-economist.html","use":"Typical peak age (25–27) behind the age-30 and age-35 thresholds"},{"key":"Cleveland & McGill 1984","text":"Cleveland, W. S. & McGill, R. (1984). Graphical perception: theory, experimentation, and application to the development of graphical methods. Journal of the American Statistical Association, 79(387), 531–554.","href":"https://doi.org/10.1080/01621459.1984.10478080","use":"Values shown as lengths on a common scale"},{"key":"Machado et al. 2009","text":"Machado, G. M., Oliveira, M. M. & Fernandes, L. A. F. (2009). A physiologically-based model for simulation of color vision deficiency. IEEE Transactions on Visualization and Computer Graphics, 15(6), 1291–1298. doi:10.1109/TVCG.2009.113","href":"https://doi.org/10.1109/TVCG.2009.113","use":"Colour palette checked for colour-vision deficiency"}],"method":[{"title":"Data","paras":["Official goals are goals in senior competitive club matches (league, domestic cups and super cups, continental club competitions, Club World Cup) and full internationals, friendlies included. Club friendlies, youth, Olympic and reserve-team matches, indoor football and penalty-shootout kicks are excluded.","Career totals for all 21 players come from the career-statistics tables on English Wikipedia, fetched 30 October 2026. Ronaldo and Messi are also counted match by match from independent match records; both sources give identical totals (985 for Ronaldo, 936 for Messi). Honours come from each player's Wikipedia honours section; all-time lists from Wikipedia, RSSSF and FIFA."]},{"title":"Normalisation and aggregation","cites":["OECD/JRC 2008"],"paras":["Each criterion is normalised across the players in the selected group with one of four methods described in the OECD/JRC Handbook on Constructing Composite Indicators: distance to a reference (share of the best value), min–max rescaling, standardisation (z-scores) and ranking. The overall score is the weighted arithmetic mean of the normalised scores (linear aggregation)."],"formula":"score(p) = Σ wᵢ · nᵢ(p) ÷ Σ wᵢ     share of best: nᵢ = 100·xᵢ/max · min–max: nᵢ = 100·(xᵢ−min)/(max−min) · z-score: nᵢ = (xᵢ−mean)/sd · rank: nᵢ = 100·(N−rankᵢ)/(N−1)"},{"title":"Missing data","cites":["OECD/JRC 2008"],"paras":["Values are never imputed. A player without data for a selected criterion is scored on the criteria he has, with the weights rescaled to sum to one, and is marked † in the ranking. This applies to Pelé, who never played in the European Cup or Champions League."]},{"title":"Uncertainty analysis","cites":["Saisana et al. 2005","Rubin 1981"],"paras":["Rank stability is tested by Monte Carlo simulation, following the uncertainty-analysis approach of Saisana, Saltelli and Tarantola. Each of 5,000 runs draws a weight vector uniformly from the simplex over the selected criteria (a flat Dirichlet distribution, as in Rubin's Bayesian bootstrap) and one of the four normalisation methods with equal probability, then ranks the players. The panel reports each player's median rank, the 5th–95th percentile range and the share of runs in which he ranks first. The random-number generator is seeded, so results are reproducible."]},{"title":"Age-based measures","cites":["Dendir 2016"],"paras":["Goals from age 30 and 35 measure output after the typical peak: a study of players in Europe's top leagues found average peak performance between ages 25 and 27, with forwards near 25. Ronaldo's and Messi's ages are exact to the match day. For the other players, each season's goals are placed at the end of that season and each year's international goals at mid-year, so their figures are estimates accurate to about one season and are labelled as such."]},{"title":"Charts and colour","cites":["Cleveland & McGill 1984","Machado et al. 2009"],"paras":["Quantities are drawn as lengths or positions on a common scale, the encodings readers judge most accurately. The highlight colour and the neutral series colour were checked for separation under protanopia and deuteranopia using the Machado, Oliveira and Fernandes simulation, in both light and dark themes."]},{"title":"Scope and known disputes","paras":["The criteria cover goals, the Champions League, international football, longevity and range. Creative play (assists, dribbling) and awards decided by votes (the Ballon d'Or) are not scored.","Ronaldo's goal against Al-Faisaly on 23 October 2026 is credited to him by the referee's report and the Saudi Pro League but recorded as an own goal by Opta, Sofascore and FotMob; this page follows the league (985; 984 on the Opta count). The totals include every senior division, so a few players score higher here than on IFFHS's top-level-only count (Gerd Müller: 724 here, 634 there). Guinness lists Pelé with 1,279 goals, a count that includes friendlies and tour matches."]},{"title":"Data sources","list":[{"text":"English Wikipedia","href":"https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals","after":"— career-statistics tables and honours sections for all 21 players (raw wikitext, 30 October 2026); all-time goal, international and Champions League lists and records."},{"text":"Match-by-match records","href":"https://www.messivsronaldo.app/","after":"— one row per official match for Ronaldo (1,343) and Messi (1,183): dates, rounds, goal types. Totals cross-checked with Wikipedia and RonaldoStats."},{"text":"RSSSF","href":"https://www.rsssf.org/players/prolific.html","after":"— most prolific goalscorers in official matches (updated 19 July 2026)."},{"text":"FIFA","href":"https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/fifa-world-cup-all-time-leading-scorers","after":"— World Cup records, 2026 match reports and awards."},{"text":"Guinness World Records","href":"https://www.guinnessworldrecords.com/world-records/most-career-goals-(football)","after":"— most career goals, all matches."},{"text":"Reuters, AP, ESPN and the Saudi Pro League","after":"— 2025–26 results and titles, and the disputed 23 October 2026 goal (links in the research notes)."}]},{"title":"References","refs":true}],"footer":["Greatest of All Time. Match data to 29 October 2026; other players from Wikipedia as of 30 October 2026. Built and checked by scripts that can be re-run.","Independent analysis of public data. Not affiliated with any player, club, league or federation."]};
+</script>
+<script>
+/* Greatest of All Time — dashboard. Renders every panel from window.FG (built by research/scripts/build_data.py). */
+(function () {
+  "use strict";
+  const FG = window.FG;
+  const d3 = window.d3;
+  const PR = FG.profile;  // Ronaldo's match-by-match detail
+
+  // ---------- helpers ----------
+  const fmtInt = d3.format(",");
+  const fmt1 = d3.format(",.1f");
+  const fmt2 = d3.format(".2f");
+  const pct0 = d3.format(".0%");
+  const byId = (id) => document.getElementById(id);
+  const P = Object.fromEntries(FG.players.map((p) => [p.id, p]));
+  const METRICS = FG.metrics;
+  const MI = Object.fromEntries(METRICS.map((m) => [m.id, m]));
+  const FAM = FG.families;
+  const V = FG.values, VN = FG.valueNotes;
+  const AS_OF = new Date("2026-10-30");
+  const ageNow = (p) => (AS_OF - new Date(p.born)) / (365.2425 * 864e5);
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function h(tag, attrs, ...kids) {
+    const n = document.createElement(tag);
+    if (attrs) for (const [k, v] of Object.entries(attrs)) {
+      if (v == null || v === false) continue;
+      if (k === "class") n.className = v;
+      else if (k === "style") n.setAttribute("style", v);
+      else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+      else n.setAttribute(k, v === true ? "" : v);
+    }
+    for (const k of kids.flat()) if (k != null) n.append(k.nodeType ? k : document.createTextNode(String(k)));
+    return n;
+  }
+  function fmtVal(v, m) {
+    if (v == null || Number.isNaN(v)) return "—";
+    if (m && m.dec) return d3.format(`,.${m.dec}f`)(v);
+    return fmtInt(v);
+  }
+  function onResize(el, fn) {
+    let w = 0, t;
+    new ResizeObserver((entries) => {
+      const nw = Math.round(entries[0].contentRect.width);
+      if (nw && Math.abs(nw - w) > 2) { w = nw; clearTimeout(t); t = setTimeout(() => fn(nw), 60); }
+    }).observe(el);
+  }
+  function table(container, head, rows) {
+    const t = h("table", { class: "data" });
+    t.append(h("thead", null, h("tr", null, head.map((c) => h("th", { scope: "col" }, c)))));
+    t.append(h("tbody", null, rows.map((r) => h("tr", null, r.map((c, i) => i === 0 ? h("th", { scope: "row" }, c) : h("td", null, c))))));
+    container.textContent = "";
+    container.append(t);
+  }
+  function segment(box, options, current, onPick) {
+    box.textContent = "";
+    for (const [id, label] of options) {
+      box.append(h("button", { type: "button", "aria-pressed": String(current === id), "data-id": id, onclick: () => onPick(id) }, label));
+    }
+  }
+  const syncSeg = (box, current) => box.querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.id === current)));
+
+  // ---------- tooltip ----------
+  const tip = byId("tip");
+  function showTip(evt, title, rows, note) {
+    tip.textContent = "";
+    tip.append(h("div", { class: "t-h" }, title));
+    for (const r of rows || []) tip.append(h("div", { class: "t-row" }, h("span", { class: "key", style: `--c:${r.c || "var(--peer)"}` }), h("span", { class: "n" }, r.name), h("span", { class: "v" }, r.v)));
+    if (note) tip.append(h("div", { class: "t-note" }, note));
+    tip.classList.add("on");
+    moveTip(evt);
+  }
+  function moveTip(evt) {
+    let x, y;
+    if (evt && evt.clientX != null && evt.type !== "focus") { x = evt.clientX; y = evt.clientY; }
+    else if (evt && evt.target && evt.target.getBoundingClientRect) { const b = evt.target.getBoundingClientRect(); x = b.left + b.width / 2; y = b.top; }
+    else return;
+    const tw = tip.offsetWidth, th = tip.offsetHeight, vw = window.innerWidth;
+    let left = x + 14, top = y - th - 12;
+    if (left + tw > vw - 8) left = x - tw - 14;
+    if (left < 8) left = 8;
+    if (top < 8) top = y + 16;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+  const hideTip = () => tip.classList.remove("on");
+  window.addEventListener("scroll", hideTip, { passive: true });
+  const hover = (sel, show) => sel.on("pointerenter", show).on("pointermove", moveTip).on("pointerleave", hideTip).on("focus", show).on("blur", hideTip);
+
+  // ---------- state ----------
+  const NORMS = [["ratio", "Share of best"], ["minmax", "Min–max"], ["z", "Z-score"], ["rank", "Rank"]];
+  const NORM_LABEL = Object.fromEntries(NORMS);
+  const NORM_HINT = {
+    ratio: "Value as a share of the best value in the group (distance to a reference).",
+    minmax: "Rescaled so the lowest value is 0 and the highest 100.",
+    z: "Standardised: distance from the group mean in standard deviations. The overall score is the mean z-score.",
+    rank: "Rank position rescaled to 0–100; ties share the better rank.",
+  };
+  const GROUPS = [["all", "All 21"], ["legends", "Legends"], ["modern", "Modern era"]];
+  const GROUP_HINT = { all: "All 21 players.", legends: "Careers that began before 1990, plus Ronaldo.", modern: "Careers that began in 1990 or later." };
+  const inGroup = (p, g) => g === "all" || p.role === "cr" || (g === "legends" ? p.debut < 1990 : p.debut >= 1990);
+  const coreWeights = () => Object.fromEntries(METRICS.map((m) => [m.id, FG.presets[0].weights[m.id] || 0]));
+  const state = { group: "all", norm: "ratio", preset: FG.presets[0].id, w: coreWeights(), focus: null, explore: "goals", alltime: "career", msort: null, mdir: -1, mmode: "values", ageHidden: new Set() };
+
+  const players = () => FG.players.filter((p) => inGroup(p, state.group));
+  const selected = () => Object.entries(state.w).filter(([, w]) => w > 0);
+
+  // ---------- scoring (OECD/JRC 2008 normalisations, linear aggregation) ----------
+  const cache = new Map();
+  function norm(method, mid, group) {
+    const key = `${method}|${mid}|${state.group}`;
+    if (cache.has(key)) return cache.get(key);
+    const vals = group.map((p) => [p.id, V[p.id][mid]]).filter(([, v]) => v != null);
+    const out = {};
+    if (vals.length) {
+      const xs = vals.map((d) => d[1]);
+      const max = d3.max(xs), min = d3.min(xs), mean = d3.mean(xs), sd = d3.deviation(xs) || 0;
+      if (method === "ratio") for (const [id, v] of vals) out[id] = max ? 100 * v / max : 0;
+      else if (method === "minmax") for (const [id, v] of vals) out[id] = max > min ? 100 * (v - min) / (max - min) : 100;
+      else if (method === "z") for (const [id, v] of vals) out[id] = sd ? (v - mean) / sd : 0;
+      else {
+        const sorted = vals.slice().sort((a, b) => b[1] - a[1]), n = sorted.length;
+        sorted.forEach(([id, v], i) => { let r = i; while (r > 0 && sorted[r - 1][1] === v) r--; out[id] = n > 1 ? 100 * (n - 1 - r) / (n - 1) : 100; });
+      }
+    }
+    cache.set(key, out);
+    return out;
+  }
+  function composite(method, weights, group) {
+    const sel = Object.entries(weights).filter(([, w]) => w > 0);
+    const S = sel.map(([mid]) => norm(method, mid, group));
+    const ranked = [], missing = [];
+    for (const p of group) {
+      let v = 0, ww = 0;
+      const lack = [];
+      sel.forEach(([mid, w], j) => { const s = S[j][p.id]; if (s == null) lack.push(mid); else { v += w * s; ww += w; } });
+      if (!ww) { missing.push(p.id); continue; }
+      ranked.push({ id: p.id, score: v / ww, partial: lack.length ? lack : null });
+    }
+    ranked.sort((a, b) => b.score - a.score);
+    return { sel, ranked, missing };
+  }
+  // Monte Carlo uncertainty analysis (Saisana, Saltelli & Tarantola 2005): random weights (flat Dirichlet) x random normalisation
+  const simCache = new Map();
+  function simulate(group, sel, runs = 5000) {
+    const key = `${state.group}|${sel.map(([m]) => m).join(",")}`;
+    if (simCache.has(key)) return simCache.get(key);
+    if (!sel.length) return null;
+    const methods = NORMS.map((n) => n[0]);
+    const T = methods.map((mt) => sel.map(([mid]) => norm(mt, mid, group)));
+    const ids = group.filter((p) => sel.some(([mid]) => V[p.id][mid] != null)).map((p) => p.id);
+    const ranks = Object.fromEntries(ids.map((id) => [id, new Uint8Array(runs)]));
+    let seed = 20261030;
+    const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return (seed + 0.5) / 4294967296; };
+    const comp = new Array(ids.length);
+    for (let k = 0; k < runs; k++) {
+      const t = T[Math.floor(rnd() * methods.length)];
+      const w = sel.map(() => -Math.log(rnd()));
+      for (let i = 0; i < ids.length; i++) {
+        let v = 0, ww = 0;
+        for (let j = 0; j < w.length; j++) { const s = t[j][ids[i]]; if (s != null) { v += w[j] * s; ww += w[j]; } }
+        comp[i] = [i, v / ww];
+      }
+      comp.sort((a, b) => b[1] - a[1]);
+      for (let r = 0; r < comp.length; r++) ranks[ids[comp[r][0]]][k] = r + 1;
+    }
+    const out = ids.map((id) => {
+      const a = Array.from(ranks[id]).sort((x, y) => x - y);
+      return { id, p1: a.filter((r) => r === 1).length / runs, median: d3.quantileSorted(a, 0.5), p5: d3.quantileSorted(a, 0.05), p95: d3.quantileSorted(a, 0.95) };
+    }).sort((a, b) => a.median - b.median || b.p1 - a.p1 || a.p5 - b.p5);
+    simCache.set(key, out);
+    return out;
+  }
+  const fmtScore = (s) => state.norm === "z" ? (s >= 0 ? "+" : "−") + fmt2(Math.abs(s)) : fmt1(s);
+  const colorOf = (pid) => (P[pid].role === "cr" ? "var(--cr7)" : pid === focusId() ? "var(--sel)" : "var(--peer)");
+  let current = null;  // latest composite
+  const focusId = () => (state.focus && players().some((p) => p.id === state.focus) ? state.focus : current && current.ranked[0] ? current.ranked[0].id : "ronaldo");
+  function leaders(mid, group) {
+    const vals = group.map((p) => [p.id, V[p.id][mid]]).filter(([, v]) => v != null);
+    const best = d3.max(vals, (d) => d[1]);
+    return { ids: vals.filter(([, v]) => v === best).map(([id]) => id), best, rankOf: (id) => { const v = V[id][mid]; return v == null ? null : 1 + vals.filter(([, x]) => x > v).length; }, n: vals.length };
+  }
+  function selectPlayer(id) { state.focus = state.focus === id ? null : id; update(); }
+
+  // ---------- settings rail ----------
+  function renderSettings() {
+    segment(byId("group-seg"), GROUPS, state.group, (id) => { state.group = id; update(); });
+    segment(byId("norm-seg"), NORMS, state.norm, (id) => { state.norm = id; update(); });
+    const pbox = byId("presets");
+    for (const pr of FG.presets) pbox.append(h("button", { class: "chip", type: "button", "data-p": pr.id, onclick: () => { state.preset = pr.id; for (const m of METRICS) state.w[m.id] = pr.weights[m.id] || 0; update(); } }, pr.label));
+    const list = byId("crit-list");
+    for (const f of FAM) {
+      const fs = h("fieldset", { class: "fam" }, h("legend", null, f.label));
+      for (const m of METRICS.filter((x) => x.family === f.id)) {
+        const name = `w-${m.id}`;
+        const wt = h("div", { class: "wt", role: "radiogroup", "aria-label": `Weight for ${m.label}` });
+        for (const [v, lab] of [[0, "Off"], [1, "1×"], [2, "2×"]]) {
+          wt.append(h("label", { for: `${name}-${v}`, title: `${m.label}: ${lab}` },
+            h("input", { type: "radio", name, id: `${name}-${v}`, value: String(v), onchange: () => { state.w[m.id] = v; state.preset = null; update(); } }), h("span", null, lab)));
+        }
+        fs.append(h("div", { class: "crit", "data-m": m.id }, h("div", { class: "c-name" }, m.label, h("small", null, m.desc)), wt));
+      }
+      list.append(fs);
+    }
+    byId("reset").addEventListener("click", () => { Object.assign(state, { group: "all", norm: "ratio", preset: FG.presets[0].id, w: coreWeights(), focus: null }); update(); });
+    if (window.matchMedia("(max-width: 1080px)").matches) byId("settings").open = false;
+  }
+  function syncSettings() {
+    syncSeg(byId("group-seg"), state.group);
+    syncSeg(byId("norm-seg"), state.norm);
+    byId("group-hint").textContent = GROUP_HINT[state.group];
+    byId("norm-hint").textContent = NORM_HINT[state.norm];
+    byId("presets").querySelectorAll(".chip").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.p === state.preset)));
+    for (const m of METRICS) {
+      const el = document.getElementById(`w-${m.id}-${state.w[m.id] || 0}`);
+      if (el) el.checked = true;
+      const row = document.querySelector(`.crit[data-m="${m.id}"]`);
+      if (row) row.classList.toggle("off", !state.w[m.id]);
+    }
+  }
+
+  // ---------- ranking ----------
+  function renderRanking() {
+    const { sel, ranked, missing } = current;
+    byId("rank-sub").textContent = sel.length ? `Weighted mean of ${sel.length} normalised criteria (${NORM_LABEL[state.norm].toLowerCase()}).` : "Select at least one criterion.";
+    const stat = byId("rank-stat");
+    stat.textContent = "";
+    if (sel.length) {
+      const top = ranked[0];
+      stat.append(h("span", null, "First: ", h("b", null, P[top.id].name)), h("span", null, "Score: ", h("b", null, fmtScore(top.score))),
+        h("span", null, "Players: ", h("b", null, String(ranked.length))));
+    }
+    const list = byId("rank-list");
+    list.textContent = "";
+    const lo = d3.min(ranked, (r) => r.score), hi = d3.max(ranked, (r) => r.score);
+    const width = (s) => state.norm === "z" ? (hi > lo ? 4 + 96 * (s - lo) / (hi - lo) : 100) : Math.max(0, s);
+    const fid = focusId();
+    ranked.forEach((r, i) => {
+      const p = P[r.id];
+      list.append(h("li", { class: "rank-row" + (p.role === "cr" ? " me" : "") + (r.id === fid && state.focus ? " sel" : "") },
+        h("span", { class: "rk" }, String(i + 1)),
+        h("button", { type: "button", class: "nm", title: r.partial ? `${p.name}: scored without ${r.partial.map((m) => MI[m].short).join(", ")}` : `Select ${p.name}`, onclick: () => selectPlayer(r.id) }, p.name + (r.partial ? " †" : "")),
+        h("span", { class: "bar", "aria-hidden": "true" }, h("i", { style: `width:${width(r.score).toFixed(1)}%;--c:${colorOf(r.id)}` })),
+        h("span", { class: "sc" }, fmtScore(r.score))));
+    });
+    const notes = [];
+    const partial = ranked.filter((r) => r.partial);
+    if (partial.length) notes.push(`† Scored on the criteria he has data for: ${partial.map((r) => `${P[r.id].short} (no ${r.partial.map((m) => MI[m].short).join(", ")})`).join("; ")}.`);
+    if (missing.length && sel.length) notes.push(`No data for any selected criterion: ${missing.map((id) => P[id].short).join(", ")}.`);
+    byId("na-note").textContent = notes.join(" ");
+  }
+
+  // ---------- rank stability ----------
+  function renderStability(sim) {
+    const el = byId("chart-stab"), stat = byId("stab-stat");
+    stat.textContent = "";
+    el.textContent = "";
+    if (!sim || sim.length < 2) { el.append(h("p", { class: "hint" }, "Select at least one criterion.")); return; }
+    for (const s of sim.filter((x) => x.p1 >= 0.005).slice(0, 3)) stat.append(h("span", null, `${P[s.id].short} first in `, h("b", null, pct0(s.p1)), " of runs"));
+    const W = el.clientWidth || 500, n = sim.length, rh = 21, m = { t: 30, r: 54, b: 6, l: 128 };
+    const Ht = m.t + m.b + n * rh;
+    const svg = d3.select(el).append("svg").attr("width", W).attr("height", Ht).attr("role", "img").attr("aria-label", "Median rank and 90% interval for each player across 5,000 simulations");
+    const x = d3.scaleLinear().domain([1, n]).range([m.l + 8, W - m.r]);
+    const ticks = [1, ...d3.range(5, n + 1, 5)];
+    svg.append("g").attr("transform", `translate(0,${m.t - 6})`).call(d3.axisTop(x).tickValues(ticks).tickFormat(d3.format("d")).tickSize(-(n * rh)))
+      .call((g) => g.select(".domain").remove()).call((g) => g.selectAll(".tick line").attr("stroke", "var(--grid)"));
+    const fid = focusId();
+    sim.forEach((s, i) => {
+      const cy = m.t + i * rh + rh / 2, c = colorOf(s.id), strong = P[s.id].role === "cr" || s.id === fid;
+      svg.append("text").attr("x", m.l - 8).attr("y", cy + 4).attr("text-anchor", "end").attr("class", strong ? "lbl-strong" : "lbl-2").text(P[s.id].name);
+      svg.append("line").attr("x1", x(s.p5)).attr("x2", x(Math.max(s.p95, s.p5 + 0.001))).attr("y1", cy).attr("y2", cy).style("stroke", c).attr("stroke-width", 3).attr("stroke-linecap", "round").style("opacity", 0.55);
+      svg.append("circle").attr("cx", x(s.median)).attr("cy", cy).attr("r", 5).style("fill", c).style("stroke", "var(--surface)").attr("stroke-width", 2);
+      svg.append("text").attr("x", W - m.r + 8).attr("y", cy + 4).attr("class", strong ? "lbl-strong" : "lbl-2").text(s.p1 >= 0.005 ? pct0(s.p1) : "");
+      const hit = svg.append("rect").attr("x", 0).attr("y", cy - rh / 2).attr("width", W).attr("height", rh).attr("fill", "transparent").attr("tabindex", "0").style("cursor", "pointer");
+      hover(hit, (e) => showTip(e, P[s.id].name, [{ c, name: "Median rank", v: String(s.median) }, { c, name: "90% of runs", v: `${s.p5}–${s.p95}` }, { c, name: "Ranked first", v: pct0(s.p1) }], null));
+      hit.on("click", () => selectPlayer(s.id));
+    });
+    svg.append("text").attr("x", m.l + 8).attr("y", 4).attr("class", "lbl-2").style("font-size", "11px").text("Rank");
+    svg.append("text").attr("x", W - m.r + 8).attr("y", 4).attr("class", "lbl-2").style("font-size", "11px").text("Top");
+    table(byId("tbl-stab"), ["Player", "Median rank", "5th pct", "95th pct", "Ranked first"], sim.map((s) => [P[s.id].name, String(s.median), String(s.p5), String(s.p95), pct0(s.p1)]));
+  }
+
+  // ---------- matrix ----------
+  function renderMatrix(group) {
+    const tbl = byId("matrix-table");
+    const scores = Object.fromEntries(METRICS.map((m) => [m.id, norm(state.norm, m.id, group)]));
+    const shade = (mid, id) => {
+      const s = scores[mid][id];
+      if (s == null) return null;
+      if (state.norm !== "z") return s;
+      const xs = Object.values(scores[mid]), lo = d3.min(xs), hi = d3.max(xs);
+      return hi > lo ? 100 * (s - lo) / (hi - lo) : 100;
+    };
+    const order = new Map(current.ranked.map((r, i) => [r.id, i]));
+    const rows = group.slice().sort((a, b) => {
+      if (state.msort) { const va = V[a.id][state.msort], vb = V[b.id][state.msort]; return ((vb ?? -Infinity) - (va ?? -Infinity)) * (state.mdir === -1 ? 1 : -1); }
+      return (order.get(a.id) ?? 99) - (order.get(b.id) ?? 99);
+    });
+    const best = Object.fromEntries(METRICS.map((m) => [m.id, leaders(m.id, group).best]));
+    tbl.textContent = "";
+    const thr = h("tr", null, h("th", { scope: "col" }, h("span", { class: "sr-only" }, "Player")));
+    for (const m of METRICS) {
+      const fam = FAM.find((f) => f.id === m.family);
+      const b = h("button", { type: "button", title: `${m.label}. ${m.desc}`, onclick: () => { if (state.msort === m.id) state.mdir *= -1; else { state.msort = m.id; state.mdir = -1; } renderMatrix(players()); } },
+        h("span", { class: "fam-tag" }, (state.w[m.id] ? "● " : "") + (fam ? fam.short : "")), m.short);
+      if (state.msort === m.id) b.setAttribute("aria-sort", state.mdir === -1 ? "descending" : "ascending");
+      thr.append(h("th", { scope: "col" }, b));
+    }
+    tbl.append(h("thead", null, thr));
+    const tb = h("tbody");
+    const fid = focusId();
+    for (const p of rows) {
+      const tr = h("tr", { class: [p.role === "cr" ? "me" : "", p.id === fid && state.focus ? "sel" : ""].join(" ").trim() || null },
+        h("th", { scope: "row" }, h("button", { type: "button", style: `--c:${colorOf(p.id)}`, onclick: () => selectPlayer(p.id) }, p.name)));
+      for (const m of METRICS) {
+        const v = V[p.id][m.id], note = VN[p.id] && VN[p.id][m.id];
+        if (v == null) { tr.append(h("td", { class: "na", title: `${p.name}: ${note || "no comparable data"}` }, "—")); continue; }
+        const s = shade(m.id, p.id), raw = scores[m.id][p.id];
+        const td = h("td", { class: (v === best[m.id] ? "lead " : "") + (s >= 58 ? "hi" : ""), style: `--cell: color-mix(in oklab, var(--seq-hi) ${s.toFixed(1)}%, var(--seq-lo))`, tabindex: "0" },
+          state.mmode === "values" ? fmtVal(v, m) : (state.norm === "z" ? fmtScore(raw) : fmtInt(Math.round(raw))));
+        const show = (e) => showTip(e, p.name, [{ c: colorOf(p.id), name: m.label, v: fmtVal(v, m) }, { c: "var(--seq-hi)", name: `Score (${NORM_LABEL[state.norm].toLowerCase()})`, v: state.norm === "z" ? fmtScore(raw) : fmt1(raw) }], note || m.desc);
+        td.addEventListener("pointerenter", show); td.addEventListener("pointermove", moveTip); td.addEventListener("pointerleave", hideTip);
+        td.addEventListener("focus", show); td.addEventListener("blur", hideTip);
+        tr.append(td);
+      }
+      tb.append(tr);
+    }
+    tbl.append(tb);
+  }
+
+  // ---------- bars ----------
+  function hbars(el, rows, opts) {
+    const W = el.clientWidth || 500;
+    el.textContent = "";
+    const rh = opts.rowH || 26, m = { t: 2, r: opts.right || 70, b: 2, l: opts.labelW || 140 };
+    const Ht = m.t + m.b + rows.length * rh;
+    const svg = d3.select(el).append("svg").attr("width", W).attr("height", Ht).attr("role", "img").attr("aria-label", opts.aria);
+    const x = d3.scaleLinear().domain([0, opts.max || d3.max(rows, (d) => d.v) || 1]).range([m.l, W - m.r]);
+    rows.forEach((d, i) => {
+      const yy = m.t + i * rh, bh = Math.min(14, rh - 8), by = yy + (rh - bh) / 2;
+      const strong = d.strong;
+      svg.append("text").attr("x", m.l - 8).attr("y", yy + rh / 2 + 4).attr("text-anchor", "end").attr("class", strong ? "lbl-strong" : "lbl-2").text(d.label);
+      const w = d.v > 0 ? Math.max(2, x(d.v) - m.l) : 0, r = Math.min(4, w);
+      if (w > 0) svg.append("path").attr("d", `M${m.l},${by}H${m.l + w - r}Q${m.l + w},${by} ${m.l + w},${by + r}V${by + bh - r}Q${m.l + w},${by + bh} ${m.l + w - r},${by + bh}H${m.l}Z`).style("fill", d.color || "var(--peer)");
+      svg.append("text").attr("x", m.l + w + 6).attr("y", yy + rh / 2 + 4).attr("class", strong ? "lbl-strong" : "lbl-2").text(d.display || fmtInt(d.v));
+      const hit = svg.append("rect").attr("x", 0).attr("y", yy).attr("width", W).attr("height", rh).attr("fill", "transparent").attr("tabindex", "0");
+      hover(hit, (e) => showTip(e, d.label, [{ c: d.color || "var(--peer)", name: opts.valueName, v: d.display || fmtInt(d.v) }].concat(d.extra || []), d.note));
+      if (d.onclick) hit.style("cursor", "pointer").on("click", d.onclick);
+    });
+    if (opts.ref) svg.append("line").attr("x1", x(opts.ref)).attr("x2", x(opts.ref)).attr("y1", 0).attr("y2", Ht).attr("stroke", "var(--ink-2)").attr("stroke-width", 1);
+  }
+
+  // ---------- criterion explorer ----------
+  function renderExplorer(group) {
+    const mid = state.explore, m = MI[mid];
+    const L = leaders(mid, group);
+    byId("explore-title").textContent = m.label;
+    byId("explore-sub").textContent = `${m.desc}. Best in group: ${L.ids.map((id) => P[id].name).join(", ")} (${fmtVal(L.best, m)}).`;
+    const minAge = { goals30: 30, goals35: 35 }[mid];
+    const fid = focusId();
+    const rows = group.filter((p) => V[p.id][mid] != null).map((p) => {
+      const young = minAge && ageNow(p) < minAge;
+      return { id: p.id, label: p.name, v: V[p.id][mid], color: colorOf(p.id), strong: p.role === "cr" || p.id === fid, note: VN[p.id][mid] || null, young,
+        display: young ? `not yet ${minAge}` : fmtVal(V[p.id][mid], m), onclick: () => selectPlayer(p.id) };
+    }).sort((a, b) => (a.young - b.young) || (b.v - a.v));
+    hbars(byId("chart-explore"), rows, { aria: `Bar chart of ${m.label} for each player`, valueName: m.label, labelW: byId("chart-explore").clientWidth < 420 ? 120 : 140, rowH: 22 });
+    table(byId("tbl-explore"), ["Player", m.label, "Note"], rows.map((r) => [r.label, r.display, r.note || ""]));
+  }
+
+  // ---------- leaders table ----------
+  function renderLeaders(group) {
+    const fid = focusId(), fp = P[fid];
+    const sub = byId("leaders-sub");
+    sub.textContent = `Best value in the group on each criterion, and where ${fp.name} stands${state.focus ? "" : " (ranked first under the current settings; click any name to choose another player)"}. `;
+    if (state.focus) sub.append(h("button", { type: "button", class: "linkbtn", onclick: () => { state.focus = null; update(); } }, "Clear selection"));
+    const t = byId("leaders-table");
+    t.textContent = "";
+    t.append(h("thead", null, h("tr", null, h("th", { scope: "col" }, "Criterion"), h("th", { scope: "col" }, "Best"), h("th", { scope: "col", class: "hide-sm", style: "text-align:right" }, "Value"),
+      h("th", { scope: "col", style: "text-align:right" }, fp.short), h("th", { scope: "col", style: "text-align:right" }, "Rank"))));
+    const tb = h("tbody");
+    for (const f of FAM) {
+      tb.append(h("tr", { class: "grp" }, h("td", { colspan: "5" }, f.label)));
+      for (const m of METRICS.filter((x) => x.family === f.id)) {
+        const L = leaders(m.id, group), v = V[fid][m.id], lead = L.ids.includes(fid);
+        tb.append(h("tr", null,
+          h("td", null, h("button", { type: "button", style: "border:0;background:none;padding:0;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--rule)", onclick: () => { state.explore = m.id; byId("explore-sel").value = m.id; renderExplorer(players()); byId("p-explorer").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest" }); } }, m.short)),
+          h("td", null, L.ids.map((id) => h("span", { style: "white-space:nowrap;margin-right:6px" }, h("span", { class: "dot", style: `--c:${colorOf(id)}` }), P[id].short))),
+          h("td", { class: "r hide-sm" }, fmtVal(L.best, m)),
+          h("td", { class: "r" + (lead ? " strong" : "") }, fmtVal(v, m)),
+          h("td", { class: "r" + (lead ? " strong" : "") }, v == null ? "—" : `${L.rankOf(fid)}`)));
+      }
+    }
+    t.append(tb);
+  }
+
+  // ---------- age chart ----------
+  function renderAge(group) {
+    const el = byId("chart-age");
+    const W = el.clientWidth || 800;
+    el.textContent = "";
+    const legend = byId("age-legend");
+    legend.textContent = "";
+    const fid = focusId();
+    const ids = group.map((p) => p.id).filter((id) => FG.ageCurves[id]).sort((a, b) => (P[a].role === "cr" ? -1 : P[b].role === "cr" ? 1 : P[a].short.localeCompare(P[b].short)));
+    for (const id of ids) {
+      const hidden = state.ageHidden.has(id);
+      legend.append(h("li", null, h("button", { type: "button", class: "tog", "aria-pressed": String(!hidden), title: hidden ? `Show ${P[id].name}` : `Hide ${P[id].name}`,
+        onclick: () => { hidden ? state.ageHidden.delete(id) : state.ageHidden.add(id); renderAge(players()); } }, h("span", { class: "ln", style: `--c:${colorOf(id)}` }), P[id].short)));
+    }
+    const narrow = W < 560;
+    const m = { t: 14, r: narrow ? 84 : 124, b: 36, l: 44 };
+    const Ht = narrow ? 320 : 420;
+    const svg = d3.select(el).append("svg").attr("width", W).attr("height", Ht).attr("role", "img").attr("aria-label", "Line chart of cumulative official goals by age");
+    const x = d3.scaleLinear().domain([15, 44]).range([m.l, W - m.r]);
+    const ymax = d3.max(ids, (id) => d3.max(FG.ageCurves[id], (d) => d[1]));
+    const y = d3.scaleLinear().domain([0, Math.ceil(ymax / 100) * 100]).nice().range([Ht - m.b, m.t]);
+    svg.append("g").attr("transform", `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).ticks(narrow ? 6 : 14).tickSizeOuter(0)).call((g) => g.select(".domain").attr("stroke", "var(--axis)"));
+    svg.append("g").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6).tickSize(-(W - m.l - m.r)).tickFormat(fmtInt)).call((g) => g.select(".domain").remove()).call((g) => g.selectAll(".tick line").attr("stroke", "var(--grid)"));
+    svg.append("text").attr("x", W - m.r).attr("y", Ht - 4).attr("text-anchor", "end").text("Age (years)");
+    const line = d3.line().x((d) => x(d[0])).y((d) => y(d[1]));
+    const rank = (id) => (P[id].role === "cr" ? 2 : id === fid ? 1 : 0);
+    const order = ids.filter((id) => !state.ageHidden.has(id)).sort((a, b) => rank(a) - rank(b));
+    for (const id of order) {
+      const data = FG.ageCurves[id], r = rank(id);
+      svg.append("path").datum(data).attr("fill", "none").attr("d", line).attr("stroke-width", r ? 2.5 : 1.4).attr("stroke-linejoin", "round").style("stroke", colorOf(id)).style("opacity", r ? 1 : 0.85);
+      const last = data[data.length - 1];
+      svg.append("circle").attr("cx", x(last[0])).attr("cy", y(last[1])).attr("r", r ? 4.5 : 3).style("fill", colorOf(id)).style("stroke", "var(--surface)").attr("stroke-width", 2);
+    }
+    const valueAt = (id, age) => { const d = FG.ageCurves[id]; if (age < d[0][0]) return null; let v = 0, i = 0; for (; i < d.length && d[i][0] <= age; i++) v = d[i][1]; return { v, done: i === d.length }; };
+    const ronaldoY = (age) => { const r = valueAt("ronaldo", age); return r ? y(r.v) : null; };
+    const labels = order.map((id) => { const last = FG.ageCurves[id][FG.ageCurves[id].length - 1]; return { id, age: last[0], x: x(last[0]) + 8, y: y(last[1]), v: last[1], pri: rank(id) }; }).sort((a, b) => b.pri - a.pri || b.v - a.v);
+    const placed = [];
+    for (const lb of labels) {
+      const onR = lb.id !== "ronaldo" && [0, 1.5, 3].some((dx) => { const ry = ronaldoY(lb.age + dx); return ry != null && Math.abs(ry - lb.y) < 14; });
+      if (!lb.pri && (narrow || onR || placed.some((p) => Math.abs(p.y - lb.y) < 14 && Math.abs(p.x - lb.x) < 110))) continue;
+      placed.push(lb);
+      svg.append("text").attr("x", lb.x).attr("y", lb.y + 4).attr("class", lb.pri ? "lbl-strong" : "lbl-2").text(`${P[lb.id].short} ${fmtInt(lb.v)}`);
+    }
+    const cross = svg.append("line").attr("y1", m.t).attr("y2", Ht - m.b).attr("stroke", "var(--axis)").style("display", "none");
+    const ov = svg.append("rect").attr("x", m.l).attr("y", m.t).attr("width", W - m.l - m.r).attr("height", Ht - m.t - m.b).attr("fill", "transparent").style("cursor", "crosshair");
+    const move = (evt) => {
+      const [px] = d3.pointer(evt, svg.node());
+      const age = Math.max(15, Math.min(44, x.invert(px)));
+      cross.style("display", null).attr("x1", x(age)).attr("x2", x(age));
+      const rows = order.map((id) => ({ id, r: valueAt(id, age) })).filter((d) => d.r).sort((p, q) => q.r.v - p.r.v)
+        .map(({ id, r }) => ({ c: colorOf(id), name: P[id].short + (r.done ? (P[id].active ? " (to date)" : " (final)") : ""), v: fmtInt(r.v) }));
+      showTip(evt, `Goals before age ${Math.floor(age) + 1}`, rows.slice(0, 12), rows.length > 12 ? `+${rows.length - 12} more` : null);
+    };
+    ov.on("pointermove", move).on("pointerenter", move).on("pointerleave", () => { cross.style("display", "none"); hideTip(); });
+    const ages = [20, 25, 30, 33, 35, 37, 39, 41];
+    table(byId("tbl-age"), ["Player", ...ages.map((a) => `By ${a}`), "Total"], ids.map((id) => {
+      const d = FG.ageCurves[id], lastAge = d[d.length - 1][0];
+      return [P[id].name, ...ages.map((a) => { const r = valueAt(id, a); return r && lastAge >= a - 0.01 ? fmtInt(r.v) : "—"; }), fmtInt(d[d.length - 1][1])];
+    }));
+    byId("age-source").textContent = FG.meta.ageSource;
+  }
+
+  // ---------- all-time lists ----------
+  const roleColor = (role) => (role === "cr" ? "var(--cr7)" : "var(--peer)");
+  function renderAllTime() {
+    const LB = FG.leaderboards;
+    segment(byId("alltime-seg"), [["career", "Official goals"], ["intl", "International goals"], ["ucl", "Champions League goals"]], state.alltime, (id) => { state.alltime = id; syncSeg(byId("alltime-seg"), id); draw(); });
+    const body = byId("alltime-body");
+    const draw = () => {
+      body.textContent = "";
+      if (state.alltime === "career") {
+        byId("alltime-title").textContent = "All-time official goals, three counts";
+        byId("alltime-sub").textContent = `The counts differ on lower divisions, reserve and regional selections. Guinness lists ${LB.guinness.player} with ${fmtInt(LB.guinness.goals)} in ${fmtInt(LB.guinness.apps)} games, including friendlies.`;
+        const grid = h("div", { style: "display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 24px" });
+        body.append(grid);
+        const charts = LB.career.map((list) => {  // lay out all three columns first, then measure and draw
+          const ch = h("div", { class: "chart" });
+          grid.append(h("div", { style: "min-width:0" }, h("div", { style: "font-weight:700;font-size:13px" }, list.label), h("div", { class: "hint", style: "margin:2px 0 8px" }, `${list.desc}. As of ${list.asOf}.`), ch));
+          return [ch, list];
+        });
+        for (const [ch, list] of charts) {
+          hbars(ch, list.rows.map((r) => ({ label: r.player, v: r.goals, display: fmtInt(r.goals) + (r.plus ? "+" : ""), color: roleColor(r.role), strong: r.role === "cr", note: r.plus ? "Lower bound given by the source." : null })),
+            { aria: `${list.label}: all-time official goals`, valueName: "Goals", labelW: 124, right: 50, rowH: 22 });
+        }
+        table(byId("tbl-alltime"), ["List", "Rank", "Player", "Goals"], LB.career.flatMap((l) => l.rows.map((r, i) => [l.label, String(i + 1), r.player, fmtInt(r.goals) + (r.plus ? "+" : "")])));
+        byId("alltime-source").textContent = "Sources: Wikipedia, list of footballers with 500 or more goals (IFFHS-style, 29 October 2026); RSSSF, most prolific goalscorers in official matches (19 July 2026); Guinness World Records.";
+      } else {
+        const intl = state.alltime === "intl";
+        byId("alltime-title").textContent = intl ? "Men's all-time international goals" : "All-time European Cup and Champions League goals";
+        byId("alltime-sub").textContent = intl ? "Full senior internationals; caps on hover." : "Qualifiers excluded; games on hover.";
+        const rows = (intl ? LB.intl : LB.ucl).slice(0, 15);
+        const ch = h("div", { class: "chart" });
+        body.append(ch);
+        hbars(ch, rows.map((d) => ({ label: d.player, v: d.goals, color: roleColor(d.role), strong: d.role === "cr", note: intl ? d.country : null,
+          extra: [{ c: "var(--peer)", name: intl ? "Caps" : "Games", v: fmtInt(intl ? d.caps : d.apps) }] })), { aria: "All-time scorers", valueName: "Goals", labelW: 150, rowH: 24 });
+        table(byId("tbl-alltime"), intl ? ["Player", "Country", "Goals", "Caps"] : ["Player", "Goals", "Games"], rows.map((d) => intl ? [d.player, d.country, fmtInt(d.goals), fmtInt(d.caps)] : [d.player, fmtInt(d.goals), fmtInt(d.apps)]));
+        byId("alltime-source").textContent = intl ? FG.meta.intlSource : FG.meta.uclSource;
+      }
+    };
+    onResize(body, draw); draw();
+  }
+
+  // ---------- Ronaldo panels ----------
+  function renderRonaldo() {
+    const R = PR.uclRounds;
+    const el = byId("chart-ucl");
+    const rounds = [["Group", "Group stage", ""], ["R16", "Round of 16", ""], ["QF", "Quarter-finals", " · record"], ["SF", "Semi-finals", " · record"], ["F", "Finals", " · record since 1992"]];
+    const rows = rounds.map(([k, label, rec]) => ({ label, v: R[k].goals, color: "var(--cr7)", display: `${R[k].goals} in ${R[k].apps}${rec}`, extra: [{ c: "var(--peer)", name: "Goals per game", v: fmt2(R[k].goals / R[k].apps) }] }));
+    const drawU = () => hbars(el, rows, { aria: "Champions League goals by round", valueName: "Goals", labelW: 112, right: 160, rowH: 32 });
+    onResize(el, drawU); drawU();
+    table(byId("tbl-ucl"), ["Round", "Goals", "Games", "Goals per game"], rounds.map(([k, l]) => [l, fmtInt(R[k].goals), fmtInt(R[k].apps), fmt2(R[k].goals / R[k].apps)]));
+
+    const G = PR.goalTypes;
+    byId("types-sub").textContent = `All ${fmtInt(G.total)} official goals. He is right-footed.`;
+    const elT = byId("chart-types");
+    const drawT = () => {
+      const W = elT.clientWidth || 600;
+      elT.textContent = "";
+      const svg = d3.select(elT).append("svg").attr("width", W).attr("height", 34).attr("role", "img").attr("aria-label", "Goals by body part");
+      const x = d3.scaleLinear().domain([0, G.total]).range([0, W]);
+      let acc = 0;
+      for (const [k, label, fill] of [["strong", "Right foot", "var(--peer)"], ["weak", "Left foot", "var(--cr7)"], ["head", "Header", "color-mix(in oklab, var(--cr7) 55%, var(--surface))"], ["other", "Other", "var(--axis)"]]) {
+        const v = G[k];
+        if (!v) continue;
+        const x0 = x(acc) + (acc ? 1 : 0), w = Math.max(0, x(acc + v) - 1 - x0);
+        acc += v;
+        const r = svg.append("rect").attr("x", x0).attr("y", 3).attr("width", w).attr("height", 28).attr("rx", 4).style("fill", fill).attr("tabindex", "0");
+        hover(r, (e) => showTip(e, label, [{ c: fill, name: "Goals", v: fmtInt(v) }, { c: fill, name: "Share", v: d3.format(".1%")(v / G.total) }], null));
+        const txt = `${fmtInt(v)} · ${pct0(v / G.total)}`;
+        if (w > txt.length * 7 + 14) svg.append("text").attr("x", x0 + 8).attr("y", 21.5).style("fill", k === "weak" ? "#ffffff" : "var(--ink)").style("font-weight", 700).style("pointer-events", "none").text(txt);
+      }
+    };
+    onResize(elT, drawT); drawT();
+    const ts = byId("types-stat");
+    ts.append(h("span", null, "Headers ", h("b", null, fmtInt(G.head))), h("span", null, "Left foot ", h("b", null, fmtInt(G.weak))),
+      h("span", null, "Left, right and head in one match ", h("b", null, String(PR.perfectHatTricks))), h("span", null, "Penalties ", h("b", null, `${PR.pens.scored}/${PR.pens.taken}`)), h("span", null, "Free kicks ", h("b", null, String(G.fk))));
+    table(byId("tbl-types"), ["Body part", "Goals", "Share"], [["Right foot", G.strong], ["Left foot", G.weak], ["Header", G.head], ["Other", G.other]].map(([l, v]) => [l, fmtInt(v), d3.format(".1%")(v / G.total)]));
+
+    const T = PR.tournaments.map((t) => ({ ...t, name: t.name.replace("Euro ", "European Championship ") }));
+    const el3 = byId("chart-tourn");
+    const drawTo = () => {
+      const W = el3.clientWidth || 800;
+      el3.textContent = "";
+      const mark = (svg, t, cx, cy, r) => {
+        const g = svg.append("g").attr("tabindex", "0");
+        const shape = t.type === "wc" ? g.append("circle").attr("cx", cx).attr("cy", cy).attr("r", r) : g.append("rect").attr("x", cx - r).attr("y", cy - r).attr("width", 2 * r).attr("height", 2 * r).attr("rx", 4);
+        if (t.goals > 0) shape.style("fill", "var(--cr7)").style("stroke", "var(--surface)").attr("stroke-width", 2); else shape.style("fill", "var(--surface)").style("stroke", "var(--cr7)").attr("stroke-width", 2);
+        if (t.goals > 0) g.append("text").attr("x", cx).attr("y", cy + 4).attr("text-anchor", "middle").style("fill", "#ffffff").style("font-weight", 700).text(t.goals);
+        hover(g, (e) => showTip(e, t.name, [{ c: "var(--cr7)", name: "Goals", v: `${t.goals} in ${t.apps} games` }], t.result || null));
+      };
+      if (W < 620) {
+        const rowH = 32, Ht = 12 + T.length * rowH;
+        const svg = d3.select(el3).append("svg").attr("width", W).attr("height", Ht).attr("role", "img").attr("aria-label", "Goals at each major tournament");
+        const rr = d3.scaleSqrt().domain([0, 5]).range([8, 13]);
+        T.forEach((t, i) => {
+          const cy = 6 + i * rowH + rowH / 2;
+          svg.append("text").attr("x", 0).attr("y", cy + 4).text(t.year);
+          mark(svg, t, 68, cy, rr(t.goals));
+          svg.append("text").attr("x", 90).attr("y", cy + 4).attr("class", "lbl-2").text(`${t.type === "wc" ? "World Cup" : "Euro"} · ${t.result || ""}`);
+        });
+        return;
+      }
+      const m = { r: 22, b: 28, l: 22 }, Ht = 112;
+      const svg = d3.select(el3).append("svg").attr("width", W).attr("height", Ht).attr("role", "img").attr("aria-label", "Timeline of goals at each major tournament");
+      const x = d3.scaleLinear().domain([2003.4, 2026.6]).range([m.l, W - m.r]);
+      svg.append("g").attr("transform", `translate(0,${Ht - m.b})`).call(d3.axisBottom(x).tickValues(d3.range(2004, 2027, 2)).tickFormat(d3.format("d")).tickSizeOuter(0)).call((g) => g.select(".domain").attr("stroke", "var(--axis)"));
+      const cy = (Ht - m.b) / 2 + 4;
+      svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", cy).attr("y2", cy).attr("stroke", "var(--grid)");
+      const rr = d3.scaleSqrt().domain([0, 5]).range([10, 21]);
+      for (const t of T) mark(svg, t, x(t.year), cy, rr(t.goals));
+    };
+    onResize(el3, drawTo); drawTo();
+    table(byId("tbl-tourn"), ["Tournament", "Goals", "Games", "Result"], T.map((t) => [t.name, String(t.goals), String(t.apps), t.result || ""]));
+
+    const elc = byId("chart-clubs");
+    const crow = PR.clubs.map((c) => ({ label: c.club, v: c.goals, color: "var(--cr7)", note: c.years, extra: [{ c: "var(--peer)", name: "Games", v: fmtInt(c.apps) }] }));
+    const drawC = () => hbars(elc, crow, { aria: "Goals by club", valueName: "Goals", labelW: 138, ref: 100, right: 44 });
+    onResize(elc, drawC); drawC();
+    table(byId("tbl-clubs"), ["Club", "Years", "Goals", "Games"], PR.clubs.map((c) => [c.club, c.years, fmtInt(c.goals), fmtInt(c.apps)]));
+
+    byId("records-sub").textContent = `${FG.records.length} records, measured against every player in history. Next best where the source names one.`;
+    const t = byId("records-table");
+    t.append(h("thead", null, h("tr", null, h("th", { scope: "col" }, "Record"), h("th", { scope: "col", style: "text-align:right" }, "Ronaldo"), h("th", { scope: "col" }, "Next best"), h("th", { scope: "col", class: "hide-sm" }, "Source"))));
+    const tb = h("tbody");
+    let grp = null;
+    for (const r of FG.records) {
+      if (r.group !== grp) { grp = r.group; tb.append(h("tr", { class: "grp" }, h("td", { colspan: "4" }, grp))); }
+      tb.append(h("tr", null, h("td", null, r.record), h("td", { class: "r strong" }, r.value), h("td", null, r.next || "—"),
+        h("td", { class: "hide-sm" }, r.href ? h("a", { href: r.href, target: "_blank", rel: "noopener" }, r.source) : r.source)));
+    }
+    t.append(tb);
+  }
+
+  // ---------- methods & footer ----------
+  function renderMethods() {
+    const box = byId("methods");
+    const refIndex = Object.fromEntries(FG.references.map((r, i) => [r.key, i + 1]));
+    for (const blk of FG.method) {
+      const d = h("div");
+      d.append(h("h4", null, blk.title, blk.cites ? h("span", { class: "cite", style: "font-weight:500;margin-left:6px" }, blk.cites.map((c) => `[${refIndex[c]}]`).join(" ")) : null));
+      for (const p of blk.paras || []) d.append(h("p", null, p));
+      if (blk.formula) d.append(h("div", { class: "formula" }, blk.formula));
+      if (blk.list) d.append(h("ul", null, blk.list.map((li) => h("li", null, li.href ? h("a", { href: li.href, target: "_blank", rel: "noopener" }, li.text) : li.text, li.after ? ` ${li.after}` : ""))));
+      if (blk.refs) d.append(h("ol", { class: "refs" }, FG.references.map((r) => h("li", null, r.href ? h("a", { href: r.href, target: "_blank", rel: "noopener" }, r.text) : r.text, h("span", { class: "use" }, `Used for: ${r.use}.`)))));
+      box.append(d);
+    }
+    const f = byId("footer-body");
+    for (const line of FG.footer) f.append(h("p", null, line));
+    byId("meta-date").textContent = `Data to ${FG.meta.asOfLabel}`;
+  }
+
+  // ---------- update loop ----------
+  function update() {
+    syncSettings();
+    const group = players();
+    byId("meta-players").textContent = `${group.length} players`;
+    byId("meta-criteria").textContent = `${selected().length} of ${METRICS.length} criteria`;
+    current = composite(state.norm, state.w, group);
+    const sim = simulate(group, current.sel);
+    renderRanking();
+    renderStability(sim);
+    renderMatrix(group);
+    renderExplorer(group);
+    renderLeaders(group);
+    renderAge(group);
+  }
+
+  function boot() {
+    renderSettings();
+    const sel = byId("explore-sel");
+    for (const f of FAM) {
+      const og = h("optgroup", { label: f.label });
+      for (const m of METRICS.filter((x) => x.family === f.id)) og.append(h("option", { value: m.id }, m.label));
+      sel.append(og);
+    }
+    sel.value = state.explore;
+    sel.addEventListener("change", () => { state.explore = sel.value; renderExplorer(players()); });
+    segment(byId("matrix-mode"), [["values", "Values"], ["scores", "Scores"]], state.mmode, (id) => { state.mmode = id; syncSeg(byId("matrix-mode"), id); renderMatrix(players()); });
+    byId("matrix-source").textContent = FG.meta.matrixSource;
+    renderAllTime();
+    renderRonaldo();
+    renderMethods();
+    update();
+    for (const [id, fn] of [["chart-stab", () => renderStability(simulate(players(), current.sel))], ["chart-explore", () => renderExplorer(players())], ["chart-age", () => renderAge(players())]]) onResize(byId(id), fn);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot); else boot();
+})();
+</script>
+</body>
+</html>

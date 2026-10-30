@@ -1,0 +1,7882 @@
+{
+ "source": "messivsronaldo.app match histories (official senior matches; club friendlies excluded)",
+ "fetched_at": "2026-10-30T18:27:52Z",
+ "players": {
+  "ronaldo": {
+   "birth_date": "1985-02-05",
+   "last_match": "2026-10-29",
+   "first_match": "2002-08-14",
+   "career": {
+    "apps": 1343,
+    "goals": 985,
+    "assists": 261,
+    "minsPlayed": 109812,
+    "pens": 184,
+    "pensMissed": 37,
+    "hatTricks": 67,
+    "freeKicks": 65,
+    "insideBox": 664,
+    "outsideBox": 72,
+    "left": 188,
+    "right": 634,
+    "head": 160,
+    "other": 3,
+    "npg": 801
+   },
+   "club": {
+    "apps": 1109,
+    "goals": 839,
+    "assists": 224,
+    "minsPlayed": 91192,
+    "pens": 161,
+    "pensMissed": 27,
+    "hatTricks": 57,
+    "freeKicks": 54,
+    "insideBox": 564,
+    "outsideBox": 60,
+    "left": 155,
+    "right": 549,
+    "head": 132,
+    "other": 3,
+    "npg": 678
+   },
+   "intl": {
+    "apps": 234,
+    "goals": 146,
+    "assists": 37,
+    "minsPlayed": 18620,
+    "pens": 23,
+    "pensMissed": 10,
+    "hatTricks": 10,
+    "freeKicks": 11,
+    "insideBox": 100,
+    "outsideBox": 12,
+    "left": 33,
+    "right": 85,
+    "head": 28,
+    "other": 0,
+    "npg": 123
+   },
+   "intl_competitive": {
+    "apps": 178,
+    "goals": 124,
+    "assists": 28,
+    "minsPlayed": 15042,
+    "pens": 22,
+    "pensMissed": 7,
+    "hatTricks": 10,
+    "freeKicks": 10,
+    "insideBox": 81,
+    "outsideBox": 11,
+    "left": 26,
+    "right": 76,
+    "head": 22,
+    "other": 0,
+    "npg": 102
+   },
+   "intl_friendly": {
+    "apps": 56,
+    "goals": 22,
+    "assists": 9,
+    "minsPlayed": 3578,
+    "pens": 1,
+    "pensMissed": 3,
+    "hatTricks": 0,
+    "freeKicks": 1,
+    "insideBox": 19,
+    "outsideBox": 1,
+    "left": 7,
+    "right": 9,
+    "head": 6,
+    "other": 0,
+    "npg": 21
+   },
+   "intl_tournaments": {
+    "apps": 61,
+    "goals": 27,
+    "assists": 10,
+    "minsPlayed": 5210,
+    "pens": 8,
+    "pensMissed": 3,
+    "hatTricks": 1,
+    "freeKicks": 1,
+    "insideBox": 17,
+    "outsideBox": 1,
+    "left": 4,
+    "right": 16,
+    "head": 7,
+    "other": 0,
+    "npg": 19
+   },
+   "intl_tournament_knockout": {
+    "apps": 24,
+    "goals": 4,
+    "assists": 2,
+    "minsPlayed": 2122,
+    "pens": 1,
+    "pensMissed": 1,
+    "hatTricks": 0,
+    "freeKicks": 0,
+    "insideBox": 3,
+    "outsideBox": 0,
+    "left": 0,
+    "right": 1,
+    "head": 3,
+    "other": 0,
+    "npg": 3
+   },
+   "by_competition": {
+    "AFC Champions League": {
+     "apps": 19,
+     "goals": 15,
+     "assists": 2,
+     "minsPlayed": 1685,
+     "pens": 3,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 11,
+     "outsideBox": 1,
+     "left": 5,
+     "right": 8,
+     "head": 2,
+     "other": 0,
+     "npg": 12
+    },
+    "AFC Champions League 2": {
+     "apps": 4,
+     "goals": 1,
+     "assists": 1,
+     "minsPlayed": 280,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 1
+    },
+    "Arab Club Champions Cup": {
+     "apps": 6,
+     "goals": 6,
+     "assists": 0,
+     "minsPlayed": 503,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 5,
+     "outsideBox": 0,
+     "left": 1,
+     "right": 2,
+     "head": 3,
+     "other": 0,
+     "npg": 5
+    },
+    "Champions League": {
+     "apps": 183,
+     "goals": 140,
+     "assists": 41,
+     "minsPlayed": 15944,
+     "pens": 19,
+     "pensMissed": 3,
+     "hatTricks": 8,
+     "freeKicks": 12,
+     "insideBox": 99,
+     "outsideBox": 10,
+     "left": 20,
+     "right": 95,
+     "head": 25,
+     "other": 0,
+     "npg": 121
+    },
+    "Champions League Qualifying": {
+     "apps": 4,
+     "goals": 1,
+     "assists": 1,
+     "minsPlayed": 253,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 1
+    },
+    "Club World Cup": {
+     "apps": 8,
+     "goals": 7,
+     "assists": 3,
+     "minsPlayed": 741,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 5,
+     "outsideBox": 0,
+     "left": 2,
+     "right": 4,
+     "head": 1,
+     "other": 0,
+     "npg": 6
+    },
+    "Confederations Cup": {
+     "apps": 4,
+     "goals": 2,
+     "assists": 1,
+     "minsPlayed": 367,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 1,
+     "head": 1,
+     "other": 0,
+     "npg": 1
+    },
+    "Copa del Rey": {
+     "apps": 30,
+     "goals": 22,
+     "assists": 3,
+     "minsPlayed": 2571,
+     "pens": 3,
+     "pensMissed": 0,
+     "hatTricks": 2,
+     "freeKicks": 2,
+     "insideBox": 16,
+     "outsideBox": 1,
+     "left": 6,
+     "right": 13,
+     "head": 3,
+     "other": 0,
+     "npg": 19
+    },
+    "Coppa Italia": {
+     "apps": 10,
+     "goals": 4,
+     "assists": 0,
+     "minsPlayed": 766,
+     "pens": 2,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 1,
+     "left": 2,
+     "right": 2,
+     "head": 0,
+     "other": 0,
+     "npg": 2
+    },
+    "Europa League": {
+     "apps": 6,
+     "goals": 2,
+     "assists": 2,
+     "minsPlayed": 531,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 1,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 1
+    },
+    "Euros Qualifier": {
+     "apps": 44,
+     "goals": 41,
+     "assists": 5,
+     "minsPlayed": 3754,
+     "pens": 8,
+     "pensMissed": 0,
+     "hatTricks": 3,
+     "freeKicks": 4,
+     "insideBox": 24,
+     "outsideBox": 5,
+     "left": 10,
+     "right": 28,
+     "head": 3,
+     "other": 0,
+     "npg": 33
+    },
+    "FA Community Shield": {
+     "apps": 1,
+     "goals": 0,
+     "assists": 0,
+     "minsPlayed": 120,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 0,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 0
+    },
+    "FA Cup": {
+     "apps": 27,
+     "goals": 13,
+     "assists": 6,
+     "minsPlayed": 2196,
+     "pens": 3,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 10,
+     "outsideBox": 0,
+     "left": 4,
+     "right": 7,
+     "head": 2,
+     "other": 0,
+     "npg": 10
+    },
+    "International Friendly": {
+     "apps": 56,
+     "goals": 22,
+     "assists": 9,
+     "minsPlayed": 3578,
+     "pens": 1,
+     "pensMissed": 3,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 19,
+     "outsideBox": 1,
+     "left": 7,
+     "right": 9,
+     "head": 6,
+     "other": 0,
+     "npg": 21
+    },
+    "La Liga": {
+     "apps": 292,
+     "goals": 311,
+     "assists": 87,
+     "minsPlayed": 25103,
+     "pens": 61,
+     "pensMissed": 11,
+     "hatTricks": 34,
+     "freeKicks": 20,
+     "insideBox": 207,
+     "outsideBox": 23,
+     "left": 55,
+     "right": 203,
+     "head": 52,
+     "other": 1,
+     "npg": 250
+    },
+    "League Cup": {
+     "apps": 12,
+     "goals": 4,
+     "assists": 1,
+     "minsPlayed": 930,
+     "pens": 2,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 2,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 3,
+     "head": 1,
+     "other": 0,
+     "npg": 2
+    },
+    "Premier League": {
+     "apps": 236,
+     "goals": 103,
+     "assists": 37,
+     "minsPlayed": 17533,
+     "pens": 14,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 12,
+     "insideBox": 66,
+     "outsideBox": 11,
+     "left": 17,
+     "right": 72,
+     "head": 13,
+     "other": 1,
+     "npg": 89
+    },
+    "Primeira Liga": {
+     "apps": 25,
+     "goals": 3,
+     "assists": 4,
+     "minsPlayed": 1069,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 3,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 3
+    },
+    "Saudi King Cup": {
+     "apps": 8,
+     "goals": 3,
+     "assists": 0,
+     "minsPlayed": 769,
+     "pens": 0,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 3,
+     "outsideBox": 0,
+     "left": 2,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 3
+    },
+    "Saudi Pro League": {
+     "apps": 117,
+     "goals": 110,
+     "assists": 18,
+     "minsPlayed": 10100,
+     "pens": 27,
+     "pensMissed": 4,
+     "hatTricks": 7,
+     "freeKicks": 6,
+     "insideBox": 68,
+     "outsideBox": 9,
+     "left": 20,
+     "right": 75,
+     "head": 14,
+     "other": 1,
+     "npg": 83
+    },
+    "Saudi Super Cup": {
+     "apps": 6,
+     "goals": 3,
+     "assists": 2,
+     "minsPlayed": 526,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 2,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 2
+    },
+    "Serie A": {
+     "apps": 98,
+     "goals": 81,
+     "assists": 16,
+     "minsPlayed": 8440,
+     "pens": 23,
+     "pensMissed": 4,
+     "hatTricks": 2,
+     "freeKicks": 1,
+     "insideBox": 54,
+     "outsideBox": 3,
+     "left": 16,
+     "right": 52,
+     "head": 13,
+     "other": 0,
+     "npg": 58
+    },
+    "Supercopa de Espana": {
+     "apps": 7,
+     "goals": 4,
+     "assists": 0,
+     "minsPlayed": 474,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 4,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 3,
+     "head": 1,
+     "other": 0,
+     "npg": 4
+    },
+    "Supercoppa Italiana": {
+     "apps": 3,
+     "goals": 2,
+     "assists": 0,
+     "minsPlayed": 270,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 2,
+     "outsideBox": 0,
+     "left": 1,
+     "right": 0,
+     "head": 1,
+     "other": 0,
+     "npg": 2
+    },
+    "Ta\u00e7a de Portugal": {
+     "apps": 3,
+     "goals": 2,
+     "assists": 0,
+     "minsPlayed": 172,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 1,
+     "left": 2,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 2
+    },
+    "UEFA Cup": {
+     "apps": 2,
+     "goals": 0,
+     "assists": 0,
+     "minsPlayed": 119,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 0,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 0
+    },
+    "UEFA European Championships": {
+     "apps": 30,
+     "goals": 14,
+     "assists": 7,
+     "minsPlayed": 2640,
+     "pens": 3,
+     "pensMissed": 2,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 11,
+     "outsideBox": 0,
+     "left": 2,
+     "right": 7,
+     "head": 5,
+     "other": 0,
+     "npg": 11
+    },
+    "UEFA Nations League": {
+     "apps": 21,
+     "goals": 15,
+     "assists": 2,
+     "minsPlayed": 1717,
+     "pens": 1,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 2,
+     "insideBox": 11,
+     "outsideBox": 1,
+     "left": 1,
+     "right": 14,
+     "head": 0,
+     "other": 0,
+     "npg": 14
+    },
+    "UEFA Super Cup": {
+     "apps": 2,
+     "goals": 2,
+     "assists": 0,
+     "minsPlayed": 97,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 2,
+     "outsideBox": 0,
+     "left": 1,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 2
+    },
+    "World Cup": {
+     "apps": 27,
+     "goals": 11,
+     "assists": 2,
+     "minsPlayed": 2203,
+     "pens": 4,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 5,
+     "outsideBox": 1,
+     "left": 2,
+     "right": 8,
+     "head": 1,
+     "other": 0,
+     "npg": 7
+    },
+    "World Cup Qualifier": {
+     "apps": 52,
+     "goals": 41,
+     "assists": 11,
+     "minsPlayed": 4361,
+     "pens": 5,
+     "pensMissed": 3,
+     "hatTricks": 5,
+     "freeKicks": 3,
+     "insideBox": 29,
+     "outsideBox": 4,
+     "left": 11,
+     "right": 18,
+     "head": 12,
+     "other": 0,
+     "npg": 36
+    }
+   },
+   "leagues": {
+    "La Liga": {
+     "apps": 292,
+     "goals": 311,
+     "assists": 87,
+     "minsPlayed": 25103,
+     "pens": 61,
+     "pensMissed": 11,
+     "hatTricks": 34,
+     "freeKicks": 20,
+     "insideBox": 207,
+     "outsideBox": 23,
+     "left": 55,
+     "right": 203,
+     "head": 52,
+     "other": 1,
+     "npg": 250
+    },
+    "Premier League": {
+     "apps": 236,
+     "goals": 103,
+     "assists": 37,
+     "minsPlayed": 17533,
+     "pens": 14,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 12,
+     "insideBox": 66,
+     "outsideBox": 11,
+     "left": 17,
+     "right": 72,
+     "head": 13,
+     "other": 1,
+     "npg": 89
+    },
+    "Primeira Liga": {
+     "apps": 25,
+     "goals": 3,
+     "assists": 4,
+     "minsPlayed": 1069,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 3,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 3
+    },
+    "Saudi Pro League": {
+     "apps": 117,
+     "goals": 110,
+     "assists": 18,
+     "minsPlayed": 10100,
+     "pens": 27,
+     "pensMissed": 4,
+     "hatTricks": 7,
+     "freeKicks": 6,
+     "insideBox": 68,
+     "outsideBox": 9,
+     "left": 20,
+     "right": 75,
+     "head": 14,
+     "other": 1,
+     "npg": 83
+    },
+    "Serie A": {
+     "apps": 98,
+     "goals": 81,
+     "assists": 16,
+     "minsPlayed": 8440,
+     "pens": 23,
+     "pensMissed": 4,
+     "hatTricks": 2,
+     "freeKicks": 1,
+     "insideBox": 54,
+     "outsideBox": 3,
+     "left": 16,
+     "right": 52,
+     "head": 13,
+     "other": 0,
+     "npg": 58
+    }
+   },
+   "ucl": {
+    "apps": 183,
+    "goals": 140,
+    "assists": 41,
+    "minsPlayed": 15944,
+    "pens": 19,
+    "pensMissed": 3,
+    "hatTricks": 8,
+    "freeKicks": 12,
+    "insideBox": 99,
+    "outsideBox": 10,
+    "left": 20,
+    "right": 95,
+    "head": 25,
+    "other": 0,
+    "npg": 121
+   },
+   "ucl_by_round": {
+    "Group": {
+     "apps": 98,
+     "goals": 73,
+     "assists": 26,
+     "minsPlayed": 8401,
+     "pens": 12,
+     "pensMissed": 2,
+     "hatTricks": 4,
+     "freeKicks": 8,
+     "insideBox": 47,
+     "outsideBox": 6,
+     "left": 11,
+     "right": 54,
+     "head": 8,
+     "other": 0,
+     "npg": 61
+    },
+    "R16": {
+     "apps": 36,
+     "goals": 25,
+     "assists": 9,
+     "minsPlayed": 3035,
+     "pens": 3,
+     "pensMissed": 0,
+     "hatTricks": 1,
+     "freeKicks": 0,
+     "insideBox": 20,
+     "outsideBox": 2,
+     "left": 6,
+     "right": 11,
+     "head": 8,
+     "other": 0,
+     "npg": 22
+    },
+    "QF": {
+     "apps": 22,
+     "goals": 25,
+     "assists": 3,
+     "minsPlayed": 1975,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 2,
+     "freeKicks": 2,
+     "insideBox": 20,
+     "outsideBox": 2,
+     "left": 3,
+     "right": 17,
+     "head": 5,
+     "other": 0,
+     "npg": 24
+    },
+    "SF": {
+     "apps": 21,
+     "goals": 13,
+     "assists": 2,
+     "minsPlayed": 1903,
+     "pens": 2,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 2,
+     "insideBox": 9,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 10,
+     "head": 3,
+     "other": 0,
+     "npg": 11
+    },
+    "F": {
+     "apps": 6,
+     "goals": 4,
+     "assists": 1,
+     "minsPlayed": 630,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 3,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 3,
+     "head": 1,
+     "other": 0,
+     "npg": 3
+    }
+   },
+   "ucl_knockout": {
+    "apps": 85,
+    "goals": 67,
+    "assists": 15,
+    "minsPlayed": 7543,
+    "pens": 7,
+    "pensMissed": 1,
+    "hatTricks": 4,
+    "freeKicks": 4,
+    "insideBox": 52,
+    "outsideBox": 4,
+    "left": 9,
+    "right": 41,
+    "head": 17,
+    "other": 0,
+    "npg": 60
+   },
+   "ucl_qf_sf_f": {
+    "apps": 49,
+    "goals": 42,
+    "assists": 6,
+    "minsPlayed": 4508,
+    "pens": 4,
+    "pensMissed": 1,
+    "hatTricks": 3,
+    "freeKicks": 4,
+    "insideBox": 32,
+    "outsideBox": 2,
+    "left": 3,
+    "right": 30,
+    "head": 9,
+    "other": 0,
+    "npg": 38
+   },
+   "finals": {
+    "apps": 41,
+    "goals": 25,
+    "assists": 2,
+    "minsPlayed": 3702,
+    "pens": 3,
+    "pensMissed": 0,
+    "hatTricks": 1,
+    "freeKicks": 1,
+    "insideBox": 21,
+    "outsideBox": 0,
+    "left": 4,
+    "right": 14,
+    "head": 7,
+    "other": 0,
+    "npg": 22,
+    "won": 25
+   },
+   "finals_list": [
+    {
+     "date": "2004-05-22",
+     "comp": "FA Cup",
+     "team": "Manchester United",
+     "opp": "Millwall",
+     "score": "3-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2004-07-04",
+     "comp": "UEFA European Championships",
+     "team": "Portugal",
+     "opp": "Greece",
+     "score": "0-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2005-05-21",
+     "comp": "FA Cup",
+     "team": "Manchester United",
+     "opp": "Arsenal",
+     "score": "0-0",
+     "pens": "4-5",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2006-02-26",
+     "comp": "League Cup",
+     "team": "Manchester United",
+     "opp": "Wigan Athletic",
+     "score": "4-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2007-05-19",
+     "comp": "FA Cup",
+     "team": "Manchester United",
+     "opp": "Chelsea",
+     "score": "0-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2007-08-05",
+     "comp": "FA Community Shield",
+     "team": "Manchester United",
+     "opp": "Chelsea",
+     "score": "1-1",
+     "pens": "3-0",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2008-05-21",
+     "comp": "Champions League",
+     "team": "Manchester United",
+     "opp": "Chelsea",
+     "score": "1-1",
+     "pens": "6-5",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2008-12-21",
+     "comp": "Club World Cup",
+     "team": "Manchester United",
+     "opp": "Liga de Quito",
+     "score": "1-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2009-03-01",
+     "comp": "League Cup",
+     "team": "Manchester United",
+     "opp": "Tottenham Hotspur",
+     "score": "0-0",
+     "pens": "4-1",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2009-05-27",
+     "comp": "Champions League",
+     "team": "Manchester United",
+     "opp": "Barcelona",
+     "score": "0-2",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2011-04-20",
+     "comp": "Copa del Rey",
+     "team": "Real Madrid",
+     "opp": "Barcelona",
+     "score": "1-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2011-08-14",
+     "comp": "Supercopa de Espana",
+     "team": "Real Madrid",
+     "opp": "Barcelona",
+     "score": "2-2",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": null
+    },
+    {
+     "date": "2011-08-17",
+     "comp": "Supercopa de Espana",
+     "team": "Real Madrid",
+     "opp": "Barcelona",
+     "score": "2-3",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2012-08-23",
+     "comp": "Supercopa de Espana",
+     "team": "Real Madrid",
+     "opp": "Barcelona",
+     "score": "2-3",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2012-08-29",
+     "comp": "Supercopa de Espana",
+     "team": "Real Madrid",
+     "opp": "Barcelona",
+     "score": "2-1",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2013-05-17",
+     "comp": "Copa del Rey",
+     "team": "Real Madrid",
+     "opp": "Atletico Madrid",
+     "score": "1-2",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2014-05-24",
+     "comp": "Champions League",
+     "team": "Real Madrid",
+     "opp": "Atletico Madrid",
+     "score": "4-1",
+     "pens": "",
+     "goals": 1,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2014-08-12",
+     "comp": "UEFA Super Cup",
+     "team": "Real Madrid",
+     "opp": "Sevilla",
+     "score": "2-0",
+     "pens": "",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2014-08-19",
+     "comp": "Supercopa de Espana",
+     "team": "Real Madrid",
+     "opp": "Atletico Madrid",
+     "score": "1-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": null
+    },
+    {
+     "date": "2014-08-22",
+     "comp": "Supercopa de Espana",
+     "team": "Real Madrid",
+     "opp": "Atletico Madrid",
+     "score": "0-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2014-12-20",
+     "comp": "Club World Cup",
+     "team": "Real Madrid",
+     "opp": "San Lorenzo",
+     "score": "2-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2016-05-28",
+     "comp": "Champions League",
+     "team": "Real Madrid",
+     "opp": "Atletico Madrid",
+     "score": "1-1",
+     "pens": "5-3",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2016-07-10",
+     "comp": "UEFA European Championships",
+     "team": "Portugal",
+     "opp": "France",
+     "score": "1-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2016-12-18",
+     "comp": "Club World Cup",
+     "team": "Real Madrid",
+     "opp": "Kashima Antlers",
+     "score": "4-2",
+     "pens": "",
+     "goals": 3,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2017-06-03",
+     "comp": "Champions League",
+     "team": "Real Madrid",
+     "opp": "Juventus",
+     "score": "4-1",
+     "pens": "",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2017-08-08",
+     "comp": "UEFA Super Cup",
+     "team": "Real Madrid",
+     "opp": "Manchester United",
+     "score": "2-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2017-08-13",
+     "comp": "Supercopa de Espana",
+     "team": "Real Madrid",
+     "opp": "Barcelona",
+     "score": "3-1",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2017-12-16",
+     "comp": "Club World Cup",
+     "team": "Real Madrid",
+     "opp": "Gremio",
+     "score": "1-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2018-05-26",
+     "comp": "Champions League",
+     "team": "Real Madrid",
+     "opp": "Liverpool",
+     "score": "3-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2019-01-16",
+     "comp": "Supercoppa Italiana",
+     "team": "Juventus",
+     "opp": "AC Milan",
+     "score": "1-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2019-06-09",
+     "comp": "UEFA Nations League",
+     "team": "Portugal",
+     "opp": "Netherlands",
+     "score": "1-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2019-12-22",
+     "comp": "Supercoppa Italiana",
+     "team": "Juventus",
+     "opp": "Lazio",
+     "score": "1-3",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2020-06-17",
+     "comp": "Coppa Italia",
+     "team": "Juventus",
+     "opp": "Napoli",
+     "score": "0-0",
+     "pens": "2-4",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2021-01-20",
+     "comp": "Supercoppa Italiana",
+     "team": "Juventus",
+     "opp": "Napoli",
+     "score": "2-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2021-05-19",
+     "comp": "Coppa Italia",
+     "team": "Juventus",
+     "opp": "Atalanta",
+     "score": "2-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2023-08-12",
+     "comp": "Arab Club Champions Cup",
+     "team": "Al Nassr",
+     "opp": "Al Hilal",
+     "score": "2-1",
+     "pens": "",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2024-05-31",
+     "comp": "Saudi King Cup",
+     "team": "Al Nassr",
+     "opp": "Al Hilal",
+     "score": "1-1",
+     "pens": "4-5",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2024-08-17",
+     "comp": "Saudi Super Cup",
+     "team": "Al Nassr",
+     "opp": "Al Hilal",
+     "score": "1-4",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2025-06-08",
+     "comp": "UEFA Nations League",
+     "team": "Portugal",
+     "opp": "Spain",
+     "score": "2-2",
+     "pens": "5-3",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2025-08-23",
+     "comp": "Saudi Super Cup",
+     "team": "Al Nassr",
+     "opp": "Al-Ahli",
+     "score": "2-2",
+     "pens": "3-5",
+     "goals": 1,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2026-05-16",
+     "comp": "AFC Champions League 2",
+     "team": "Al Nassr",
+     "opp": "Gamba Osaka",
+     "score": "0-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    }
+   ],
+   "knockout_all": {
+    "apps": 258,
+    "goals": 160,
+    "assists": 35,
+    "minsPlayed": 22003,
+    "pens": 23,
+    "pensMissed": 6,
+    "hatTricks": 9,
+    "freeKicks": 9,
+    "insideBox": 121,
+    "outsideBox": 7,
+    "left": 33,
+    "right": 96,
+    "head": 31,
+    "other": 0,
+    "npg": 137
+   },
+   "by_age": {
+    "17": {
+     "apps": 19,
+     "goals": 5,
+     "assists": 4,
+     "minsPlayed": 936,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 4,
+     "outsideBox": 1,
+     "left": 2,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 5
+    },
+    "18": {
+     "apps": 36,
+     "goals": 1,
+     "assists": 3,
+     "minsPlayed": 1892,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 0,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 1
+    },
+    "19": {
+     "apps": 67,
+     "goals": 17,
+     "assists": 14,
+     "minsPlayed": 4392,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 13,
+     "outsideBox": 4,
+     "left": 5,
+     "right": 6,
+     "head": 6,
+     "other": 0,
+     "npg": 17
+    },
+    "20": {
+     "apps": 60,
+     "goals": 13,
+     "assists": 11,
+     "minsPlayed": 4329,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 9,
+     "outsideBox": 1,
+     "left": 3,
+     "right": 8,
+     "head": 2,
+     "other": 0,
+     "npg": 12
+    },
+    "21": {
+     "apps": 60,
+     "goals": 26,
+     "assists": 12,
+     "minsPlayed": 4981,
+     "pens": 3,
+     "pensMissed": 2,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 19,
+     "outsideBox": 3,
+     "left": 4,
+     "right": 18,
+     "head": 4,
+     "other": 0,
+     "npg": 23
+    },
+    "22": {
+     "apps": 61,
+     "goals": 40,
+     "assists": 9,
+     "minsPlayed": 5100,
+     "pens": 7,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 4,
+     "insideBox": 27,
+     "outsideBox": 2,
+     "left": 8,
+     "right": 24,
+     "head": 8,
+     "other": 0,
+     "npg": 33
+    },
+    "23": {
+     "apps": 59,
+     "goals": 30,
+     "assists": 13,
+     "minsPlayed": 4753,
+     "pens": 5,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 3,
+     "insideBox": 21,
+     "outsideBox": 1,
+     "left": 5,
+     "right": 18,
+     "head": 6,
+     "other": 1,
+     "npg": 25
+    },
+    "24": {
+     "apps": 45,
+     "goals": 28,
+     "assists": 4,
+     "minsPlayed": 3620,
+     "pens": 4,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 6,
+     "insideBox": 14,
+     "outsideBox": 4,
+     "left": 3,
+     "right": 21,
+     "head": 4,
+     "other": 0,
+     "npg": 24
+    },
+    "25": {
+     "apps": 64,
+     "goals": 53,
+     "assists": 19,
+     "minsPlayed": 5516,
+     "pens": 9,
+     "pensMissed": 0,
+     "hatTricks": 5,
+     "freeKicks": 7,
+     "insideBox": 36,
+     "outsideBox": 1,
+     "left": 11,
+     "right": 38,
+     "head": 4,
+     "other": 0,
+     "npg": 44
+    },
+    "26": {
+     "apps": 60,
+     "goals": 59,
+     "assists": 17,
+     "minsPlayed": 5088,
+     "pens": 14,
+     "pensMissed": 0,
+     "hatTricks": 8,
+     "freeKicks": 6,
+     "insideBox": 35,
+     "outsideBox": 4,
+     "left": 10,
+     "right": 44,
+     "head": 5,
+     "other": 0,
+     "npg": 45
+    },
+    "27": {
+     "apps": 70,
+     "goals": 67,
+     "assists": 15,
+     "minsPlayed": 6203,
+     "pens": 9,
+     "pensMissed": 2,
+     "hatTricks": 6,
+     "freeKicks": 5,
+     "insideBox": 44,
+     "outsideBox": 9,
+     "left": 14,
+     "right": 44,
+     "head": 9,
+     "other": 0,
+     "npg": 58
+    },
+    "28": {
+     "apps": 60,
+     "goals": 64,
+     "assists": 16,
+     "minsPlayed": 5020,
+     "pens": 8,
+     "pensMissed": 2,
+     "hatTricks": 6,
+     "freeKicks": 6,
+     "insideBox": 48,
+     "outsideBox": 2,
+     "left": 14,
+     "right": 37,
+     "head": 13,
+     "other": 0,
+     "npg": 56
+    },
+    "29": {
+     "apps": 57,
+     "goals": 60,
+     "assists": 18,
+     "minsPlayed": 4735,
+     "pens": 14,
+     "pensMissed": 1,
+     "hatTricks": 4,
+     "freeKicks": 2,
+     "insideBox": 40,
+     "outsideBox": 4,
+     "left": 9,
+     "right": 43,
+     "head": 7,
+     "other": 1,
+     "npg": 46
+    },
+    "30": {
+     "apps": 56,
+     "goals": 58,
+     "assists": 19,
+     "minsPlayed": 4986,
+     "pens": 11,
+     "pensMissed": 3,
+     "hatTricks": 9,
+     "freeKicks": 3,
+     "insideBox": 40,
+     "outsideBox": 4,
+     "left": 9,
+     "right": 32,
+     "head": 17,
+     "other": 0,
+     "npg": 47
+    },
+    "31": {
+     "apps": 58,
+     "goals": 54,
+     "assists": 14,
+     "minsPlayed": 5086,
+     "pens": 7,
+     "pensMissed": 6,
+     "hatTricks": 6,
+     "freeKicks": 5,
+     "insideBox": 38,
+     "outsideBox": 4,
+     "left": 9,
+     "right": 34,
+     "head": 11,
+     "other": 0,
+     "npg": 47
+    },
+    "32": {
+     "apps": 59,
+     "goals": 53,
+     "assists": 12,
+     "minsPlayed": 5075,
+     "pens": 9,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 2,
+     "insideBox": 39,
+     "outsideBox": 3,
+     "left": 11,
+     "right": 31,
+     "head": 11,
+     "other": 0,
+     "npg": 44
+    },
+    "33": {
+     "apps": 54,
+     "goals": 49,
+     "assists": 13,
+     "minsPlayed": 4514,
+     "pens": 8,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 1,
+     "insideBox": 38,
+     "outsideBox": 2,
+     "left": 11,
+     "right": 27,
+     "head": 11,
+     "other": 0,
+     "npg": 41
+    },
+    "34": {
+     "apps": 50,
+     "goals": 45,
+     "assists": 4,
+     "minsPlayed": 4371,
+     "pens": 11,
+     "pensMissed": 0,
+     "hatTricks": 5,
+     "freeKicks": 1,
+     "insideBox": 31,
+     "outsideBox": 2,
+     "left": 5,
+     "right": 32,
+     "head": 8,
+     "other": 0,
+     "npg": 34
+    },
+    "35": {
+     "apps": 48,
+     "goals": 40,
+     "assists": 8,
+     "minsPlayed": 4083,
+     "pens": 14,
+     "pensMissed": 3,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 19,
+     "outsideBox": 5,
+     "left": 8,
+     "right": 29,
+     "head": 3,
+     "other": 0,
+     "npg": 26
+    },
+    "36": {
+     "apps": 60,
+     "goals": 41,
+     "assists": 5,
+     "minsPlayed": 5070,
+     "pens": 9,
+     "pensMissed": 3,
+     "hatTricks": 2,
+     "freeKicks": 0,
+     "insideBox": 29,
+     "outsideBox": 3,
+     "left": 9,
+     "right": 23,
+     "head": 9,
+     "other": 0,
+     "npg": 32
+    },
+    "37": {
+     "apps": 45,
+     "goals": 17,
+     "assists": 4,
+     "minsPlayed": 3356,
+     "pens": 4,
+     "pensMissed": 0,
+     "hatTricks": 2,
+     "freeKicks": 1,
+     "insideBox": 10,
+     "outsideBox": 2,
+     "left": 3,
+     "right": 12,
+     "head": 2,
+     "other": 0,
+     "npg": 13
+    },
+    "38": {
+     "apps": 56,
+     "goals": 53,
+     "assists": 15,
+     "minsPlayed": 4914,
+     "pens": 14,
+     "pensMissed": 0,
+     "hatTricks": 3,
+     "freeKicks": 3,
+     "insideBox": 30,
+     "outsideBox": 6,
+     "left": 15,
+     "right": 32,
+     "head": 6,
+     "other": 0,
+     "npg": 39
+    },
+    "39": {
+     "apps": 57,
+     "goals": 50,
+     "assists": 8,
+     "minsPlayed": 4972,
+     "pens": 11,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 3,
+     "insideBox": 34,
+     "outsideBox": 2,
+     "left": 11,
+     "right": 33,
+     "head": 6,
+     "other": 0,
+     "npg": 39
+    },
+    "40": {
+     "apps": 47,
+     "goals": 38,
+     "assists": 3,
+     "minsPlayed": 3995,
+     "pens": 9,
+     "pensMissed": 4,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 26,
+     "outsideBox": 3,
+     "left": 4,
+     "right": 30,
+     "head": 3,
+     "other": 1,
+     "npg": 29
+    },
+    "41": {
+     "apps": 35,
+     "goals": 24,
+     "assists": 1,
+     "minsPlayed": 2825,
+     "pens": 3,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 20,
+     "outsideBox": 0,
+     "left": 5,
+     "right": 15,
+     "head": 4,
+     "other": 0,
+     "npg": 21
+    }
+   },
+   "from_age_30": {
+    "apps": 625,
+    "goals": 522,
+    "assists": 106,
+    "minsPlayed": 53247,
+    "pens": 110,
+    "pensMissed": 27,
+    "hatTricks": 37,
+    "freeKicks": 22,
+    "insideBox": 354,
+    "outsideBox": 36,
+    "left": 100,
+    "right": 330,
+    "head": 91,
+    "other": 1,
+    "npg": 412
+   },
+   "before_age_30": {
+    "apps": 718,
+    "goals": 463,
+    "assists": 155,
+    "minsPlayed": 56565,
+    "pens": 74,
+    "pensMissed": 10,
+    "hatTricks": 30,
+    "freeKicks": 43,
+    "insideBox": 310,
+    "outsideBox": 36,
+    "left": 88,
+    "right": 304,
+    "head": 69,
+    "other": 2,
+    "npg": 389
+   },
+   "from_age_33": {
+    "apps": 452,
+    "goals": 357,
+    "assists": 61,
+    "minsPlayed": 38100,
+    "pens": 83,
+    "pensMissed": 16,
+    "hatTricks": 19,
+    "freeKicks": 12,
+    "insideBox": 237,
+    "outsideBox": 25,
+    "left": 71,
+    "right": 233,
+    "head": 52,
+    "other": 1,
+    "npg": 274
+   },
+   "before_age_33": {
+    "apps": 891,
+    "goals": 628,
+    "assists": 200,
+    "minsPlayed": 71712,
+    "pens": 101,
+    "pensMissed": 21,
+    "hatTricks": 48,
+    "freeKicks": 53,
+    "insideBox": 427,
+    "outsideBox": 47,
+    "left": 117,
+    "right": 401,
+    "head": 108,
+    "other": 2,
+    "npg": 527
+   },
+   "from_age_35": {
+    "apps": 348,
+    "goals": 263,
+    "assists": 44,
+    "minsPlayed": 29215,
+    "pens": 64,
+    "pensMissed": 14,
+    "hatTricks": 11,
+    "freeKicks": 10,
+    "insideBox": 168,
+    "outsideBox": 21,
+    "left": 55,
+    "right": 174,
+    "head": 33,
+    "other": 1,
+    "npg": 199
+   },
+   "before_age_35": {
+    "apps": 995,
+    "goals": 722,
+    "assists": 217,
+    "minsPlayed": 80597,
+    "pens": 120,
+    "pensMissed": 23,
+    "hatTricks": 56,
+    "freeKicks": 55,
+    "insideBox": 496,
+    "outsideBox": 51,
+    "left": 133,
+    "right": 460,
+    "head": 127,
+    "other": 2,
+    "npg": 602
+   },
+   "from_age_38": {
+    "apps": 195,
+    "goals": 165,
+    "assists": 27,
+    "minsPlayed": 16706,
+    "pens": 37,
+    "pensMissed": 8,
+    "hatTricks": 7,
+    "freeKicks": 7,
+    "insideBox": 110,
+    "outsideBox": 11,
+    "left": 35,
+    "right": 110,
+    "head": 19,
+    "other": 1,
+    "npg": 128
+   },
+   "before_age_38": {
+    "apps": 1148,
+    "goals": 820,
+    "assists": 234,
+    "minsPlayed": 93106,
+    "pens": 147,
+    "pensMissed": 29,
+    "hatTricks": 60,
+    "freeKicks": 58,
+    "insideBox": 554,
+    "outsideBox": 61,
+    "left": 153,
+    "right": 524,
+    "head": 141,
+    "other": 2,
+    "npg": 673
+   },
+   "from_age_40": {
+    "apps": 82,
+    "goals": 62,
+    "assists": 4,
+    "minsPlayed": 6820,
+    "pens": 12,
+    "pensMissed": 6,
+    "hatTricks": 1,
+    "freeKicks": 1,
+    "insideBox": 46,
+    "outsideBox": 3,
+    "left": 9,
+    "right": 45,
+    "head": 7,
+    "other": 1,
+    "npg": 50
+   },
+   "before_age_40": {
+    "apps": 1261,
+    "goals": 923,
+    "assists": 257,
+    "minsPlayed": 102992,
+    "pens": 172,
+    "pensMissed": 31,
+    "hatTricks": 66,
+    "freeKicks": 64,
+    "insideBox": 618,
+    "outsideBox": 69,
+    "left": 179,
+    "right": 589,
+    "head": 153,
+    "other": 2,
+    "npg": 751
+   },
+   "by_year": {
+    "2002": {
+     "apps": 16,
+     "goals": 5,
+     "assists": 4,
+     "minsPlayed": 850,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 4,
+     "outsideBox": 1,
+     "left": 2,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 5
+    },
+    "2003": {
+     "apps": 36,
+     "goals": 1,
+     "assists": 2,
+     "minsPlayed": 1708,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 0,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 1
+    },
+    "2004": {
+     "apps": 60,
+     "goals": 13,
+     "assists": 14,
+     "minsPlayed": 3905,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 10,
+     "outsideBox": 3,
+     "left": 2,
+     "right": 5,
+     "head": 6,
+     "other": 0,
+     "npg": 13
+    },
+    "2005": {
+     "apps": 64,
+     "goals": 15,
+     "assists": 11,
+     "minsPlayed": 4629,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 11,
+     "outsideBox": 2,
+     "left": 6,
+     "right": 7,
+     "head": 2,
+     "other": 0,
+     "npg": 14
+    },
+    "2006": {
+     "apps": 60,
+     "goals": 25,
+     "assists": 10,
+     "minsPlayed": 4920,
+     "pens": 1,
+     "pensMissed": 2,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 19,
+     "outsideBox": 3,
+     "left": 4,
+     "right": 18,
+     "head": 3,
+     "other": 0,
+     "npg": 24
+    },
+    "2007": {
+     "apps": 60,
+     "goals": 34,
+     "assists": 11,
+     "minsPlayed": 5004,
+     "pens": 8,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 22,
+     "outsideBox": 2,
+     "left": 6,
+     "right": 19,
+     "head": 9,
+     "other": 0,
+     "npg": 26
+    },
+    "2008": {
+     "apps": 58,
+     "goals": 35,
+     "assists": 12,
+     "minsPlayed": 4786,
+     "pens": 4,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 5,
+     "insideBox": 25,
+     "outsideBox": 1,
+     "left": 7,
+     "right": 21,
+     "head": 6,
+     "other": 1,
+     "npg": 31
+    },
+    "2009": {
+     "apps": 49,
+     "goals": 30,
+     "assists": 6,
+     "minsPlayed": 3861,
+     "pens": 6,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 6,
+     "insideBox": 15,
+     "outsideBox": 3,
+     "left": 3,
+     "right": 23,
+     "head": 4,
+     "other": 0,
+     "npg": 24
+    },
+    "2010": {
+     "apps": 59,
+     "goals": 48,
+     "assists": 18,
+     "minsPlayed": 5046,
+     "pens": 8,
+     "pensMissed": 0,
+     "hatTricks": 4,
+     "freeKicks": 7,
+     "insideBox": 31,
+     "outsideBox": 2,
+     "left": 10,
+     "right": 35,
+     "head": 3,
+     "other": 0,
+     "npg": 40
+    },
+    "2011": {
+     "apps": 60,
+     "goals": 60,
+     "assists": 18,
+     "minsPlayed": 5088,
+     "pens": 13,
+     "pensMissed": 0,
+     "hatTricks": 9,
+     "freeKicks": 6,
+     "insideBox": 38,
+     "outsideBox": 3,
+     "left": 10,
+     "right": 44,
+     "head": 6,
+     "other": 0,
+     "npg": 47
+    },
+    "2012": {
+     "apps": 71,
+     "goals": 63,
+     "assists": 13,
+     "minsPlayed": 6310,
+     "pens": 10,
+     "pensMissed": 2,
+     "hatTricks": 4,
+     "freeKicks": 4,
+     "insideBox": 40,
+     "outsideBox": 9,
+     "left": 10,
+     "right": 45,
+     "head": 8,
+     "other": 0,
+     "npg": 53
+    },
+    "2013": {
+     "apps": 59,
+     "goals": 69,
+     "assists": 15,
+     "minsPlayed": 4956,
+     "pens": 9,
+     "pensMissed": 2,
+     "hatTricks": 8,
+     "freeKicks": 6,
+     "insideBox": 52,
+     "outsideBox": 2,
+     "left": 18,
+     "right": 37,
+     "head": 14,
+     "other": 0,
+     "npg": 60
+    },
+    "2014": {
+     "apps": 60,
+     "goals": 61,
+     "assists": 20,
+     "minsPlayed": 5033,
+     "pens": 13,
+     "pensMissed": 1,
+     "hatTricks": 4,
+     "freeKicks": 3,
+     "insideBox": 40,
+     "outsideBox": 5,
+     "left": 9,
+     "right": 46,
+     "head": 5,
+     "other": 1,
+     "npg": 48
+    },
+    "2015": {
+     "apps": 57,
+     "goals": 57,
+     "assists": 17,
+     "minsPlayed": 5005,
+     "pens": 11,
+     "pensMissed": 3,
+     "hatTricks": 8,
+     "freeKicks": 3,
+     "insideBox": 40,
+     "outsideBox": 3,
+     "left": 7,
+     "right": 32,
+     "head": 18,
+     "other": 0,
+     "npg": 46
+    },
+    "2016": {
+     "apps": 57,
+     "goals": 55,
+     "assists": 16,
+     "minsPlayed": 4996,
+     "pens": 7,
+     "pensMissed": 6,
+     "hatTricks": 7,
+     "freeKicks": 4,
+     "insideBox": 39,
+     "outsideBox": 5,
+     "left": 12,
+     "right": 32,
+     "head": 11,
+     "other": 0,
+     "npg": 48
+    },
+    "2017": {
+     "apps": 60,
+     "goals": 53,
+     "assists": 12,
+     "minsPlayed": 5180,
+     "pens": 8,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 3,
+     "insideBox": 39,
+     "outsideBox": 3,
+     "left": 10,
+     "right": 32,
+     "head": 11,
+     "other": 0,
+     "npg": 45
+    },
+    "2018": {
+     "apps": 53,
+     "goals": 49,
+     "assists": 13,
+     "minsPlayed": 4471,
+     "pens": 9,
+     "pensMissed": 1,
+     "hatTricks": 3,
+     "freeKicks": 1,
+     "insideBox": 37,
+     "outsideBox": 2,
+     "left": 12,
+     "right": 27,
+     "head": 10,
+     "other": 0,
+     "npg": 40
+    },
+    "2019": {
+     "apps": 50,
+     "goals": 39,
+     "assists": 4,
+     "minsPlayed": 4309,
+     "pens": 8,
+     "pensMissed": 1,
+     "hatTricks": 4,
+     "freeKicks": 1,
+     "insideBox": 28,
+     "outsideBox": 2,
+     "left": 3,
+     "right": 26,
+     "head": 10,
+     "other": 0,
+     "npg": 31
+    },
+    "2020": {
+     "apps": 45,
+     "goals": 44,
+     "assists": 7,
+     "minsPlayed": 3885,
+     "pens": 17,
+     "pensMissed": 3,
+     "hatTricks": 1,
+     "freeKicks": 2,
+     "insideBox": 21,
+     "outsideBox": 4,
+     "left": 7,
+     "right": 34,
+     "head": 3,
+     "other": 0,
+     "npg": 27
+    },
+    "2021": {
+     "apps": 65,
+     "goals": 47,
+     "assists": 7,
+     "minsPlayed": 5437,
+     "pens": 10,
+     "pensMissed": 2,
+     "hatTricks": 2,
+     "freeKicks": 0,
+     "insideBox": 33,
+     "outsideBox": 4,
+     "left": 12,
+     "right": 26,
+     "head": 9,
+     "other": 0,
+     "npg": 37
+    },
+    "2022": {
+     "apps": 46,
+     "goals": 16,
+     "assists": 4,
+     "minsPlayed": 3457,
+     "pens": 3,
+     "pensMissed": 1,
+     "hatTricks": 2,
+     "freeKicks": 1,
+     "insideBox": 10,
+     "outsideBox": 2,
+     "left": 3,
+     "right": 11,
+     "head": 2,
+     "other": 0,
+     "npg": 13
+    },
+    "2023": {
+     "apps": 59,
+     "goals": 54,
+     "assists": 15,
+     "minsPlayed": 5184,
+     "pens": 15,
+     "pensMissed": 0,
+     "hatTricks": 3,
+     "freeKicks": 3,
+     "insideBox": 30,
+     "outsideBox": 6,
+     "left": 15,
+     "right": 33,
+     "head": 6,
+     "other": 0,
+     "npg": 39
+    },
+    "2024": {
+     "apps": 51,
+     "goals": 43,
+     "assists": 7,
+     "minsPlayed": 4441,
+     "pens": 9,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 3,
+     "insideBox": 30,
+     "outsideBox": 1,
+     "left": 10,
+     "right": 28,
+     "head": 5,
+     "other": 0,
+     "npg": 34
+    },
+    "2025": {
+     "apps": 46,
+     "goals": 41,
+     "assists": 4,
+     "minsPlayed": 3914,
+     "pens": 10,
+     "pensMissed": 4,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 27,
+     "outsideBox": 4,
+     "left": 5,
+     "right": 31,
+     "head": 4,
+     "other": 1,
+     "npg": 31
+    },
+    "2026": {
+     "apps": 42,
+     "goals": 28,
+     "assists": 1,
+     "minsPlayed": 3437,
+     "pens": 4,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 23,
+     "outsideBox": 0,
+     "left": 5,
+     "right": 19,
+     "head": 4,
+     "other": 0,
+     "npg": 24
+    }
+   },
+   "by_season": {
+    "2002-2003": {
+     "apps": 31,
+     "goals": 5,
+     "assists": 4,
+     "minsPlayed": 1392,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 4,
+     "outsideBox": 1,
+     "left": 2,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 5
+    },
+    "2003-2004": {
+     "apps": 53,
+     "goals": 8,
+     "assists": 9,
+     "minsPlayed": 3054,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 5,
+     "outsideBox": 2,
+     "left": 0,
+     "right": 4,
+     "head": 4,
+     "other": 0,
+     "npg": 8
+    },
+    "2004-2005": {
+     "apps": 60,
+     "goals": 16,
+     "assists": 12,
+     "minsPlayed": 4498,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 12,
+     "outsideBox": 3,
+     "left": 7,
+     "right": 6,
+     "head": 3,
+     "other": 0,
+     "npg": 16
+    },
+    "2005-2006": {
+     "apps": 62,
+     "goals": 15,
+     "assists": 10,
+     "minsPlayed": 4543,
+     "pens": 2,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 11,
+     "outsideBox": 1,
+     "left": 4,
+     "right": 9,
+     "head": 2,
+     "other": 0,
+     "npg": 13
+    },
+    "2006-2007": {
+     "apps": 61,
+     "goals": 28,
+     "assists": 16,
+     "minsPlayed": 5006,
+     "pens": 5,
+     "pensMissed": 2,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 19,
+     "outsideBox": 3,
+     "left": 2,
+     "right": 21,
+     "head": 5,
+     "other": 0,
+     "npg": 23
+    },
+    "2007-2008": {
+     "apps": 61,
+     "goals": 46,
+     "assists": 8,
+     "minsPlayed": 5190,
+     "pens": 6,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 5,
+     "insideBox": 34,
+     "outsideBox": 1,
+     "left": 9,
+     "right": 27,
+     "head": 9,
+     "other": 1,
+     "npg": 40
+    },
+    "2008-2009": {
+     "apps": 60,
+     "goals": 27,
+     "assists": 9,
+     "minsPlayed": 4895,
+     "pens": 6,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 5,
+     "insideBox": 13,
+     "outsideBox": 3,
+     "left": 4,
+     "right": 17,
+     "head": 6,
+     "other": 0,
+     "npg": 21
+    },
+    "2009-2010": {
+     "apps": 46,
+     "goals": 34,
+     "assists": 11,
+     "minsPlayed": 3740,
+     "pens": 4,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 6,
+     "insideBox": 22,
+     "outsideBox": 2,
+     "left": 6,
+     "right": 25,
+     "head": 3,
+     "other": 0,
+     "npg": 30
+    },
+    "2010-2011": {
+     "apps": 59,
+     "goals": 56,
+     "assists": 17,
+     "minsPlayed": 4983,
+     "pens": 9,
+     "pensMissed": 0,
+     "hatTricks": 7,
+     "freeKicks": 6,
+     "insideBox": 38,
+     "outsideBox": 3,
+     "left": 10,
+     "right": 41,
+     "head": 5,
+     "other": 0,
+     "npg": 47
+    },
+    "2011-2012": {
+     "apps": 69,
+     "goals": 69,
+     "assists": 18,
+     "minsPlayed": 6116,
+     "pens": 15,
+     "pensMissed": 2,
+     "hatTricks": 7,
+     "freeKicks": 7,
+     "insideBox": 41,
+     "outsideBox": 6,
+     "left": 11,
+     "right": 50,
+     "head": 8,
+     "other": 0,
+     "npg": 54
+    },
+    "2012-2013": {
+     "apps": 64,
+     "goals": 59,
+     "assists": 14,
+     "minsPlayed": 5342,
+     "pens": 7,
+     "pensMissed": 1,
+     "hatTricks": 5,
+     "freeKicks": 4,
+     "insideBox": 42,
+     "outsideBox": 6,
+     "left": 17,
+     "right": 33,
+     "head": 9,
+     "other": 0,
+     "npg": 52
+    },
+    "2013-2014": {
+     "apps": 57,
+     "goals": 62,
+     "assists": 15,
+     "minsPlayed": 4902,
+     "pens": 10,
+     "pensMissed": 1,
+     "hatTricks": 5,
+     "freeKicks": 6,
+     "insideBox": 43,
+     "outsideBox": 3,
+     "left": 10,
+     "right": 44,
+     "head": 8,
+     "other": 0,
+     "npg": 52
+    },
+    "2014-2015": {
+     "apps": 60,
+     "goals": 66,
+     "assists": 21,
+     "minsPlayed": 5122,
+     "pens": 14,
+     "pensMissed": 3,
+     "hatTricks": 9,
+     "freeKicks": 2,
+     "insideBox": 46,
+     "outsideBox": 4,
+     "left": 8,
+     "right": 39,
+     "head": 18,
+     "other": 1,
+     "npg": 52
+    },
+    "2015-2016": {
+     "apps": 61,
+     "goals": 57,
+     "assists": 17,
+     "minsPlayed": 5362,
+     "pens": 8,
+     "pensMissed": 5,
+     "hatTricks": 6,
+     "freeKicks": 3,
+     "insideBox": 42,
+     "outsideBox": 4,
+     "left": 11,
+     "right": 33,
+     "head": 13,
+     "other": 0,
+     "npg": 49
+    },
+    "2016-2017": {
+     "apps": 56,
+     "goals": 56,
+     "assists": 13,
+     "minsPlayed": 5001,
+     "pens": 9,
+     "pensMissed": 3,
+     "hatTricks": 6,
+     "freeKicks": 4,
+     "insideBox": 39,
+     "outsideBox": 4,
+     "left": 10,
+     "right": 34,
+     "head": 12,
+     "other": 0,
+     "npg": 47
+    },
+    "2017-2018": {
+     "apps": 55,
+     "goals": 54,
+     "assists": 11,
+     "minsPlayed": 4578,
+     "pens": 9,
+     "pensMissed": 2,
+     "hatTricks": 4,
+     "freeKicks": 2,
+     "insideBox": 41,
+     "outsideBox": 2,
+     "left": 13,
+     "right": 31,
+     "head": 10,
+     "other": 0,
+     "npg": 45
+    },
+    "2018-2019": {
+     "apps": 47,
+     "goals": 31,
+     "assists": 10,
+     "minsPlayed": 3947,
+     "pens": 6,
+     "pensMissed": 1,
+     "hatTricks": 2,
+     "freeKicks": 1,
+     "insideBox": 23,
+     "outsideBox": 1,
+     "left": 5,
+     "right": 17,
+     "head": 9,
+     "other": 0,
+     "npg": 25
+    },
+    "2019-2020": {
+     "apps": 52,
+     "goals": 48,
+     "assists": 5,
+     "minsPlayed": 4620,
+     "pens": 17,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 1,
+     "insideBox": 26,
+     "outsideBox": 4,
+     "left": 7,
+     "right": 39,
+     "head": 2,
+     "other": 0,
+     "npg": 31
+    },
+    "2020-2021": {
+     "apps": 59,
+     "goals": 46,
+     "assists": 7,
+     "minsPlayed": 5011,
+     "pens": 12,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 29,
+     "outsideBox": 4,
+     "left": 12,
+     "right": 26,
+     "head": 8,
+     "other": 0,
+     "npg": 34
+    },
+    "2021-2022": {
+     "apps": 49,
+     "goals": 32,
+     "assists": 4,
+     "minsPlayed": 4015,
+     "pens": 5,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 1,
+     "insideBox": 22,
+     "outsideBox": 4,
+     "left": 3,
+     "right": 23,
+     "head": 6,
+     "other": 0,
+     "npg": 27
+    },
+    "2022-2023": {
+     "apps": 46,
+     "goals": 23,
+     "assists": 5,
+     "minsPlayed": 3542,
+     "pens": 8,
+     "pensMissed": 0,
+     "hatTricks": 2,
+     "freeKicks": 2,
+     "insideBox": 11,
+     "outsideBox": 2,
+     "left": 7,
+     "right": 15,
+     "head": 1,
+     "other": 0,
+     "npg": 15
+    },
+    "2023-2024": {
+     "apps": 63,
+     "goals": 57,
+     "assists": 16,
+     "minsPlayed": 5545,
+     "pens": 12,
+     "pensMissed": 1,
+     "hatTricks": 4,
+     "freeKicks": 3,
+     "insideBox": 37,
+     "outsideBox": 5,
+     "left": 16,
+     "right": 33,
+     "head": 8,
+     "other": 0,
+     "npg": 45
+    },
+    "2024-2025": {
+     "apps": 50,
+     "goals": 43,
+     "assists": 5,
+     "minsPlayed": 4294,
+     "pens": 11,
+     "pensMissed": 3,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 29,
+     "outsideBox": 2,
+     "left": 6,
+     "right": 32,
+     "head": 5,
+     "other": 0,
+     "npg": 32
+    },
+    "2025-2026": {
+     "apps": 49,
+     "goals": 38,
+     "assists": 4,
+     "minsPlayed": 4084,
+     "pens": 9,
+     "pensMissed": 3,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 26,
+     "outsideBox": 2,
+     "left": 6,
+     "right": 29,
+     "head": 2,
+     "other": 1,
+     "npg": 29
+    },
+    "2026-2027": {
+     "apps": 13,
+     "goals": 9,
+     "assists": 0,
+     "minsPlayed": 1030,
+     "pens": 0,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 0,
+     "insideBox": 9,
+     "outsideBox": 0,
+     "left": 2,
+     "right": 4,
+     "head": 3,
+     "other": 0,
+     "npg": 9
+    }
+   },
+   "hat_trick_matches": 67,
+   "perfect_hat_tricks": 11,
+   "seasons_30plus": [
+    "2007-2008",
+    "2009-2010",
+    "2010-2011",
+    "2011-2012",
+    "2012-2013",
+    "2013-2014",
+    "2014-2015",
+    "2015-2016",
+    "2016-2017",
+    "2017-2018",
+    "2018-2019",
+    "2019-2020",
+    "2020-2021",
+    "2021-2022",
+    "2023-2024",
+    "2024-2025",
+    "2025-2026"
+   ],
+   "years_40plus": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2020,
+    2021,
+    2023,
+    2024,
+    2025
+   ],
+   "distinct_opponents_scored_against": 211,
+   "distinct_competitions_scored_in": 29,
+   "clubs": {
+    "Al Nassr": {
+     "apps": 160,
+     "goals": 138,
+     "assists": 23,
+     "minsPlayed": 13863,
+     "pens": 32,
+     "pensMissed": 5,
+     "hatTricks": 7,
+     "freeKicks": 6,
+     "insideBox": 90,
+     "outsideBox": 10,
+     "left": 28,
+     "right": 90,
+     "head": 19,
+     "other": 1,
+     "npg": 106
+    },
+    "Juventus": {
+     "apps": 134,
+     "goals": 101,
+     "assists": 20,
+     "minsPlayed": 11507,
+     "pens": 29,
+     "pensMissed": 5,
+     "hatTricks": 3,
+     "freeKicks": 1,
+     "insideBox": 65,
+     "outsideBox": 6,
+     "left": 21,
+     "right": 62,
+     "head": 18,
+     "other": 0,
+     "npg": 72
+    },
+    "Manchester United": {
+     "apps": 346,
+     "goals": 145,
+     "assists": 57,
+     "minsPlayed": 26606,
+     "pens": 21,
+     "pensMissed": 4,
+     "hatTricks": 3,
+     "freeKicks": 14,
+     "insideBox": 96,
+     "outsideBox": 14,
+     "left": 23,
+     "right": 97,
+     "head": 24,
+     "other": 1,
+     "npg": 124
+    },
+    "Real Madrid": {
+     "apps": 438,
+     "goals": 450,
+     "assists": 120,
+     "minsPlayed": 37824,
+     "pens": 79,
+     "pensMissed": 13,
+     "hatTricks": 44,
+     "freeKicks": 33,
+     "insideBox": 309,
+     "outsideBox": 29,
+     "left": 81,
+     "right": 298,
+     "head": 70,
+     "other": 1,
+     "npg": 371
+    },
+    "Sporting CP": {
+     "apps": 31,
+     "goals": 5,
+     "assists": 4,
+     "minsPlayed": 1392,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 4,
+     "outsideBox": 1,
+     "left": 2,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 5
+    }
+   },
+   "decisive": {
+    "matches": 270,
+    "per100": 20.1,
+    "points_added": 532,
+    "knockout": 54,
+    "ucl_knockout": 22
+   },
+   "age_curve_monthly": [
+    [
+     17.52,
+     0
+    ],
+    [
+     17.646,
+     0
+    ],
+    [
+     17.72,
+     3
+    ],
+    [
+     17.816,
+     4
+    ],
+    [
+     17.876,
+     5
+    ],
+    [
+     17.969,
+     5
+    ],
+    [
+     17.999,
+     5
+    ],
+    [
+     18.119,
+     5
+    ],
+    [
+     18.215,
+     5
+    ],
+    [
+     18.295,
+     5
+    ],
+    [
+     18.317,
+     5
+    ],
+    [
+     18.566,
+     5
+    ],
+    [
+     18.623,
+     5
+    ],
+    [
+     18.716,
+     5
+    ],
+    [
+     18.815,
+     6
+    ],
+    [
+     18.886,
+     6
+    ],
+    [
+     18.985,
+     6
+    ],
+    [
+     19.061,
+     7
+    ],
+    [
+     19.149,
+     8
+    ],
+    [
+     19.226,
+     9
+    ],
+    [
+     19.31,
+     11
+    ],
+    [
+     19.398,
+     13
+    ],
+    [
+     19.409,
+     13
+    ],
+    [
+     19.565,
+     13
+    ],
+    [
+     19.636,
+     15
+    ],
+    [
+     19.732,
+     17
+    ],
+    [
+     19.809,
+     18
+    ],
+    [
+     19.894,
+     19
+    ],
+    [
+     19.981,
+     21
+    ],
+    [
+     20.058,
+     24
+    ],
+    [
+     20.146,
+     26
+    ],
+    [
+     20.214,
+     27
+    ],
+    [
+     20.288,
+     27
+    ],
+    [
+     20.337,
+     29
+    ],
+    [
+     20.559,
+     30
+    ],
+    [
+     20.641,
+     30
+    ],
+    [
+     20.729,
+     31
+    ],
+    [
+     20.816,
+     32
+    ],
+    [
+     20.901,
+     34
+    ],
+    [
+     20.94,
+     34
+    ],
+    [
+     21.057,
+     39
+    ],
+    [
+     21.142,
+     42
+    ],
+    [
+     21.227,
+     42
+    ],
+    [
+     21.304,
+     43
+    ],
+    [
+     21.383,
+     44
+    ],
+    [
+     21.419,
+     44
+    ],
+    [
+     21.553,
+     45
+    ],
+    [
+     21.638,
+     46
+    ],
+    [
+     21.725,
+     49
+    ],
+    [
+     21.813,
+     52
+    ],
+    [
+     21.898,
+     59
+    ],
+    [
+     21.985,
+     61
+    ],
+    [
+     22.059,
+     63
+    ],
+    [
+     22.147,
+     67
+    ],
+    [
+     22.224,
+     71
+    ],
+    [
+     22.281,
+     72
+    ],
+    [
+     22.541,
+     73
+    ],
+    [
+     22.645,
+     76
+    ],
+    [
+     22.722,
+     81
+    ],
+    [
+     22.807,
+     86
+    ],
+    [
+     22.894,
+     93
+    ],
+    [
+     22.982,
+     102
+    ],
+    [
+     23.048,
+     104
+    ],
+    [
+     23.144,
+     110
+    ],
+    [
+     23.228,
+     113
+    ],
+    [
+     23.316,
+     117
+    ],
+    [
+     23.368,
+     118
+    ],
+    [
+     23.65,
+     120
+    ],
+    [
+     23.729,
+     123
+    ],
+    [
+     23.817,
+     127
+    ],
+    [
+     23.896,
+     128
+    ],
+    [
+     23.987,
+     132
+    ],
+    [
+     24.053,
+     135
+    ],
+    [
+     24.148,
+     137
+    ],
+    [
+     24.228,
+     142
+    ],
+    [
+     24.304,
+     145
+    ],
+    [
+     24.332,
+     145
+    ],
+    [
+     24.562,
+     146
+    ],
+    [
+     24.649,
+     154
+    ],
+    [
+     24.677,
+     154
+    ],
+    [
+     24.814,
+     154
+    ],
+    [
+     24.868,
+     158
+    ],
+    [
+     24.967,
+     160
+    ],
+    [
+     25.06,
+     164
+    ],
+    [
+     25.139,
+     169
+    ],
+    [
+     25.213,
+     172
+    ],
+    [
+     25.296,
+     178
+    ],
+    [
+     25.394,
+     179
+    ],
+    [
+     25.561,
+     179
+    ],
+    [
+     25.643,
+     180
+    ],
+    [
+     25.731,
+     193
+    ],
+    [
+     25.813,
+     199
+    ],
+    [
+     25.876,
+     206
+    ],
+    [
+     25.983,
+     213
+    ],
+    [
+     26.057,
+     216
+    ],
+    [
+     26.114,
+     219
+    ],
+    [
+     26.221,
+     224
+    ],
+    [
+     26.287,
+     235
+    ],
+    [
+     26.325,
+     235
+    ],
+    [
+     26.558,
+     240
+    ],
+    [
+     26.64,
+     247
+    ],
+    [
+     26.727,
+     251
+    ],
+    [
+     26.804,
+     261
+    ],
+    [
+     26.862,
+     266
+    ],
+    [
+     26.977,
+     272
+    ],
+    [
+     27.064,
+     278
+    ],
+    [
+     27.149,
+     288
+    ],
+    [
+     27.228,
+     298
+    ],
+    [
+     27.302,
+     301
+    ],
+    [
+     27.39,
+     304
+    ],
+    [
+     27.563,
+     307
+    ],
+    [
+     27.65,
+     315
+    ],
+    [
+     27.727,
+     324
+    ],
+    [
+     27.801,
+     325
+    ],
+    [
+     27.877,
+     329
+    ],
+    [
+     27.984,
+     339
+    ],
+    [
+     28.058,
+     346
+    ],
+    [
+     28.146,
+     351
+    ],
+    [
+     28.231,
+     358
+    ],
+    [
+     28.277,
+     362
+    ],
+    [
+     28.343,
+     363
+    ],
+    [
+     28.554,
+     364
+    ],
+    [
+     28.644,
+     376
+    ],
+    [
+     28.732,
+     385
+    ],
+    [
+     28.797,
+     396
+    ],
+    [
+     28.877,
+     398
+    ],
+    [
+     28.978,
+     403
+    ],
+    [
+     29.057,
+     407
+    ],
+    [
+     29.142,
+     417
+    ],
+    [
+     29.227,
+     422
+    ],
+    [
+     29.296,
+     424
+    ],
+    [
+     29.386,
+     425
+    ],
+    [
+     29.55,
+     428
+    ],
+    [
+     29.641,
+     438
+    ],
+    [
+     29.717,
+     447
+    ],
+    [
+     29.813,
+     453
+    ],
+    [
+     29.871,
+     459
+    ],
+    [
+     29.966,
+     463
+    ],
+    [
+     30.046,
+     465
+    ],
+    [
+     30.142,
+     469
+    ],
+    [
+     30.226,
+     477
+    ],
+    [
+     30.292,
+     488
+    ],
+    [
+     30.35,
+     491
+    ],
+    [
+     30.561,
+     491
+    ],
+    [
+     30.648,
+     501
+    ],
+    [
+     30.733,
+     504
+    ],
+    [
+     30.812,
+     507
+    ],
+    [
+     30.897,
+     516
+    ],
+    [
+     30.985,
+     521
+    ],
+    [
+     31.059,
+     525
+    ],
+    [
+     31.144,
+     533
+    ],
+    [
+     31.204,
+     539
+    ],
+    [
+     31.308,
+     543
+    ],
+    [
+     31.398,
+     547
+    ],
+    [
+     31.426,
+     548
+    ],
+    [
+     31.642,
+     551
+    ],
+    [
+     31.73,
+     560
+    ],
+    [
+     31.806,
+     567
+    ],
+    [
+     31.866,
+     571
+    ],
+    [
+     31.981,
+     575
+    ],
+    [
+     32.058,
+     578
+    ],
+    [
+     32.14,
+     584
+    ],
+    [
+     32.228,
+     590
+    ],
+    [
+     32.288,
+     598
+    ],
+    [
+     32.392,
+     604
+    ],
+    [
+     32.567,
+     608
+    ],
+    [
+     32.639,
+     612
+    ],
+    [
+     32.729,
+     615
+    ],
+    [
+     32.803,
+     619
+    ],
+    [
+     32.88,
+     624
+    ],
+    [
+     32.975,
+     628
+    ],
+    [
+     33.052,
+     636
+    ],
+    [
+     33.134,
+     647
+    ],
+    [
+     33.216,
+     652
+    ],
+    [
+     33.301,
+     654
+    ],
+    [
+     33.397,
+     658
+    ],
+    [
+     33.55,
+     658
+    ],
+    [
+     33.646,
+     661
+    ],
+    [
+     33.723,
+     665
+    ],
+    [
+     33.808,
+     668
+    ],
+    [
+     33.895,
+     673
+    ],
+    [
+     33.983,
+     675
+    ],
+    [
+     34.051,
+     679
+    ],
+    [
+     34.131,
+     682
+    ],
+    [
+     34.221,
+     685
+    ],
+    [
+     34.281,
+     686
+    ],
+    [
+     34.339,
+     689
+    ],
+    [
+     34.566,
+     690
+    ],
+    [
+     34.643,
+     697
+    ],
+    [
+     34.73,
+     702
+    ],
+    [
+     34.804,
+     706
+    ],
+    [
+     34.875,
+     712
+    ],
+    [
+     34.971,
+     720
+    ],
+    [
+     35.056,
+     725
+    ],
+    [
+     35.086,
+     725
+    ],
+    [
+     35.398,
+     728
+    ],
+    [
+     35.478,
+     735
+    ],
+    [
+     35.502,
+     737
+    ],
+    [
+     35.642,
+     742
+    ],
+    [
+     35.68,
+     742
+    ],
+    [
+     35.801,
+     749
+    ],
+    [
+     35.878,
+     756
+    ],
+    [
+     35.984,
+     760
+    ],
+    [
+     36.061,
+     766
+    ],
+    [
+     36.146,
+     771
+    ],
+    [
+     36.217,
+     773
+    ],
+    [
+     36.283,
+     777
+    ],
+    [
+     36.39,
+     783
+    ],
+    [
+     36.543,
+     783
+    ],
+    [
+     36.647,
+     790
+    ],
+    [
+     36.732,
+     796
+    ],
+    [
+     36.811,
+     799
+    ],
+    [
+     36.899,
+     803
+    ],
+    [
+     36.962,
+     803
+    ],
+    [
+     37.058,
+     804
+    ],
+    [
+     37.142,
+     807
+    ],
+    [
+     37.225,
+     812
+    ],
+    [
+     37.249,
+     813
+    ],
+    [
+     37.34,
+     815
+    ],
+    [
+     37.556,
+     815
+    ],
+    [
+     37.641,
+     816
+    ],
+    [
+     37.731,
+     818
+    ],
+    [
+     37.81,
+     819
+    ],
+    [
+     37.843,
+     819
+    ],
+    [
+     37.972,
+     819
+    ],
+    [
+     38.054,
+     827
+    ],
+    [
+     38.134,
+     832
+    ],
+    [
+     38.224,
+     835
+    ],
+    [
+     38.303,
+     837
+    ],
+    [
+     38.369,
+     838
+    ],
+    [
+     38.481,
+     839
+    ],
+    [
+     38.561,
+     849
+    ],
+    [
+     38.646,
+     854
+    ],
+    [
+     38.733,
+     862
+    ],
+    [
+     38.807,
+     867
+    ],
+    [
+     38.897,
+     873
+    ],
+    [
+     39.054,
+     877
+    ],
+    [
+     39.147,
+     882
+    ],
+    [
+     39.223,
+     885
+    ],
+    [
+     39.316,
+     893
+    ],
+    [
+     39.388,
+     895
+    ],
+    [
+     39.412,
+     895
+    ],
+    [
+     39.557,
+     899
+    ],
+    [
+     39.65,
+     904
+    ],
+    [
+     39.73,
+     907
+    ],
+    [
+     39.815,
+     915
+    ],
+    [
+     39.834,
+     916
+    ],
+    [
+     39.984,
+     921
+    ],
+    [
+     40.064,
+     925
+    ],
+    [
+     40.127,
+     929
+    ],
+    [
+     40.231,
+     934
+    ],
+    [
+     40.302,
+     936
+    ],
+    [
+     40.338,
+     938
+    ],
+    [
+     40.562,
+     940
+    ],
+    [
+     40.639,
+     946
+    ],
+    [
+     40.726,
+     950
+    ],
+    [
+     40.798,
+     954
+    ],
+    [
+     40.899,
+     957
+    ],
+    [
+     40.984,
+     961
+    ],
+    [
+     41.063,
+     965
+    ],
+    [
+     41.227,
+     970
+    ],
+    [
+     41.288,
+     973
+    ],
+    [
+     41.389,
+     975
+    ],
+    [
+     41.414,
+     976
+    ],
+    [
+     41.559,
+     978
+    ],
+    [
+     41.633,
+     979
+    ],
+    [
+     41.728,
+     985
+    ]
+   ],
+   "tournaments": [
+    {
+     "comp": "UEFA European Championships",
+     "year": 2004,
+     "apps": 6,
+     "goals": 2,
+     "assists": 2
+    },
+    {
+     "comp": "World Cup",
+     "year": 2006,
+     "apps": 6,
+     "goals": 1,
+     "assists": 0
+    },
+    {
+     "comp": "UEFA European Championships",
+     "year": 2008,
+     "apps": 3,
+     "goals": 1,
+     "assists": 1
+    },
+    {
+     "comp": "World Cup",
+     "year": 2010,
+     "apps": 4,
+     "goals": 1,
+     "assists": 1
+    },
+    {
+     "comp": "UEFA European Championships",
+     "year": 2012,
+     "apps": 5,
+     "goals": 3,
+     "assists": 0
+    },
+    {
+     "comp": "World Cup",
+     "year": 2014,
+     "apps": 3,
+     "goals": 1,
+     "assists": 1
+    },
+    {
+     "comp": "UEFA European Championships",
+     "year": 2016,
+     "apps": 7,
+     "goals": 3,
+     "assists": 2
+    },
+    {
+     "comp": "Confederations Cup",
+     "year": 2017,
+     "apps": 4,
+     "goals": 2,
+     "assists": 1
+    },
+    {
+     "comp": "World Cup",
+     "year": 2018,
+     "apps": 4,
+     "goals": 4,
+     "assists": 0
+    },
+    {
+     "comp": "UEFA European Championships",
+     "year": 2021,
+     "apps": 4,
+     "goals": 5,
+     "assists": 1
+    },
+    {
+     "comp": "World Cup",
+     "year": 2022,
+     "apps": 5,
+     "goals": 1,
+     "assists": 0
+    },
+    {
+     "comp": "UEFA European Championships",
+     "year": 2024,
+     "apps": 5,
+     "goals": 0,
+     "assists": 1
+    },
+    {
+     "comp": "World Cup",
+     "year": 2026,
+     "apps": 5,
+     "goals": 3,
+     "assists": 0
+    }
+   ]
+  },
+  "messi": {
+   "birth_date": "1987-06-24",
+   "last_match": "2026-10-28",
+   "first_match": "2004-10-16",
+   "career": {
+    "apps": 1183,
+    "goals": 936,
+    "assists": 427,
+    "minsPlayed": 97321,
+    "pens": 115,
+    "pensMissed": 35,
+    "hatTricks": 62,
+    "freeKicks": 76,
+    "insideBox": 636,
+    "outsideBox": 109,
+    "left": 787,
+    "right": 113,
+    "head": 32,
+    "other": 4,
+    "npg": 821
+   },
+   "club": {
+    "apps": 975,
+    "goals": 810,
+    "assists": 360,
+    "minsPlayed": 80119,
+    "pens": 89,
+    "pensMissed": 28,
+    "hatTricks": 51,
+    "freeKicks": 64,
+    "insideBox": 563,
+    "outsideBox": 94,
+    "left": 675,
+    "right": 101,
+    "head": 30,
+    "other": 4,
+    "npg": 721
+   },
+   "intl": {
+    "apps": 208,
+    "goals": 126,
+    "assists": 67,
+    "minsPlayed": 17202,
+    "pens": 26,
+    "pensMissed": 7,
+    "hatTricks": 11,
+    "freeKicks": 12,
+    "insideBox": 73,
+    "outsideBox": 15,
+    "left": 112,
+    "right": 12,
+    "head": 2,
+    "other": 0,
+    "npg": 100
+   },
+   "intl_competitive": {
+    "apps": 146,
+    "goals": 71,
+    "assists": 45,
+    "minsPlayed": 12452,
+    "pens": 14,
+    "pensMissed": 4,
+    "hatTricks": 5,
+    "freeKicks": 10,
+    "insideBox": 38,
+    "outsideBox": 9,
+    "left": 62,
+    "right": 8,
+    "head": 1,
+    "other": 0,
+    "npg": 57
+   },
+   "intl_friendly": {
+    "apps": 62,
+    "goals": 55,
+    "assists": 22,
+    "minsPlayed": 4750,
+    "pens": 12,
+    "pensMissed": 3,
+    "hatTricks": 6,
+    "freeKicks": 2,
+    "insideBox": 35,
+    "outsideBox": 6,
+    "left": 50,
+    "right": 4,
+    "head": 1,
+    "other": 0,
+    "npg": 43
+   },
+   "intl_tournaments": {
+    "apps": 74,
+    "goals": 35,
+    "assists": 32,
+    "minsPlayed": 6474,
+    "pens": 7,
+    "pensMissed": 4,
+    "hatTricks": 2,
+    "freeKicks": 6,
+    "insideBox": 17,
+    "outsideBox": 5,
+    "left": 31,
+    "right": 4,
+    "head": 0,
+    "other": 0,
+    "npg": 28
+   },
+   "intl_tournament_knockout": {
+    "apps": 37,
+    "goals": 13,
+    "assists": 24,
+    "minsPlayed": 3528,
+    "pens": 3,
+    "pensMissed": 1,
+    "hatTricks": 0,
+    "freeKicks": 2,
+    "insideBox": 8,
+    "outsideBox": 0,
+    "left": 12,
+    "right": 1,
+    "head": 0,
+    "other": 0,
+    "npg": 10
+   },
+   "by_competition": {
+    "CONCACAF Champions Cup": {
+     "apps": 12,
+     "goals": 8,
+     "assists": 2,
+     "minsPlayed": 966,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 6,
+     "outsideBox": 1,
+     "left": 7,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 7
+    },
+    "Campeones Cup": {
+     "apps": 1,
+     "goals": 1,
+     "assists": 1,
+     "minsPlayed": 90,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 0,
+     "head": 1,
+     "other": 0,
+     "npg": 1
+    },
+    "Champions League": {
+     "apps": 163,
+     "goals": 129,
+     "assists": 40,
+     "minsPlayed": 13577,
+     "pens": 18,
+     "pensMissed": 5,
+     "hatTricks": 8,
+     "freeKicks": 5,
+     "insideBox": 88,
+     "outsideBox": 18,
+     "left": 107,
+     "right": 18,
+     "head": 4,
+     "other": 0,
+     "npg": 111
+    },
+    "Club World Cup": {
+     "apps": 9,
+     "goals": 6,
+     "assists": 1,
+     "minsPlayed": 787,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 5,
+     "outsideBox": 0,
+     "left": 5,
+     "right": 0,
+     "head": 0,
+     "other": 1,
+     "npg": 6
+    },
+    "Copa America": {
+     "apps": 39,
+     "goals": 14,
+     "assists": 18,
+     "minsPlayed": 3331,
+     "pens": 3,
+     "pensMissed": 0,
+     "hatTricks": 1,
+     "freeKicks": 4,
+     "insideBox": 6,
+     "outsideBox": 1,
+     "left": 14,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 11
+    },
+    "Copa del Rey": {
+     "apps": 80,
+     "goals": 56,
+     "assists": 33,
+     "minsPlayed": 6520,
+     "pens": 3,
+     "pensMissed": 6,
+     "hatTricks": 3,
+     "freeKicks": 3,
+     "insideBox": 45,
+     "outsideBox": 5,
+     "left": 49,
+     "right": 3,
+     "head": 3,
+     "other": 1,
+     "npg": 53
+    },
+    "Coupe de France": {
+     "apps": 2,
+     "goals": 0,
+     "assists": 0,
+     "minsPlayed": 180,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 0,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 0
+    },
+    "Finalissima": {
+     "apps": 1,
+     "goals": 0,
+     "assists": 2,
+     "minsPlayed": 90,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 0,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 0
+    },
+    "International Friendly": {
+     "apps": 62,
+     "goals": 55,
+     "assists": 22,
+     "minsPlayed": 4750,
+     "pens": 12,
+     "pensMissed": 3,
+     "hatTricks": 6,
+     "freeKicks": 2,
+     "insideBox": 35,
+     "outsideBox": 6,
+     "left": 50,
+     "right": 4,
+     "head": 1,
+     "other": 0,
+     "npg": 43
+    },
+    "La Liga": {
+     "apps": 520,
+     "goals": 474,
+     "assists": 192,
+     "minsPlayed": 42157,
+     "pens": 60,
+     "pensMissed": 14,
+     "hatTricks": 36,
+     "freeKicks": 39,
+     "insideBox": 327,
+     "outsideBox": 48,
+     "left": 394,
+     "right": 63,
+     "head": 16,
+     "other": 1,
+     "npg": 414
+    },
+    "Leagues Cup": {
+     "apps": 13,
+     "goals": 14,
+     "assists": 4,
+     "minsPlayed": 980,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 8,
+     "outsideBox": 3,
+     "left": 11,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 13
+    },
+    "Ligue 1": {
+     "apps": 58,
+     "goals": 22,
+     "assists": 30,
+     "minsPlayed": 4988,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 16,
+     "outsideBox": 4,
+     "left": 19,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 22
+    },
+    "MLS": {
+     "apps": 82,
+     "goals": 75,
+     "assists": 40,
+     "minsPlayed": 6762,
+     "pens": 3,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 9,
+     "insideBox": 50,
+     "outsideBox": 13,
+     "left": 67,
+     "right": 5,
+     "head": 2,
+     "other": 1,
+     "npg": 72
+    },
+    "MLS Cup": {
+     "apps": 9,
+     "goals": 7,
+     "assists": 8,
+     "minsPlayed": 810,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 5,
+     "outsideBox": 2,
+     "left": 4,
+     "right": 0,
+     "head": 3,
+     "other": 0,
+     "npg": 7
+    },
+    "Supercopa de Espana": {
+     "apps": 20,
+     "goals": 14,
+     "assists": 5,
+     "minsPlayed": 1672,
+     "pens": 3,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 10,
+     "outsideBox": 0,
+     "left": 9,
+     "right": 4,
+     "head": 1,
+     "other": 0,
+     "npg": 11
+    },
+    "Troph\u00e9e des Champions": {
+     "apps": 1,
+     "goals": 1,
+     "assists": 0,
+     "minsPlayed": 90,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 1
+    },
+    "UEFA Super Cup": {
+     "apps": 4,
+     "goals": 3,
+     "assists": 2,
+     "minsPlayed": 420,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 3,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 3
+    },
+    "US Open Cup": {
+     "apps": 1,
+     "goals": 0,
+     "assists": 2,
+     "minsPlayed": 120,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 0,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 0
+    },
+    "World Cup": {
+     "apps": 34,
+     "goals": 21,
+     "assists": 12,
+     "minsPlayed": 3053,
+     "pens": 4,
+     "pensMissed": 4,
+     "hatTricks": 1,
+     "freeKicks": 2,
+     "insideBox": 11,
+     "outsideBox": 4,
+     "left": 17,
+     "right": 4,
+     "head": 0,
+     "other": 0,
+     "npg": 17
+    },
+    "World Cup Qualifier": {
+     "apps": 72,
+     "goals": 36,
+     "assists": 13,
+     "minsPlayed": 5978,
+     "pens": 7,
+     "pensMissed": 0,
+     "hatTricks": 3,
+     "freeKicks": 4,
+     "insideBox": 21,
+     "outsideBox": 4,
+     "left": 31,
+     "right": 4,
+     "head": 1,
+     "other": 0,
+     "npg": 29
+    }
+   },
+   "leagues": {
+    "La Liga": {
+     "apps": 520,
+     "goals": 474,
+     "assists": 192,
+     "minsPlayed": 42157,
+     "pens": 60,
+     "pensMissed": 14,
+     "hatTricks": 36,
+     "freeKicks": 39,
+     "insideBox": 327,
+     "outsideBox": 48,
+     "left": 394,
+     "right": 63,
+     "head": 16,
+     "other": 1,
+     "npg": 414
+    },
+    "Ligue 1": {
+     "apps": 58,
+     "goals": 22,
+     "assists": 30,
+     "minsPlayed": 4988,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 16,
+     "outsideBox": 4,
+     "left": 19,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 22
+    },
+    "MLS": {
+     "apps": 82,
+     "goals": 75,
+     "assists": 40,
+     "minsPlayed": 6762,
+     "pens": 3,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 9,
+     "insideBox": 50,
+     "outsideBox": 13,
+     "left": 67,
+     "right": 5,
+     "head": 2,
+     "other": 1,
+     "npg": 72
+    }
+   },
+   "ucl": {
+    "apps": 163,
+    "goals": 129,
+    "assists": 40,
+    "minsPlayed": 13577,
+    "pens": 18,
+    "pensMissed": 5,
+    "hatTricks": 8,
+    "freeKicks": 5,
+    "insideBox": 88,
+    "outsideBox": 18,
+    "left": 107,
+    "right": 18,
+    "head": 4,
+    "other": 0,
+    "npg": 111
+   },
+   "ucl_by_round": {
+    "Group": {
+     "apps": 86,
+     "goals": 80,
+     "assists": 28,
+     "minsPlayed": 6902,
+     "pens": 10,
+     "pensMissed": 1,
+     "hatTricks": 6,
+     "freeKicks": 4,
+     "insideBox": 58,
+     "outsideBox": 8,
+     "left": 67,
+     "right": 10,
+     "head": 3,
+     "other": 0,
+     "npg": 70
+    },
+    "R16": {
+     "apps": 36,
+     "goals": 29,
+     "assists": 6,
+     "minsPlayed": 3123,
+     "pens": 6,
+     "pensMissed": 3,
+     "hatTricks": 1,
+     "freeKicks": 0,
+     "insideBox": 18,
+     "outsideBox": 5,
+     "left": 26,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 23
+    },
+    "QF": {
+     "apps": 23,
+     "goals": 12,
+     "assists": 3,
+     "minsPlayed": 1960,
+     "pens": 2,
+     "pensMissed": 0,
+     "hatTricks": 1,
+     "freeKicks": 0,
+     "insideBox": 7,
+     "outsideBox": 3,
+     "left": 9,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 10
+    },
+    "SF": {
+     "apps": 15,
+     "goals": 6,
+     "assists": 3,
+     "minsPlayed": 1322,
+     "pens": 0,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 4,
+     "outsideBox": 1,
+     "left": 4,
+     "right": 2,
+     "head": 0,
+     "other": 0,
+     "npg": 6
+    },
+    "F": {
+     "apps": 3,
+     "goals": 2,
+     "assists": 0,
+     "minsPlayed": 270,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 1,
+     "left": 1,
+     "right": 0,
+     "head": 1,
+     "other": 0,
+     "npg": 2
+    }
+   },
+   "ucl_knockout": {
+    "apps": 77,
+    "goals": 49,
+    "assists": 12,
+    "minsPlayed": 6675,
+    "pens": 8,
+    "pensMissed": 4,
+    "hatTricks": 2,
+    "freeKicks": 1,
+    "insideBox": 30,
+    "outsideBox": 10,
+    "left": 40,
+    "right": 8,
+    "head": 1,
+    "other": 0,
+    "npg": 41
+   },
+   "ucl_qf_sf_f": {
+    "apps": 41,
+    "goals": 20,
+    "assists": 6,
+    "minsPlayed": 3552,
+    "pens": 2,
+    "pensMissed": 1,
+    "hatTricks": 1,
+    "freeKicks": 1,
+    "insideBox": 12,
+    "outsideBox": 5,
+    "left": 14,
+    "right": 5,
+    "head": 1,
+    "other": 0,
+    "npg": 18
+   },
+   "finals": {
+    "apps": 53,
+    "goals": 36,
+    "assists": 18,
+    "minsPlayed": 4917,
+    "pens": 4,
+    "pensMissed": 1,
+    "hatTricks": 1,
+    "freeKicks": 3,
+    "insideBox": 26,
+    "outsideBox": 3,
+    "left": 26,
+    "right": 6,
+    "head": 3,
+    "other": 1,
+    "npg": 32,
+    "won": 33
+   },
+   "finals_list": [
+    {
+     "date": "2006-08-17",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Espanyol",
+     "score": "1-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2006-08-20",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Espanyol",
+     "score": "3-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2006-08-25",
+     "comp": "UEFA Super Cup",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "0-3",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2007-07-15",
+     "comp": "Copa America",
+     "team": "Argentina",
+     "opp": "Brazil",
+     "score": "0-3",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2009-05-13",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Athletic Bilbao",
+     "score": "4-1",
+     "pens": "",
+     "goals": 1,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2009-05-27",
+     "comp": "Champions League",
+     "team": "Barcelona",
+     "opp": "Manchester United",
+     "score": "2-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2009-08-23",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Athletic Bilbao",
+     "score": "3-0",
+     "pens": "",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2009-08-28",
+     "comp": "UEFA Super Cup",
+     "team": "Barcelona",
+     "opp": "Shakhtar Donetsk",
+     "score": "1-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2009-12-19",
+     "comp": "Club World Cup",
+     "team": "Barcelona",
+     "opp": "Estudiantes",
+     "score": "2-1",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2010-08-14",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "1-3",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2010-08-21",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "4-0",
+     "pens": "",
+     "goals": 3,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2011-04-20",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Real Madrid",
+     "score": "0-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2011-05-28",
+     "comp": "Champions League",
+     "team": "Barcelona",
+     "opp": "Manchester United",
+     "score": "3-1",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2011-08-14",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Real Madrid",
+     "score": "2-2",
+     "pens": "",
+     "goals": 1,
+     "assists": 1,
+     "won": null
+    },
+    {
+     "date": "2011-08-17",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Real Madrid",
+     "score": "3-2",
+     "pens": "",
+     "goals": 2,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2011-08-26",
+     "comp": "UEFA Super Cup",
+     "team": "Barcelona",
+     "opp": "FC Porto",
+     "score": "2-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2011-12-18",
+     "comp": "Club World Cup",
+     "team": "Barcelona",
+     "opp": "Santos",
+     "score": "4-0",
+     "pens": "",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2012-05-25",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Athletic Bilbao",
+     "score": "3-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2012-08-23",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Real Madrid",
+     "score": "3-2",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2012-08-29",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Real Madrid",
+     "score": "1-2",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2013-08-21",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Atletico Madrid",
+     "score": "1-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": null
+    },
+    {
+     "date": "2013-08-28",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Atletico Madrid",
+     "score": "0-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": null
+    },
+    {
+     "date": "2014-04-16",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Real Madrid",
+     "score": "1-2",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2014-07-13",
+     "comp": "World Cup",
+     "team": "Argentina",
+     "opp": "Germany",
+     "score": "0-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2015-05-30",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Athletic Bilbao",
+     "score": "3-1",
+     "pens": "",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2015-06-06",
+     "comp": "Champions League",
+     "team": "Barcelona",
+     "opp": "Juventus",
+     "score": "3-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2015-07-04",
+     "comp": "Copa America",
+     "team": "Argentina",
+     "opp": "Chile",
+     "score": "0-0",
+     "pens": "1-4",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2015-08-11",
+     "comp": "UEFA Super Cup",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "5-4",
+     "pens": "",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2015-08-14",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Athletic Bilbao",
+     "score": "0-4",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2015-08-17",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Athletic Bilbao",
+     "score": "1-1",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": null
+    },
+    {
+     "date": "2015-12-20",
+     "comp": "Club World Cup",
+     "team": "Barcelona",
+     "opp": "River Plate",
+     "score": "3-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2016-05-22",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "2-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 2,
+     "won": true
+    },
+    {
+     "date": "2016-06-26",
+     "comp": "Copa America",
+     "team": "Argentina",
+     "opp": "Chile",
+     "score": "0-0",
+     "pens": "2-4",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2016-08-14",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "2-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2016-08-17",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "3-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2017-05-27",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Alaves",
+     "score": "3-1",
+     "pens": "",
+     "goals": 1,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2017-08-13",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Real Madrid",
+     "score": "1-3",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2017-08-16",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Real Madrid",
+     "score": "0-2",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2018-04-21",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "5-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 2,
+     "won": true
+    },
+    {
+     "date": "2018-08-12",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Sevilla",
+     "score": "2-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 1,
+     "won": true
+    },
+    {
+     "date": "2019-05-25",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Valencia",
+     "score": "1-2",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2021-01-17",
+     "comp": "Supercopa de Espana",
+     "team": "Barcelona",
+     "opp": "Athletic Bilbao",
+     "score": "2-3",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2021-04-17",
+     "comp": "Copa del Rey",
+     "team": "Barcelona",
+     "opp": "Athletic Bilbao",
+     "score": "4-0",
+     "pens": "",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2021-07-10",
+     "comp": "Copa America",
+     "team": "Argentina",
+     "opp": "Brazil",
+     "score": "1-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2022-06-01",
+     "comp": "Finalissima",
+     "team": "Argentina",
+     "opp": "Italy",
+     "score": "3-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 2,
+     "won": true
+    },
+    {
+     "date": "2022-07-31",
+     "comp": "Troph\u00e9e des Champions",
+     "team": "Paris Saint-Germain",
+     "opp": "Nantes",
+     "score": "4-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2022-12-18",
+     "comp": "World Cup",
+     "team": "Argentina",
+     "opp": "France",
+     "score": "3-3",
+     "pens": "4-2",
+     "goals": 2,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2023-08-19",
+     "comp": "Leagues Cup",
+     "team": "Inter Miami",
+     "opp": "Nashville SC",
+     "score": "1-1",
+     "pens": "10-9",
+     "goals": 1,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2024-07-15",
+     "comp": "Copa America",
+     "team": "Argentina",
+     "opp": "Colombia",
+     "score": "1-0",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": true
+    },
+    {
+     "date": "2025-08-31",
+     "comp": "Leagues Cup",
+     "team": "Inter Miami",
+     "opp": "Seattle Sounders",
+     "score": "0-3",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2025-12-06",
+     "comp": "MLS Cup",
+     "team": "Inter Miami",
+     "opp": "Vancouver",
+     "score": "3-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 2,
+     "won": true
+    },
+    {
+     "date": "2026-07-19",
+     "comp": "World Cup",
+     "team": "Argentina",
+     "opp": "Spain",
+     "score": "0-1",
+     "pens": "",
+     "goals": 0,
+     "assists": 0,
+     "won": false
+    },
+    {
+     "date": "2026-09-16",
+     "comp": "Campeones Cup",
+     "team": "Inter Miami",
+     "opp": "Cruz Azul",
+     "score": "2-0",
+     "pens": "",
+     "goals": 1,
+     "assists": 1,
+     "won": true
+    }
+   ],
+   "knockout_all": {
+    "apps": 257,
+    "goals": 166,
+    "assists": 90,
+    "minsPlayed": 22218,
+    "pens": 19,
+    "pensMissed": 12,
+    "hatTricks": 6,
+    "freeKicks": 10,
+    "insideBox": 116,
+    "outsideBox": 21,
+    "left": 136,
+    "right": 19,
+    "head": 9,
+    "other": 2,
+    "npg": 147
+   },
+   "by_age": {
+    "17": {
+     "apps": 9,
+     "goals": 1,
+     "assists": 0,
+     "minsPlayed": 234,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 1,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 1
+    },
+    "18": {
+     "apps": 34,
+     "goals": 10,
+     "assists": 6,
+     "minsPlayed": 1814,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 9,
+     "outsideBox": 1,
+     "left": 7,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 10
+    },
+    "19": {
+     "apps": 41,
+     "goals": 19,
+     "assists": 4,
+     "minsPlayed": 3131,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 1,
+     "freeKicks": 0,
+     "insideBox": 17,
+     "outsideBox": 1,
+     "left": 15,
+     "right": 3,
+     "head": 0,
+     "other": 1,
+     "npg": 18
+    },
+    "20": {
+     "apps": 56,
+     "goals": 21,
+     "assists": 17,
+     "minsPlayed": 4256,
+     "pens": 5,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 14,
+     "outsideBox": 2,
+     "left": 20,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 16
+    },
+    "21": {
+     "apps": 60,
+     "goals": 41,
+     "assists": 19,
+     "minsPlayed": 4709,
+     "pens": 4,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 32,
+     "outsideBox": 4,
+     "left": 31,
+     "right": 7,
+     "head": 3,
+     "other": 0,
+     "npg": 37
+    },
+    "22": {
+     "apps": 62,
+     "goals": 48,
+     "assists": 11,
+     "minsPlayed": 5205,
+     "pens": 3,
+     "pensMissed": 0,
+     "hatTricks": 4,
+     "freeKicks": 2,
+     "insideBox": 35,
+     "outsideBox": 8,
+     "left": 34,
+     "right": 10,
+     "head": 3,
+     "other": 1,
+     "npg": 45
+    },
+    "23": {
+     "apps": 64,
+     "goals": 57,
+     "assists": 27,
+     "minsPlayed": 5350,
+     "pens": 6,
+     "pensMissed": 2,
+     "hatTricks": 4,
+     "freeKicks": 1,
+     "insideBox": 43,
+     "outsideBox": 7,
+     "left": 49,
+     "right": 7,
+     "head": 1,
+     "other": 0,
+     "npg": 51
+    },
+    "24": {
+     "apps": 73,
+     "goals": 82,
+     "assists": 37,
+     "minsPlayed": 6421,
+     "pens": 15,
+     "pensMissed": 3,
+     "hatTricks": 12,
+     "freeKicks": 3,
+     "insideBox": 62,
+     "outsideBox": 2,
+     "left": 71,
+     "right": 8,
+     "head": 3,
+     "other": 0,
+     "npg": 67
+    },
+    "25": {
+     "apps": 62,
+     "goals": 69,
+     "assists": 18,
+     "minsPlayed": 5008,
+     "pens": 7,
+     "pensMissed": 1,
+     "hatTricks": 3,
+     "freeKicks": 6,
+     "insideBox": 49,
+     "outsideBox": 7,
+     "left": 59,
+     "right": 8,
+     "head": 2,
+     "other": 0,
+     "npg": 62
+    },
+    "26": {
+     "apps": 52,
+     "goals": 46,
+     "assists": 15,
+     "minsPlayed": 4226,
+     "pens": 10,
+     "pensMissed": 2,
+     "hatTricks": 4,
+     "freeKicks": 3,
+     "insideBox": 25,
+     "outsideBox": 8,
+     "left": 39,
+     "right": 5,
+     "head": 1,
+     "other": 1,
+     "npg": 36
+    },
+    "27": {
+     "apps": 69,
+     "goals": 64,
+     "assists": 29,
+     "minsPlayed": 6099,
+     "pens": 8,
+     "pensMissed": 4,
+     "hatTricks": 6,
+     "freeKicks": 3,
+     "insideBox": 50,
+     "outsideBox": 3,
+     "left": 41,
+     "right": 17,
+     "head": 6,
+     "other": 0,
+     "npg": 56
+    },
+    "28": {
+     "apps": 61,
+     "goals": 50,
+     "assists": 30,
+     "minsPlayed": 5142,
+     "pens": 5,
+     "pensMissed": 4,
+     "hatTricks": 4,
+     "freeKicks": 9,
+     "insideBox": 34,
+     "outsideBox": 2,
+     "left": 45,
+     "right": 3,
+     "head": 2,
+     "other": 0,
+     "npg": 45
+    },
+    "29": {
+     "apps": 58,
+     "goals": 57,
+     "assists": 18,
+     "minsPlayed": 5022,
+     "pens": 10,
+     "pensMissed": 1,
+     "hatTricks": 2,
+     "freeKicks": 5,
+     "insideBox": 31,
+     "outsideBox": 11,
+     "left": 50,
+     "right": 5,
+     "head": 2,
+     "other": 0,
+     "npg": 47
+    },
+    "30": {
+     "apps": 62,
+     "goals": 51,
+     "assists": 19,
+     "minsPlayed": 5191,
+     "pens": 4,
+     "pensMissed": 4,
+     "hatTricks": 6,
+     "freeKicks": 7,
+     "insideBox": 37,
+     "outsideBox": 3,
+     "left": 47,
+     "right": 4,
+     "head": 0,
+     "other": 0,
+     "npg": 47
+    },
+    "31": {
+     "apps": 57,
+     "goals": 55,
+     "assists": 21,
+     "minsPlayed": 4609,
+     "pens": 6,
+     "pensMissed": 1,
+     "hatTricks": 4,
+     "freeKicks": 8,
+     "insideBox": 36,
+     "outsideBox": 5,
+     "left": 47,
+     "right": 8,
+     "head": 0,
+     "other": 0,
+     "npg": 49
+    },
+    "32": {
+     "apps": 40,
+     "goals": 28,
+     "assists": 21,
+     "minsPlayed": 3399,
+     "pens": 5,
+     "pensMissed": 1,
+     "hatTricks": 3,
+     "freeKicks": 4,
+     "insideBox": 15,
+     "outsideBox": 4,
+     "left": 25,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 23
+    },
+    "33": {
+     "apps": 65,
+     "goals": 46,
+     "assists": 19,
+     "minsPlayed": 5812,
+     "pens": 10,
+     "pensMissed": 3,
+     "hatTricks": 0,
+     "freeKicks": 5,
+     "insideBox": 25,
+     "outsideBox": 6,
+     "left": 43,
+     "right": 1,
+     "head": 2,
+     "other": 0,
+     "npg": 36
+    },
+    "34": {
+     "apps": 49,
+     "goals": 24,
+     "assists": 20,
+     "minsPlayed": 4145,
+     "pens": 4,
+     "pensMissed": 1,
+     "hatTricks": 2,
+     "freeKicks": 1,
+     "insideBox": 12,
+     "outsideBox": 7,
+     "left": 21,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 20
+    },
+    "35": {
+     "apps": 54,
+     "goals": 38,
+     "assists": 25,
+     "minsPlayed": 4803,
+     "pens": 5,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 4,
+     "insideBox": 21,
+     "outsideBox": 8,
+     "left": 31,
+     "right": 7,
+     "head": 0,
+     "other": 0,
+     "npg": 33
+    },
+    "36": {
+     "apps": 37,
+     "goals": 30,
+     "assists": 18,
+     "minsPlayed": 2917,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 3,
+     "insideBox": 20,
+     "outsideBox": 6,
+     "left": 25,
+     "right": 3,
+     "head": 1,
+     "other": 1,
+     "npg": 29
+    },
+    "37": {
+     "apps": 43,
+     "goals": 29,
+     "assists": 10,
+     "minsPlayed": 3468,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 2,
+     "freeKicks": 3,
+     "insideBox": 21,
+     "outsideBox": 4,
+     "left": 24,
+     "right": 4,
+     "head": 1,
+     "other": 0,
+     "npg": 28
+    },
+    "38": {
+     "apps": 50,
+     "goals": 50,
+     "assists": 30,
+     "minsPlayed": 4234,
+     "pens": 4,
+     "pensMissed": 2,
+     "hatTricks": 2,
+     "freeKicks": 3,
+     "insideBox": 34,
+     "outsideBox": 9,
+     "left": 44,
+     "right": 3,
+     "head": 3,
+     "other": 0,
+     "npg": 46
+    },
+    "39": {
+     "apps": 25,
+     "goals": 20,
+     "assists": 13,
+     "minsPlayed": 2126,
+     "pens": 1,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 5,
+     "insideBox": 13,
+     "outsideBox": 1,
+     "left": 18,
+     "right": 1,
+     "head": 1,
+     "other": 0,
+     "npg": 19
+    }
+   },
+   "from_age_30": {
+    "apps": 482,
+    "goals": 371,
+    "assists": 196,
+    "minsPlayed": 40704,
+    "pens": 41,
+    "pensMissed": 15,
+    "hatTricks": 21,
+    "freeKicks": 43,
+    "insideBox": 234,
+    "outsideBox": 53,
+    "left": 325,
+    "right": 37,
+    "head": 8,
+    "other": 1,
+    "npg": 330
+   },
+   "before_age_30": {
+    "apps": 701,
+    "goals": 565,
+    "assists": 231,
+    "minsPlayed": 56617,
+    "pens": 74,
+    "pensMissed": 20,
+    "hatTricks": 41,
+    "freeKicks": 33,
+    "insideBox": 402,
+    "outsideBox": 56,
+    "left": 462,
+    "right": 76,
+    "head": 24,
+    "other": 3,
+    "npg": 491
+   },
+   "from_age_33": {
+    "apps": 323,
+    "goals": 237,
+    "assists": 135,
+    "minsPlayed": 27505,
+    "pens": 26,
+    "pensMissed": 9,
+    "hatTricks": 8,
+    "freeKicks": 24,
+    "insideBox": 146,
+    "outsideBox": 41,
+    "left": 206,
+    "right": 22,
+    "head": 8,
+    "other": 1,
+    "npg": 211
+   },
+   "before_age_33": {
+    "apps": 860,
+    "goals": 699,
+    "assists": 292,
+    "minsPlayed": 69816,
+    "pens": 89,
+    "pensMissed": 26,
+    "hatTricks": 54,
+    "freeKicks": 52,
+    "insideBox": 490,
+    "outsideBox": 68,
+    "left": 581,
+    "right": 91,
+    "head": 24,
+    "other": 3,
+    "npg": 610
+   },
+   "from_age_35": {
+    "apps": 209,
+    "goals": 167,
+    "assists": 96,
+    "minsPlayed": 17548,
+    "pens": 12,
+    "pensMissed": 5,
+    "hatTricks": 6,
+    "freeKicks": 18,
+    "insideBox": 109,
+    "outsideBox": 28,
+    "left": 142,
+    "right": 18,
+    "head": 6,
+    "other": 1,
+    "npg": 155
+   },
+   "before_age_35": {
+    "apps": 974,
+    "goals": 769,
+    "assists": 331,
+    "minsPlayed": 79773,
+    "pens": 103,
+    "pensMissed": 30,
+    "hatTricks": 56,
+    "freeKicks": 58,
+    "insideBox": 527,
+    "outsideBox": 81,
+    "left": 645,
+    "right": 95,
+    "head": 26,
+    "other": 3,
+    "npg": 666
+   },
+   "from_age_38": {
+    "apps": 75,
+    "goals": 70,
+    "assists": 43,
+    "minsPlayed": 6360,
+    "pens": 5,
+    "pensMissed": 4,
+    "hatTricks": 3,
+    "freeKicks": 8,
+    "insideBox": 47,
+    "outsideBox": 10,
+    "left": 62,
+    "right": 4,
+    "head": 4,
+    "other": 0,
+    "npg": 65
+   },
+   "before_age_38": {
+    "apps": 1108,
+    "goals": 866,
+    "assists": 384,
+    "minsPlayed": 90961,
+    "pens": 110,
+    "pensMissed": 31,
+    "hatTricks": 59,
+    "freeKicks": 68,
+    "insideBox": 589,
+    "outsideBox": 99,
+    "left": 725,
+    "right": 109,
+    "head": 28,
+    "other": 4,
+    "npg": 756
+   },
+   "from_age_40": {
+    "goals": 0,
+    "pens": 0,
+    "npg": 0
+   },
+   "before_age_40": {
+    "apps": 1183,
+    "goals": 936,
+    "assists": 427,
+    "minsPlayed": 97321,
+    "pens": 115,
+    "pensMissed": 35,
+    "hatTricks": 62,
+    "freeKicks": 76,
+    "insideBox": 636,
+    "outsideBox": 109,
+    "left": 787,
+    "right": 113,
+    "head": 32,
+    "other": 4,
+    "npg": 821
+   },
+   "by_year": {
+    "2004": {
+     "apps": 7,
+     "goals": 0,
+     "assists": 0,
+     "minsPlayed": 228,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 0,
+     "outsideBox": 0,
+     "left": 0,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 0
+    },
+    "2005": {
+     "apps": 21,
+     "goals": 3,
+     "assists": 4,
+     "minsPlayed": 999,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 3,
+     "outsideBox": 0,
+     "left": 3,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 3
+    },
+    "2006": {
+     "apps": 33,
+     "goals": 12,
+     "assists": 3,
+     "minsPlayed": 2136,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 11,
+     "outsideBox": 1,
+     "left": 8,
+     "right": 3,
+     "head": 1,
+     "other": 0,
+     "npg": 12
+    },
+    "2007": {
+     "apps": 55,
+     "goals": 31,
+     "assists": 12,
+     "minsPlayed": 4390,
+     "pens": 5,
+     "pensMissed": 0,
+     "hatTricks": 1,
+     "freeKicks": 0,
+     "insideBox": 23,
+     "outsideBox": 3,
+     "left": 27,
+     "right": 3,
+     "head": 0,
+     "other": 1,
+     "npg": 26
+    },
+    "2008": {
+     "apps": 48,
+     "goals": 22,
+     "assists": 18,
+     "minsPlayed": 3589,
+     "pens": 3,
+     "pensMissed": 2,
+     "hatTricks": 0,
+     "freeKicks": 1,
+     "insideBox": 15,
+     "outsideBox": 3,
+     "left": 19,
+     "right": 1,
+     "head": 2,
+     "other": 0,
+     "npg": 19
+    },
+    "2009": {
+     "apps": 64,
+     "goals": 41,
+     "assists": 15,
+     "minsPlayed": 5055,
+     "pens": 5,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 32,
+     "outsideBox": 3,
+     "left": 29,
+     "right": 8,
+     "head": 3,
+     "other": 1,
+     "npg": 36
+    },
+    "2010": {
+     "apps": 64,
+     "goals": 60,
+     "assists": 17,
+     "minsPlayed": 5327,
+     "pens": 1,
+     "pensMissed": 1,
+     "hatTricks": 6,
+     "freeKicks": 1,
+     "insideBox": 48,
+     "outsideBox": 10,
+     "left": 47,
+     "right": 12,
+     "head": 1,
+     "other": 0,
+     "npg": 59
+    },
+    "2011": {
+     "apps": 70,
+     "goals": 59,
+     "assists": 37,
+     "minsPlayed": 6183,
+     "pens": 8,
+     "pensMissed": 2,
+     "hatTricks": 6,
+     "freeKicks": 1,
+     "insideBox": 47,
+     "outsideBox": 3,
+     "left": 48,
+     "right": 9,
+     "head": 2,
+     "other": 0,
+     "npg": 51
+    },
+    "2012": {
+     "apps": 69,
+     "goals": 91,
+     "assists": 22,
+     "minsPlayed": 5972,
+     "pens": 14,
+     "pensMissed": 3,
+     "hatTricks": 9,
+     "freeKicks": 7,
+     "insideBox": 63,
+     "outsideBox": 7,
+     "left": 81,
+     "right": 7,
+     "head": 3,
+     "other": 0,
+     "npg": 77
+    },
+    "2013": {
+     "apps": 47,
+     "goals": 45,
+     "assists": 16,
+     "minsPlayed": 3507,
+     "pens": 9,
+     "pensMissed": 1,
+     "hatTricks": 4,
+     "freeKicks": 3,
+     "insideBox": 30,
+     "outsideBox": 3,
+     "left": 39,
+     "right": 4,
+     "head": 2,
+     "other": 0,
+     "npg": 36
+    },
+    "2014": {
+     "apps": 66,
+     "goals": 58,
+     "assists": 21,
+     "minsPlayed": 5692,
+     "pens": 7,
+     "pensMissed": 3,
+     "hatTricks": 5,
+     "freeKicks": 4,
+     "insideBox": 39,
+     "outsideBox": 8,
+     "left": 40,
+     "right": 15,
+     "head": 2,
+     "other": 1,
+     "npg": 51
+    },
+    "2015": {
+     "apps": 61,
+     "goals": 52,
+     "assists": 26,
+     "minsPlayed": 5244,
+     "pens": 8,
+     "pensMissed": 4,
+     "hatTricks": 3,
+     "freeKicks": 4,
+     "insideBox": 38,
+     "outsideBox": 2,
+     "left": 39,
+     "right": 8,
+     "head": 5,
+     "other": 0,
+     "npg": 44
+    },
+    "2016": {
+     "apps": 62,
+     "goals": 59,
+     "assists": 31,
+     "minsPlayed": 5317,
+     "pens": 7,
+     "pensMissed": 2,
+     "hatTricks": 6,
+     "freeKicks": 7,
+     "insideBox": 38,
+     "outsideBox": 7,
+     "left": 56,
+     "right": 1,
+     "head": 2,
+     "other": 0,
+     "npg": 52
+    },
+    "2017": {
+     "apps": 64,
+     "goals": 54,
+     "assists": 16,
+     "minsPlayed": 5562,
+     "pens": 10,
+     "pensMissed": 3,
+     "hatTricks": 3,
+     "freeKicks": 5,
+     "insideBox": 33,
+     "outsideBox": 6,
+     "left": 47,
+     "right": 6,
+     "head": 1,
+     "other": 0,
+     "npg": 44
+    },
+    "2018": {
+     "apps": 54,
+     "goals": 51,
+     "assists": 26,
+     "minsPlayed": 4405,
+     "pens": 2,
+     "pensMissed": 2,
+     "hatTricks": 5,
+     "freeKicks": 10,
+     "insideBox": 34,
+     "outsideBox": 5,
+     "left": 44,
+     "right": 7,
+     "head": 0,
+     "other": 0,
+     "npg": 49
+    },
+    "2019": {
+     "apps": 58,
+     "goals": 50,
+     "assists": 18,
+     "minsPlayed": 4680,
+     "pens": 8,
+     "pensMissed": 2,
+     "hatTricks": 4,
+     "freeKicks": 8,
+     "insideBox": 27,
+     "outsideBox": 7,
+     "left": 46,
+     "right": 4,
+     "head": 0,
+     "other": 0,
+     "npg": 42
+    },
+    "2020": {
+     "apps": 48,
+     "goals": 27,
+     "assists": 19,
+     "minsPlayed": 4275,
+     "pens": 9,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 16,
+     "outsideBox": 1,
+     "left": 23,
+     "right": 3,
+     "head": 1,
+     "other": 0,
+     "npg": 18
+    },
+    "2021": {
+     "apps": 61,
+     "goals": 43,
+     "assists": 18,
+     "minsPlayed": 5295,
+     "pens": 6,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 5,
+     "insideBox": 21,
+     "outsideBox": 11,
+     "left": 40,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 37
+    },
+    "2022": {
+     "apps": 51,
+     "goals": 35,
+     "assists": 30,
+     "minsPlayed": 4470,
+     "pens": 6,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 2,
+     "insideBox": 20,
+     "outsideBox": 7,
+     "left": 29,
+     "right": 6,
+     "head": 0,
+     "other": 0,
+     "npg": 29
+    },
+    "2023": {
+     "apps": 44,
+     "goals": 28,
+     "assists": 12,
+     "minsPlayed": 3688,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 1,
+     "freeKicks": 5,
+     "insideBox": 18,
+     "outsideBox": 5,
+     "left": 22,
+     "right": 6,
+     "head": 0,
+     "other": 0,
+     "npg": 28
+    },
+    "2024": {
+     "apps": 36,
+     "goals": 29,
+     "assists": 18,
+     "minsPlayed": 2895,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 2,
+     "freeKicks": 1,
+     "insideBox": 22,
+     "outsideBox": 5,
+     "left": 24,
+     "right": 2,
+     "head": 2,
+     "other": 1,
+     "npg": 28
+    },
+    "2025": {
+     "apps": 54,
+     "goals": 46,
+     "assists": 28,
+     "minsPlayed": 4534,
+     "pens": 3,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 3,
+     "insideBox": 32,
+     "outsideBox": 8,
+     "left": 41,
+     "right": 3,
+     "head": 2,
+     "other": 0,
+     "npg": 43
+    },
+    "2026": {
+     "apps": 46,
+     "goals": 40,
+     "assists": 20,
+     "minsPlayed": 3878,
+     "pens": 3,
+     "pensMissed": 3,
+     "hatTricks": 2,
+     "freeKicks": 7,
+     "insideBox": 26,
+     "outsideBox": 4,
+     "left": 35,
+     "right": 3,
+     "head": 2,
+     "other": 0,
+     "npg": 37
+    }
+   },
+   "by_season": {
+    "2004-2005": {
+     "apps": 9,
+     "goals": 1,
+     "assists": 0,
+     "minsPlayed": 234,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 1,
+     "outsideBox": 0,
+     "left": 1,
+     "right": 0,
+     "head": 0,
+     "other": 0,
+     "npg": 1
+    },
+    "2005-2006": {
+     "apps": 35,
+     "goals": 10,
+     "assists": 6,
+     "minsPlayed": 1850,
+     "pens": 0,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 9,
+     "outsideBox": 1,
+     "left": 7,
+     "right": 2,
+     "head": 1,
+     "other": 0,
+     "npg": 10
+    },
+    "2006-2007": {
+     "apps": 46,
+     "goals": 21,
+     "assists": 5,
+     "minsPlayed": 3550,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 1,
+     "freeKicks": 0,
+     "insideBox": 19,
+     "outsideBox": 1,
+     "left": 17,
+     "right": 3,
+     "head": 0,
+     "other": 1,
+     "npg": 20
+    },
+    "2007-2008": {
+     "apps": 50,
+     "goals": 19,
+     "assists": 16,
+     "minsPlayed": 3801,
+     "pens": 5,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 0,
+     "insideBox": 12,
+     "outsideBox": 2,
+     "left": 18,
+     "right": 1,
+     "head": 0,
+     "other": 0,
+     "npg": 14
+    },
+    "2008-2009": {
+     "apps": 60,
+     "goals": 41,
+     "assists": 19,
+     "minsPlayed": 4709,
+     "pens": 4,
+     "pensMissed": 2,
+     "hatTricks": 1,
+     "freeKicks": 1,
+     "insideBox": 32,
+     "outsideBox": 4,
+     "left": 31,
+     "right": 7,
+     "head": 3,
+     "other": 0,
+     "npg": 37
+    },
+    "2009-2010": {
+     "apps": 64,
+     "goals": 48,
+     "assists": 12,
+     "minsPlayed": 5385,
+     "pens": 3,
+     "pensMissed": 0,
+     "hatTricks": 4,
+     "freeKicks": 2,
+     "insideBox": 35,
+     "outsideBox": 8,
+     "left": 34,
+     "right": 10,
+     "head": 3,
+     "other": 1,
+     "npg": 45
+    },
+    "2010-2011": {
+     "apps": 66,
+     "goals": 57,
+     "assists": 29,
+     "minsPlayed": 5560,
+     "pens": 6,
+     "pensMissed": 2,
+     "hatTricks": 4,
+     "freeKicks": 1,
+     "insideBox": 43,
+     "outsideBox": 7,
+     "left": 49,
+     "right": 7,
+     "head": 1,
+     "other": 0,
+     "npg": 51
+    },
+    "2011-2012": {
+     "apps": 69,
+     "goals": 82,
+     "assists": 34,
+     "minsPlayed": 6031,
+     "pens": 15,
+     "pensMissed": 3,
+     "hatTricks": 12,
+     "freeKicks": 3,
+     "insideBox": 62,
+     "outsideBox": 2,
+     "left": 71,
+     "right": 8,
+     "head": 3,
+     "other": 0,
+     "npg": 67
+    },
+    "2012-2013": {
+     "apps": 62,
+     "goals": 69,
+     "assists": 18,
+     "minsPlayed": 5008,
+     "pens": 7,
+     "pensMissed": 1,
+     "hatTricks": 3,
+     "freeKicks": 6,
+     "insideBox": 49,
+     "outsideBox": 7,
+     "left": 59,
+     "right": 8,
+     "head": 2,
+     "other": 0,
+     "npg": 62
+    },
+    "2013-2014": {
+     "apps": 57,
+     "goals": 48,
+     "assists": 16,
+     "minsPlayed": 4739,
+     "pens": 10,
+     "pensMissed": 2,
+     "hatTricks": 4,
+     "freeKicks": 4,
+     "insideBox": 26,
+     "outsideBox": 8,
+     "left": 41,
+     "right": 5,
+     "head": 1,
+     "other": 1,
+     "npg": 38
+    },
+    "2014-2015": {
+     "apps": 67,
+     "goals": 62,
+     "assists": 31,
+     "minsPlayed": 5886,
+     "pens": 8,
+     "pensMissed": 4,
+     "hatTricks": 6,
+     "freeKicks": 2,
+     "insideBox": 49,
+     "outsideBox": 3,
+     "left": 39,
+     "right": 17,
+     "head": 6,
+     "other": 0,
+     "npg": 54
+    },
+    "2015-2016": {
+     "apps": 59,
+     "goals": 50,
+     "assists": 27,
+     "minsPlayed": 4962,
+     "pens": 5,
+     "pensMissed": 4,
+     "hatTricks": 4,
+     "freeKicks": 9,
+     "insideBox": 34,
+     "outsideBox": 2,
+     "left": 45,
+     "right": 3,
+     "head": 2,
+     "other": 0,
+     "npg": 45
+    },
+    "2016-2017": {
+     "apps": 57,
+     "goals": 57,
+     "assists": 18,
+     "minsPlayed": 4902,
+     "pens": 10,
+     "pensMissed": 1,
+     "hatTricks": 2,
+     "freeKicks": 5,
+     "insideBox": 31,
+     "outsideBox": 11,
+     "left": 50,
+     "right": 5,
+     "head": 2,
+     "other": 0,
+     "npg": 47
+    },
+    "2017-2018": {
+     "apps": 64,
+     "goals": 52,
+     "assists": 21,
+     "minsPlayed": 5371,
+     "pens": 4,
+     "pensMissed": 4,
+     "hatTricks": 6,
+     "freeKicks": 7,
+     "insideBox": 38,
+     "outsideBox": 3,
+     "left": 47,
+     "right": 5,
+     "head": 0,
+     "other": 0,
+     "npg": 48
+    },
+    "2018-2019": {
+     "apps": 58,
+     "goals": 54,
+     "assists": 20,
+     "minsPlayed": 4646,
+     "pens": 6,
+     "pensMissed": 1,
+     "hatTricks": 4,
+     "freeKicks": 8,
+     "insideBox": 35,
+     "outsideBox": 5,
+     "left": 47,
+     "right": 7,
+     "head": 0,
+     "other": 0,
+     "npg": 48
+    },
+    "2019-2020": {
+     "apps": 46,
+     "goals": 33,
+     "assists": 26,
+     "minsPlayed": 3992,
+     "pens": 6,
+     "pensMissed": 1,
+     "hatTricks": 3,
+     "freeKicks": 5,
+     "insideBox": 18,
+     "outsideBox": 4,
+     "left": 30,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 27
+    },
+    "2020-2021": {
+     "apps": 60,
+     "goals": 44,
+     "assists": 17,
+     "minsPlayed": 5362,
+     "pens": 10,
+     "pensMissed": 3,
+     "hatTricks": 0,
+     "freeKicks": 5,
+     "insideBox": 22,
+     "outsideBox": 7,
+     "left": 41,
+     "right": 1,
+     "head": 2,
+     "other": 0,
+     "npg": 34
+    },
+    "2021-2022": {
+     "apps": 45,
+     "goals": 21,
+     "assists": 16,
+     "minsPlayed": 3785,
+     "pens": 3,
+     "pensMissed": 1,
+     "hatTricks": 2,
+     "freeKicks": 0,
+     "insideBox": 12,
+     "outsideBox": 6,
+     "left": 18,
+     "right": 3,
+     "head": 0,
+     "other": 0,
+     "npg": 18
+    },
+    "2022-2023": {
+     "apps": 54,
+     "goals": 38,
+     "assists": 25,
+     "minsPlayed": 4803,
+     "pens": 5,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 4,
+     "insideBox": 21,
+     "outsideBox": 8,
+     "left": 31,
+     "right": 7,
+     "head": 0,
+     "other": 0,
+     "npg": 33
+    },
+    "2023-2024": {
+     "apps": 41,
+     "goals": 31,
+     "assists": 18,
+     "minsPlayed": 3252,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 0,
+     "freeKicks": 3,
+     "insideBox": 21,
+     "outsideBox": 6,
+     "left": 26,
+     "right": 3,
+     "head": 1,
+     "other": 1,
+     "npg": 30
+    },
+    "2024-2025": {
+     "apps": 45,
+     "goals": 36,
+     "assists": 12,
+     "minsPlayed": 3673,
+     "pens": 1,
+     "pensMissed": 0,
+     "hatTricks": 2,
+     "freeKicks": 4,
+     "insideBox": 26,
+     "outsideBox": 5,
+     "left": 31,
+     "right": 4,
+     "head": 1,
+     "other": 0,
+     "npg": 35
+    },
+    "2025-2026": {
+     "apps": 50,
+     "goals": 45,
+     "assists": 32,
+     "minsPlayed": 4264,
+     "pens": 4,
+     "pensMissed": 3,
+     "hatTricks": 2,
+     "freeKicks": 3,
+     "insideBox": 30,
+     "outsideBox": 8,
+     "left": 39,
+     "right": 3,
+     "head": 3,
+     "other": 0,
+     "npg": 41
+    },
+    "2026-2027": {
+     "apps": 19,
+     "goals": 17,
+     "assists": 9,
+     "minsPlayed": 1556,
+     "pens": 1,
+     "pensMissed": 1,
+     "hatTricks": 1,
+     "freeKicks": 4,
+     "insideBox": 11,
+     "outsideBox": 1,
+     "left": 15,
+     "right": 1,
+     "head": 1,
+     "other": 0,
+     "npg": 16
+    }
+   },
+   "hat_trick_matches": 62,
+   "perfect_hat_tricks": 0,
+   "seasons_30plus": [
+    "2008-2009",
+    "2009-2010",
+    "2010-2011",
+    "2011-2012",
+    "2012-2013",
+    "2013-2014",
+    "2014-2015",
+    "2015-2016",
+    "2016-2017",
+    "2017-2018",
+    "2018-2019",
+    "2019-2020",
+    "2020-2021",
+    "2022-2023",
+    "2023-2024",
+    "2024-2025",
+    "2025-2026"
+   ],
+   "years_40plus": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2021,
+    2025,
+    2026
+   ],
+   "distinct_opponents_scored_against": 171,
+   "distinct_competitions_scored_in": 17,
+   "clubs": {
+    "Barcelona": {
+     "apps": 778,
+     "goals": 672,
+     "assists": 269,
+     "minsPlayed": 63530,
+     "pens": 82,
+     "pensMissed": 25,
+     "hatTricks": 48,
+     "freeKicks": 50,
+     "insideBox": 473,
+     "outsideBox": 67,
+     "left": 557,
+     "right": 88,
+     "head": 24,
+     "other": 3,
+     "npg": 590
+    },
+    "Inter Miami": {
+     "apps": 122,
+     "goals": 106,
+     "assists": 57,
+     "minsPlayed": 10088,
+     "pens": 5,
+     "pensMissed": 2,
+     "hatTricks": 3,
+     "freeKicks": 12,
+     "insideBox": 70,
+     "outsideBox": 19,
+     "left": 90,
+     "right": 9,
+     "head": 6,
+     "other": 1,
+     "npg": 101
+    },
+    "Paris Saint-Germain": {
+     "apps": 75,
+     "goals": 32,
+     "assists": 34,
+     "minsPlayed": 6501,
+     "pens": 2,
+     "pensMissed": 1,
+     "hatTricks": 0,
+     "freeKicks": 2,
+     "insideBox": 20,
+     "outsideBox": 8,
+     "left": 28,
+     "right": 4,
+     "head": 0,
+     "other": 0,
+     "npg": 30
+    }
+   },
+   "decisive": {
+    "matches": 246,
+    "per100": 20.8,
+    "points_added": 460,
+    "knockout": 43,
+    "ucl_knockout": 11
+   },
+   "age_curve_monthly": [
+    [
+     17.345,
+     0
+    ],
+    [
+     17.495,
+     0
+    ],
+    [
+     17.816,
+     0
+    ],
+    [
+     17.854,
+     1
+    ],
+    [
+     18.15,
+     1
+    ],
+    [
+     18.262,
+     1
+    ],
+    [
+     18.341,
+     1
+    ],
+    [
+     18.429,
+     3
+    ],
+    [
+     18.492,
+     3
+    ],
+    [
+     18.601,
+     7
+    ],
+    [
+     18.675,
+     9
+    ],
+    [
+     18.703,
+     10
+    ],
+    [
+     18.933,
+     10
+    ],
+    [
+     19.001,
+     11
+    ],
+    [
+     19.179,
+     12
+    ],
+    [
+     19.269,
+     14
+    ],
+    [
+     19.354,
+     15
+    ],
+    [
+     19.387,
+     15
+    ],
+    [
+     19.683,
+     15
+    ],
+    [
+     19.768,
+     20
+    ],
+    [
+     19.847,
+     22
+    ],
+    [
+     19.921,
+     24
+    ],
+    [
+     20.014,
+     30
+    ],
+    [
+     20.058,
+     32
+    ],
+    [
+     20.173,
+     32
+    ],
+    [
+     20.266,
+     38
+    ],
+    [
+     20.345,
+     42
+    ],
+    [
+     20.428,
+     46
+    ],
+    [
+     20.477,
+     46
+    ],
+    [
+     20.605,
+     46
+    ],
+    [
+     20.679,
+     49
+    ],
+    [
+     20.696,
+     49
+    ],
+    [
+     20.849,
+     49
+    ],
+    [
+     20.898,
+     50
+    ],
+    [
+     20.989,
+     51
+    ],
+    [
+     21.189,
+     51
+    ],
+    [
+     21.263,
+     55
+    ],
+    [
+     21.339,
+     60
+    ],
+    [
+     21.435,
+     67
+    ],
+    [
+     21.495,
+     68
+    ],
+    [
+     21.602,
+     75
+    ],
+    [
+     21.673,
+     78
+    ],
+    [
+     21.761,
+     84
+    ],
+    [
+     21.846,
+     88
+    ],
+    [
+     21.925,
+     92
+    ],
+    [
+     21.963,
+     92
+    ],
+    [
+     22.18,
+     94
+    ],
+    [
+     22.267,
+     100
+    ],
+    [
+     22.355,
+     101
+    ],
+    [
+     22.434,
+     104
+    ],
+    [
+     22.489,
+     109
+    ],
+    [
+     22.604,
+     115
+    ],
+    [
+     22.681,
+     117
+    ],
+    [
+     22.768,
+     127
+    ],
+    [
+     22.845,
+     133
+    ],
+    [
+     22.894,
+     140
+    ],
+    [
+     23.009,
+     140
+    ],
+    [
+     23.026,
+     140
+    ],
+    [
+     23.182,
+     144
+    ],
+    [
+     23.267,
+     148
+    ],
+    [
+     23.352,
+     155
+    ],
+    [
+     23.434,
+     165
+    ],
+    [
+     23.494,
+     169
+    ],
+    [
+     23.601,
+     179
+    ],
+    [
+     23.677,
+     185
+    ],
+    [
+     23.754,
+     188
+    ],
+    [
+     23.85,
+     195
+    ],
+    [
+     23.927,
+     196
+    ],
+    [
+     23.99,
+     197
+    ],
+    [
+     24.061,
+     197
+    ],
+    [
+     24.181,
+     203
+    ],
+    [
+     24.263,
+     211
+    ],
+    [
+     24.348,
+     217
+    ],
+    [
+     24.433,
+     225
+    ],
+    [
+     24.485,
+     228
+    ],
+    [
+     24.597,
+     235
+    ],
+    [
+     24.685,
+     245
+    ],
+    [
+     24.77,
+     258
+    ],
+    [
+     24.849,
+     267
+    ],
+    [
+     24.92,
+     275
+    ],
+    [
+     24.961,
+     279
+    ],
+    [
+     25.183,
+     286
+    ],
+    [
+     25.268,
+     291
+    ],
+    [
+     25.345,
+     301
+    ],
+    [
+     25.424,
+     310
+    ],
+    [
+     25.498,
+     319
+    ],
+    [
+     25.605,
+     328
+    ],
+    [
+     25.679,
+     333
+    ],
+    [
+     25.766,
+     341
+    ],
+    [
+     25.843,
+     343
+    ],
+    [
+     25.884,
+     345
+    ],
+    [
+     25.975,
+     348
+    ],
+    [
+     26.18,
+     350
+    ],
+    [
+     26.265,
+     361
+    ],
+    [
+     26.35,
+     362
+    ],
+    [
+     26.382,
+     364
+    ],
+    [
+     26.593,
+     368
+    ],
+    [
+     26.667,
+     376
+    ],
+    [
+     26.763,
+     386
+    ],
+    [
+     26.842,
+     390
+    ],
+    [
+     26.897,
+     391
+    ],
+    [
+     27.004,
+     396
+    ],
+    [
+     27.053,
+     396
+    ],
+    [
+     27.187,
+     398
+    ],
+    [
+     27.27,
+     402
+    ],
+    [
+     27.338,
+     407
+    ],
+    [
+     27.437,
+     416
+    ],
+    [
+     27.491,
+     422
+    ],
+    [
+     27.598,
+     430
+    ],
+    [
+     27.683,
+     437
+    ],
+    [
+     27.743,
+     442
+    ],
+    [
+     27.845,
+     448
+    ],
+    [
+     27.932,
+     457
+    ],
+    [
+     28.009,
+     458
+    ],
+    [
+     28.028,
+     458
+    ],
+    [
+     28.181,
+     461
+    ],
+    [
+     28.258,
+     467
+    ],
+    [
+     28.43,
+     470
+    ],
+    [
+     28.518,
+     474
+    ],
+    [
+     28.603,
+     482
+    ],
+    [
+     28.682,
+     491
+    ],
+    [
+     28.767,
+     499
+    ],
+    [
+     28.852,
+     502
+    ],
+    [
+     28.926,
+     503
+    ],
+    [
+     29.008,
+     508
+    ],
+    [
+     29.181,
+     511
+    ],
+    [
+     29.246,
+     517
+    ],
+    [
+     29.35,
+     523
+    ],
+    [
+     29.43,
+     529
+    ],
+    [
+     29.487,
+     533
+    ],
+    [
+     29.602,
+     539
+    ],
+    [
+     29.679,
+     545
+    ],
+    [
+     29.747,
+     552
+    ],
+    [
+     29.849,
+     560
+    ],
+    [
+     29.925,
+     565
+    ],
+    [
+     29.961,
+     565
+    ],
+    [
+     30.174,
+     568
+    ],
+    [
+     30.262,
+     577
+    ],
+    [
+     30.355,
+     584
+    ],
+    [
+     30.426,
+     584
+    ],
+    [
+     30.5,
+     587
+    ],
+    [
+     30.599,
+     595
+    ],
+    [
+     30.673,
+     598
+    ],
+    [
+     30.769,
+     604
+    ],
+    [
+     30.848,
+     611
+    ],
+    [
+     30.933,
+     616
+    ],
+    [
+     31.018,
+     617
+    ],
+    [
+     31.171,
+     619
+    ],
+    [
+     31.267,
+     625
+    ],
+    [
+     31.324,
+     629
+    ],
+    [
+     31.431,
+     632
+    ],
+    [
+     31.497,
+     638
+    ],
+    [
+     31.604,
+     644
+    ],
+    [
+     31.68,
+     650
+    ],
+    [
+     31.765,
+     658
+    ],
+    [
+     31.842,
+     663
+    ],
+    [
+     31.919,
+     668
+    ],
+    [
+     32.012,
+     671
+    ],
+    [
+     32.034,
+     671
+    ],
+    [
+     32.253,
+     671
+    ],
+    [
+     32.348,
+     676
+    ],
+    [
+     32.428,
+     683
+    ],
+    [
+     32.493,
+     688
+    ],
+    [
+     32.603,
+     692
+    ],
+    [
+     32.674,
+     696
+    ],
+    [
+     32.704,
+     697
+    ],
+    [
+     33.019,
+     700
+    ],
+    [
+     33.071,
+     703
+    ],
+    [
+     33.148,
+     704
+    ],
+    [
+     33.263,
+     705
+    ],
+    [
+     33.356,
+     708
+    ],
+    [
+     33.435,
+     712
+    ],
+    [
+     33.498,
+     715
+    ],
+    [
+     33.608,
+     721
+    ],
+    [
+     33.682,
+     729
+    ],
+    [
+     33.742,
+     734
+    ],
+    [
+     33.849,
+     739
+    ],
+    [
+     33.895,
+     743
+    ],
+    [
+     34.013,
+     747
+    ],
+    [
+     34.046,
+     748
+    ],
+    [
+     34.183,
+     748
+    ],
+    [
+     34.265,
+     752
+    ],
+    [
+     34.35,
+     755
+    ],
+    [
+     34.432,
+     756
+    ],
+    [
+     34.498,
+     758
+    ],
+    [
+     34.607,
+     758
+    ],
+    [
+     34.678,
+     759
+    ],
+    [
+     34.763,
+     760
+    ],
+    [
+     34.848,
+     762
+    ],
+    [
+     34.908,
+     764
+    ],
+    [
+     34.949,
+     769
+    ],
+    [
+     35.103,
+     770
+    ],
+    [
+     35.188,
+     773
+    ],
+    [
+     35.262,
+     779
+    ],
+    [
+     35.349,
+     785
+    ],
+    [
+     35.437,
+     788
+    ],
+    [
+     35.486,
+     793
+    ],
+    [
+     35.601,
+     794
+    ],
+    [
+     35.678,
+     798
+    ],
+    [
+     35.76,
+     803
+    ],
+    [
+     35.85,
+     805
+    ],
+    [
+     35.924,
+     806
+    ],
+    [
+     35.976,
+     807
+    ],
+    [
+     36.086,
+     810
+    ],
+    [
+     36.184,
+     818
+    ],
+    [
+     36.242,
+     819
+    ],
+    [
+     36.327,
+     821
+    ],
+    [
+     36.411,
+     821
+    ],
+    [
+     36.674,
+     822
+    ],
+    [
+     36.721,
+     826
+    ],
+    [
+     36.844,
+     832
+    ],
+    [
+     36.932,
+     834
+    ],
+    [
+     37.006,
+     837
+    ],
+    [
+     37.06,
+     838
+    ],
+    [
+     37.268,
+     841
+    ],
+    [
+     37.34,
+     849
+    ],
+    [
+     37.408,
+     850
+    ],
+    [
+     37.676,
+     852
+    ],
+    [
+     37.764,
+     855
+    ],
+    [
+     37.852,
+     858
+    ],
+    [
+     37.936,
+     865
+    ],
+    [
+     38.016,
+     866
+    ],
+    [
+     38.101,
+     874
+    ],
+    [
+     38.188,
+     877
+    ],
+    [
+     38.27,
+     884
+    ],
+    [
+     38.336,
+     891
+    ],
+    [
+     38.435,
+     896
+    ],
+    [
+     38.454,
+     896
+    ],
+    [
+     38.665,
+     896
+    ],
+    [
+     38.769,
+     902
+    ],
+    [
+     38.837,
+     905
+    ],
+    [
+     38.917,
+     910
+    ],
+    [
+     39.01,
+     917
+    ],
+    [
+     39.07,
+     919
+    ],
+    [
+     39.182,
+     927
+    ],
+    [
+     39.262,
+     931
+    ],
+    [
+     39.346,
+     936
+    ]
+   ],
+   "tournaments": [
+    {
+     "comp": "World Cup",
+     "year": 2006,
+     "apps": 3,
+     "goals": 1,
+     "assists": 1
+    },
+    {
+     "comp": "Copa America",
+     "year": 2007,
+     "apps": 6,
+     "goals": 2,
+     "assists": 1
+    },
+    {
+     "comp": "World Cup",
+     "year": 2010,
+     "apps": 5,
+     "goals": 0,
+     "assists": 1
+    },
+    {
+     "comp": "Copa America",
+     "year": 2011,
+     "apps": 4,
+     "goals": 0,
+     "assists": 3
+    },
+    {
+     "comp": "World Cup",
+     "year": 2014,
+     "apps": 7,
+     "goals": 4,
+     "assists": 1
+    },
+    {
+     "comp": "Copa America",
+     "year": 2015,
+     "apps": 6,
+     "goals": 1,
+     "assists": 3
+    },
+    {
+     "comp": "Copa America",
+     "year": 2016,
+     "apps": 5,
+     "goals": 5,
+     "assists": 4
+    },
+    {
+     "comp": "World Cup",
+     "year": 2018,
+     "apps": 4,
+     "goals": 1,
+     "assists": 2
+    },
+    {
+     "comp": "Copa America",
+     "year": 2019,
+     "apps": 6,
+     "goals": 1,
+     "assists": 1
+    },
+    {
+     "comp": "Copa America",
+     "year": 2021,
+     "apps": 7,
+     "goals": 4,
+     "assists": 5
+    },
+    {
+     "comp": "Finalissima",
+     "year": 2022,
+     "apps": 1,
+     "goals": 0,
+     "assists": 2
+    },
+    {
+     "comp": "World Cup",
+     "year": 2022,
+     "apps": 7,
+     "goals": 7,
+     "assists": 3
+    },
+    {
+     "comp": "Copa America",
+     "year": 2024,
+     "apps": 5,
+     "goals": 1,
+     "assists": 1
+    },
+    {
+     "comp": "World Cup",
+     "year": 2026,
+     "apps": 8,
+     "goals": 8,
+     "assists": 4
+    }
+   ]
+  }
+ }
+}

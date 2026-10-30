@@ -1,0 +1,10 @@
+# generated
+site/dist/
+deploy/
+*.zip
+__pycache__/
+*.pyc
+# third-party raw data, re-downloaded by research/scripts/fetch_mvr.sh and extract_*.py
+research/mvr/
+research/raw/
+research/scripts/fetch_log.jsonl

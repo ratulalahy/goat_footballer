@@ -1,0 +1,1602 @@
+{
+  "_meta": {
+    "generated": "2026-10-30",
+    "companion_file": "research/recent_and_leaderboards.md",
+    "conventions": "rank '15=' style ties are given as the shared integer rank; 'value' is the leaderboard metric, 'secondary' is the stated second metric (caps/apps/matches/years). 'status' active = still active per the source (Wikipedia bold convention) unless noted.",
+    "leaderboards": {
+      "5a_mens_international_goals_top15": {
+        "value": "international goals (FIFA-recognised A matches)",
+        "secondary": "caps",
+        "as_of": "2026-10-07",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals"
+      },
+      "5b_mens_international_caps_top10": {
+        "value": "caps",
+        "secondary": "date of latest cap",
+        "as_of": "2026-10-06",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps"
+      },
+      "5c_ucl_all_time_scorers_top15": {
+        "value": "European Cup/Champions League goals (excl. qualifying)",
+        "secondary": "appearances",
+        "as_of": "2026-10-21",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+        "cross_check": {
+          "source_url": "https://theanalyst.com/2024/10/champions-league-top-scorers",
+          "as_of": "2026-10-16",
+          "note": "Opta (UCL era only) identical except Mbappe 72, Kane 57 five days earlier"
+        }
+      },
+      "5d_ucl_titles_5_or_more": {
+        "value": "titles won",
+        "secondary": "clubs and years",
+        "as_of": "after 2026 final (2026-05-30)",
+        "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+      },
+      "5e_ucl_knockout_goals_top10_planetfootball": {
+        "value": "UCL knockout-stage goals",
+        "secondary": null,
+        "as_of": "2026-04-28",
+        "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard",
+        "caveat": "secondary source; conflicts with Football365 list (Muller 27 vs 29, Lewandowski 36 vs 34); UCL era only; not updated for 2026 SF/final"
+      },
+      "5e_ucl_knockout_goals_top10_football365": {
+        "value": "UCL knockout-stage goals",
+        "secondary": null,
+        "as_of": "2025-04-10",
+        "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi",
+        "caveat": "older secondary source kept to show the conflict"
+      },
+      "5f_goals_in_ucl_finals": {
+        "value": "goals in European Cup/UCL finals",
+        "secondary": "finals detail where stated",
+        "as_of": "2026-05-30",
+        "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo",
+        "note": "top-3 also in Wikipedia records page; 2026 final (Havertz scored) does not change the 3+ list"
+      },
+      "5g_career_goals_iffhs_method_top10": {
+        "value": "official top-level goals (league+cup+continental+international)",
+        "secondary": "breakdown league/cup/continental/international",
+        "as_of": "2026-10-29",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+        "note": "Wikipedia compilation following IFFHS methodology; retired-player totals match IFFHS figures quoted by SI (https://www.si.com/soccer/most-goals-soccer-history-ranking-top-10-players, 2025-07-02, mod. 2026-04-28)"
+      },
+      "5g_career_goals_rsssf_official_top_level_top10": {
+        "value": "RSSSF official goals, top level (preliminary list)",
+        "secondary": null,
+        "as_of": "2026-07-19",
+        "source_url": "https://www.rsssf.org/players/prolific.html"
+      },
+      "5g_career_goals_rsssf_official_all_levels_top10": {
+        "value": "RSSSF official goals, all levels incl. reserve/regional/youth selections",
+        "secondary": "matches",
+        "as_of": "2026-07-19",
+        "source_url": "https://www.rsssf.org/players/prolific.html"
+      },
+      "5g_career_goals_guinness": {
+        "value": "Guinness 'most career goals'",
+        "secondary": "games",
+        "as_of": "undated page, read 2026-10-30",
+        "source_url": "https://www.guinnessworldrecords.com/world-records/most-career-goals-(football)"
+      },
+      "5h_most_world_cups_scored_in": {
+        "value": "World Cups with at least one goal",
+        "secondary": "WC goals / matches",
+        "as_of": "2026-07-19",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+      },
+      "5h_most_euros_scored_in": {
+        "value": "Euro final tournaments with at least one goal",
+        "secondary": "Euro goals / matches",
+        "as_of": "through Euro 2024 (read 2026-10-30)",
+        "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers",
+        "note": "ranks 2= derived from the tournaments column of the source table (players with 4+ Euro goals)"
+      },
+      "5i_euro_finals_goals_top5": {
+        "value": "goals at Euro final tournaments",
+        "secondary": "matches",
+        "as_of": "through Euro 2024 (read 2026-10-30)",
+        "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"
+      }
+    },
+    "disputed_career_totals": {
+      "Josef Bican": [
+        {
+          "value": 722,
+          "by": "IFFHS-style (Wikipedia list / SI citing IFFHS)",
+          "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+          "as_of": "2026-10-29"
+        },
+        {
+          "value": 743,
+          "by": "RSSSF official top level",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": "950+",
+          "by": "RSSSF official, all levels incl. regional/selection matches",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": "1813+",
+          "by": "RSSSF all matches incl. friendlies",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": 805,
+          "by": "FIFA 'estimated' (2020 profile, as reported)",
+          "source_url": "https://fourfourtwo.com/news/cristiano-ronaldo-scores-record-breaking-806th-career-goal-to-overtake-josef-bican",
+          "as_of": "2022-03"
+        },
+        {
+          "value": 821,
+          "by": "Czech FA (official matches)",
+          "source_url": "https://myjoyonline.com/ronaldos-latest-slice-of-history-disputed-czech-fa-claims-josef-bican-scored-821-goals",
+          "as_of": "2022-03"
+        },
+        {
+          "value": 518,
+          "by": "UEFA, top-flight league goals only (as cited by Wikipedia)",
+          "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+          "as_of": "2026-10-29"
+        }
+      ],
+      "Romario": [
+        {
+          "value": 756,
+          "by": "IFFHS-style",
+          "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+          "as_of": "2026-10-29"
+        },
+        {
+          "value": 761,
+          "by": "RSSSF official top level",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": 785,
+          "by": "RSSSF official all levels",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": 1002,
+          "by": "RSSSF all matches incl. friendlies",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": "1000 (claimed 2007)",
+          "by": "Romario's own count incl. friendlies/youth (per Wikipedia)",
+          "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+          "as_of": "2026-10-29"
+        }
+      ],
+      "Pele": [
+        {
+          "value": 762,
+          "by": "IFFHS-style",
+          "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+          "as_of": "2026-10-29"
+        },
+        {
+          "value": 770,
+          "by": "RSSSF official top level",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": 778,
+          "by": "RSSSF official all levels",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": 1324,
+          "by": "RSSSF all matches incl. friendlies",
+          "source_url": "https://www.rsssf.org/players/prolific.html",
+          "as_of": "2026-07-19"
+        },
+        {
+          "value": 1279,
+          "by": "Guinness World Records 'most career goals' (1,363 games)",
+          "source_url": "https://www.guinnessworldrecords.com/world-records/most-career-goals-(football)",
+          "as_of": "undated"
+        },
+        {
+          "value": 1283,
+          "by": "Pele's own Instagram count (per Wikipedia)",
+          "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+          "as_of": "2026-10-29"
+        }
+      ]
+    }
+  },
+  "5a_mens_international_goals_top15": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 146,
+      "secondary": 234,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "active",
+      "career": "2003–"
+    },
+    {
+      "rank": 2,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 126,
+      "secondary": 208,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "2005–2026"
+    },
+    {
+      "rank": 3,
+      "player": "Ali Daei",
+      "country": "Iran",
+      "value": 108,
+      "secondary": 148,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1993–2006",
+      "note": "some counts give 109 incl. a match v Ecuador Olympic team"
+    },
+    {
+      "rank": 4,
+      "player": "Sunil Chhetri",
+      "country": "India",
+      "value": 95,
+      "secondary": 157,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "2005–2025"
+    },
+    {
+      "rank": 5,
+      "player": "Romelu Lukaku",
+      "country": "Belgium",
+      "value": 94,
+      "secondary": 135,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "active",
+      "career": "2010–"
+    },
+    {
+      "rank": 6,
+      "player": "Robert Lewandowski",
+      "country": "Poland",
+      "value": 92,
+      "secondary": 170,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "active",
+      "career": "2008–"
+    },
+    {
+      "rank": 7,
+      "player": "Harry Kane",
+      "country": "England",
+      "value": 91,
+      "secondary": 125,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "active",
+      "career": "2015–"
+    },
+    {
+      "rank": 8,
+      "player": "Mokhtar Dahari",
+      "country": "Malaysia",
+      "value": 89,
+      "secondary": 142,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1972–1985"
+    },
+    {
+      "rank": 9,
+      "player": "Ali Mabkhout",
+      "country": "United Arab Emirates",
+      "value": 85,
+      "secondary": 115,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "2009–2024"
+    },
+    {
+      "rank": 10,
+      "player": "Ferenc Puskás",
+      "country": "Hungary / Spain",
+      "value": 84,
+      "secondary": 89,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1945–1962"
+    },
+    {
+      "rank": 11,
+      "player": "Neymar",
+      "country": "Brazil",
+      "value": 80,
+      "secondary": 130,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "2010–2026"
+    },
+    {
+      "rank": 12,
+      "player": "Godfrey Chitalu",
+      "country": "Zambia",
+      "value": 79,
+      "secondary": 111,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1968–1980"
+    },
+    {
+      "rank": 13,
+      "player": "Hussein Saeed",
+      "country": "Iraq",
+      "value": 78,
+      "secondary": 137,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1977–1990"
+    },
+    {
+      "rank": 14,
+      "player": "Pelé",
+      "country": "Brazil",
+      "value": 77,
+      "secondary": 92,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1957–1971"
+    },
+    {
+      "rank": 15,
+      "player": "Vivian Woodward",
+      "country": "England (incl. England amateurs)",
+      "value": 75,
+      "secondary": 53,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1903–1914",
+      "note": "includes amateur internationals"
+    },
+    {
+      "rank": 15,
+      "player": "Sándor Kocsis",
+      "country": "Hungary",
+      "value": 75,
+      "secondary": 68,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1948–1956"
+    },
+    {
+      "rank": 15,
+      "player": "Kunishige Kamamoto",
+      "country": "Japan",
+      "value": 75,
+      "secondary": 76,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1964–1977"
+    },
+    {
+      "rank": 15,
+      "player": "Bashar Abdullah",
+      "country": "Kuwait",
+      "value": 75,
+      "secondary": 134,
+      "as_of": "2026-10-07",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals",
+      "status": "retired",
+      "career": "1996–2007"
+    }
+  ],
+  "5b_mens_international_caps_top10": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 234,
+      "secondary": "latest cap 2026-09-24",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "active"
+    },
+    {
+      "rank": 2,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 208,
+      "secondary": "latest cap 2026-10-06 (farewell)",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "retired"
+    },
+    {
+      "rank": 3,
+      "player": "Luka Modrić",
+      "country": "Croatia",
+      "value": 206,
+      "secondary": "latest cap 2026-10-06",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "active"
+    },
+    {
+      "rank": 4,
+      "player": "Bader Al-Mutawa",
+      "country": "Kuwait",
+      "value": 202,
+      "secondary": "latest cap 2022-06-14",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "inactive",
+      "note": "FIFA readjusted from 196 to 202"
+    },
+    {
+      "rank": 5,
+      "player": "Soh Chin Ann",
+      "country": "Malaysia",
+      "value": 195,
+      "secondary": "latest cap 1984-10-18",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "retired"
+    },
+    {
+      "rank": 6,
+      "player": "Hassan Al-Haydos",
+      "country": "Qatar",
+      "value": 193,
+      "secondary": "latest cap 2026-09-27",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "active"
+    },
+    {
+      "rank": 6,
+      "player": "Ahmed Kano",
+      "country": "Oman",
+      "value": 193,
+      "secondary": "latest cap 2019-12-02",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "inactive"
+    },
+    {
+      "rank": 8,
+      "player": "Ahmed Hassan",
+      "country": "Egypt",
+      "value": 184,
+      "secondary": "latest cap 2012-05-22",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "retired"
+    },
+    {
+      "rank": 9,
+      "player": "Andrés Guardado",
+      "country": "Mexico",
+      "value": 182,
+      "secondary": "latest cap 2024-10-15",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "retired"
+    },
+    {
+      "rank": 10,
+      "player": "Sergio Ramos",
+      "country": "Spain",
+      "value": 180,
+      "secondary": "latest cap 2021-03-31",
+      "as_of": "2026-10-06",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_100_or_more_international_caps",
+      "status": "inactive"
+    }
+  ],
+  "5c_ucl_all_time_scorers_top15": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 140,
+      "secondary": 183,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2003–2022"
+    },
+    {
+      "rank": 2,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 129,
+      "secondary": 163,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2005–2023"
+    },
+    {
+      "rank": 3,
+      "player": "Robert Lewandowski",
+      "country": "Poland",
+      "value": 109,
+      "secondary": 144,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2011–2026"
+    },
+    {
+      "rank": 4,
+      "player": "Karim Benzema",
+      "country": "France",
+      "value": 90,
+      "secondary": 152,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2005–2023"
+    },
+    {
+      "rank": 5,
+      "player": "Kylian Mbappé",
+      "country": "France",
+      "value": 73,
+      "secondary": 101,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2016–",
+      "status": "active in 2026–27 UCL"
+    },
+    {
+      "rank": 6,
+      "player": "Raúl",
+      "country": "Spain",
+      "value": 71,
+      "secondary": 142,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "1995–2011"
+    },
+    {
+      "rank": 7,
+      "player": "Erling Haaland",
+      "country": "Norway",
+      "value": 61,
+      "secondary": 60,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2019–",
+      "status": "active in 2026–27 UCL"
+    },
+    {
+      "rank": 8,
+      "player": "Harry Kane",
+      "country": "England",
+      "value": 58,
+      "secondary": 73,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2016–",
+      "status": "active in 2026–27 UCL"
+    },
+    {
+      "rank": 9,
+      "player": "Thomas Müller",
+      "country": "Germany",
+      "value": 57,
+      "secondary": 163,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2009–2025"
+    },
+    {
+      "rank": 10,
+      "player": "Ruud van Nistelrooy",
+      "country": "Netherlands",
+      "value": 56,
+      "secondary": 73,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "1998–2009"
+    },
+    {
+      "rank": 11,
+      "player": "Mohamed Salah",
+      "country": "Egypt",
+      "value": 50,
+      "secondary": 98,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2013–2026"
+    },
+    {
+      "rank": 11,
+      "player": "Thierry Henry",
+      "country": "France",
+      "value": 50,
+      "secondary": 112,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "1997–2012"
+    },
+    {
+      "rank": 13,
+      "player": "Alfredo Di Stéfano",
+      "country": "Argentina / Spain",
+      "value": 49,
+      "secondary": 58,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "1955–1964",
+      "note": "European Cup era"
+    },
+    {
+      "rank": 14,
+      "player": "Andriy Shevchenko",
+      "country": "Ukraine",
+      "value": 48,
+      "secondary": 100,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "1994–2012"
+    },
+    {
+      "rank": 14,
+      "player": "Zlatan Ibrahimović",
+      "country": "Sweden",
+      "value": 48,
+      "secondary": 124,
+      "as_of": "2026-10-21",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_UEFA_Champions_League_top_scorers",
+      "years": "2001–2021"
+    }
+  ],
+  "5d_ucl_titles_5_or_more": [
+    {
+      "rank": 1,
+      "player": "Paco Gento",
+      "country": "Spain",
+      "value": 6,
+      "secondary": "Real Madrid 1956, 1957, 1958, 1959, 1960, 1966",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 1,
+      "player": "Toni Kroos",
+      "country": "Germany",
+      "value": 6,
+      "secondary": "Bayern Munich 2013; Real Madrid 2016, 2017, 2018, 2022, 2024",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 1,
+      "player": "Dani Carvajal",
+      "country": "Spain",
+      "value": 6,
+      "secondary": "Real Madrid 2014, 2016, 2017, 2018, 2022, 2024",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 1,
+      "player": "Luka Modrić",
+      "country": "Croatia",
+      "value": 6,
+      "secondary": "Real Madrid 2014, 2016, 2017, 2018, 2022, 2024",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 1,
+      "player": "Nacho",
+      "country": "Spain",
+      "value": 6,
+      "secondary": "Real Madrid 2014, 2016, 2017, 2018, 2022, 2024",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Juan Alonso",
+      "country": "Spain",
+      "value": 5,
+      "secondary": "Real Madrid 1956, 1957, 1958, 1959, 1960",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Rafael Lesmes",
+      "country": "Spain",
+      "value": 5,
+      "secondary": "Real Madrid 1956, 1957, 1958, 1959, 1960",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Marquitos",
+      "country": "Spain",
+      "value": 5,
+      "secondary": "Real Madrid 1956, 1957, 1958, 1959, 1960",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Héctor Rial",
+      "country": "Argentina / Spain",
+      "value": 5,
+      "secondary": "Real Madrid 1956, 1957, 1958, 1959, 1960",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Alfredo Di Stéfano",
+      "country": "Argentina / Spain",
+      "value": 5,
+      "secondary": "Real Madrid 1956, 1957, 1958, 1959, 1960",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "José María Zárraga",
+      "country": "Spain",
+      "value": 5,
+      "secondary": "Real Madrid 1956, 1957, 1958, 1959, 1960",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Alessandro Costacurta",
+      "country": "Italy",
+      "value": 5,
+      "secondary": "Milan 1989, 1990, 1994, 2003, 2007",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Paolo Maldini",
+      "country": "Italy",
+      "value": 5,
+      "secondary": "Milan 1989, 1990, 1994, 2003, 2007",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 5,
+      "secondary": "Manchester United 2008; Real Madrid 2014, 2016, 2017, 2018",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Gareth Bale",
+      "country": "Wales",
+      "value": 5,
+      "secondary": "Real Madrid 2014, 2016, 2017, 2018, 2022",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Karim Benzema",
+      "country": "France",
+      "value": 5,
+      "secondary": "Real Madrid 2014, 2016, 2017, 2018, 2022",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Casemiro",
+      "country": "Brazil",
+      "value": 5,
+      "secondary": "Real Madrid 2014, 2016, 2017, 2018, 2022",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Marcelo",
+      "country": "Brazil",
+      "value": 5,
+      "secondary": "Real Madrid 2014, 2016, 2017, 2018, 2022",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 6,
+      "player": "Lucas Vázquez",
+      "country": "Spain",
+      "value": 5,
+      "secondary": "Real Madrid 2016, 2017, 2018, 2022, 2024",
+      "as_of": "after 2026 final (2026-05-30)",
+      "source_url": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    }
+  ],
+  "5e_ucl_knockout_goals_top10_planetfootball": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 67,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard",
+      "note": "Wikipedia records page also gives 67 (record)"
+    },
+    {
+      "rank": 2,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 49,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    },
+    {
+      "rank": 3,
+      "player": "Robert Lewandowski",
+      "country": "Poland",
+      "value": 36,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    },
+    {
+      "rank": 4,
+      "player": "Karim Benzema",
+      "country": "France",
+      "value": 32,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    },
+    {
+      "rank": 5,
+      "player": "Thomas Müller",
+      "country": "Germany",
+      "value": 27,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard",
+      "note": "Football365 (2025-04-10) gives 29"
+    },
+    {
+      "rank": 6,
+      "player": "Kylian Mbappé",
+      "country": "France",
+      "value": 26,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    },
+    {
+      "rank": 7,
+      "player": "Raúl",
+      "country": "Spain",
+      "value": 18,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    },
+    {
+      "rank": 7,
+      "player": "Andriy Shevchenko",
+      "country": "Ukraine",
+      "value": 18,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    },
+    {
+      "rank": 9,
+      "player": "Erling Haaland",
+      "country": "Norway",
+      "value": 17,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    },
+    {
+      "rank": 10,
+      "player": "Filippo Inzaghi",
+      "country": "Italy",
+      "value": 16,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    },
+    {
+      "rank": 10,
+      "player": "Arjen Robben",
+      "country": "Netherlands",
+      "value": 16,
+      "secondary": null,
+      "as_of": "2026-04-28",
+      "source_url": "https://www.planetfootball.com/champions-league/the-top-10-champions-league-knockout-goal-scorers-ronaldo-messi-lampard"
+    }
+  ],
+  "5e_ucl_knockout_goals_top10_football365": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 67,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 2,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 49,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 3,
+      "player": "Robert Lewandowski",
+      "country": "Poland",
+      "value": 34,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 4,
+      "player": "Karim Benzema",
+      "country": "France",
+      "value": 32,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 5,
+      "player": "Thomas Müller",
+      "country": "Germany",
+      "value": 29,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 6,
+      "player": "Kylian Mbappé",
+      "country": "France",
+      "value": 24,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 7,
+      "player": "Raúl",
+      "country": "Spain",
+      "value": 18,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 7,
+      "player": "Andriy Shevchenko",
+      "country": "Ukraine",
+      "value": 18,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 9,
+      "player": "Filippo Inzaghi",
+      "country": "Italy",
+      "value": 16,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    },
+    {
+      "rank": 9,
+      "player": "Erling Haaland",
+      "country": "Norway",
+      "value": 16,
+      "secondary": null,
+      "as_of": "2025-04-10",
+      "source_url": "https://www.football365.com/news/who-has-scored-most-champions-league-knockout-stage-goals-ronaldo-messi"
+    }
+  ],
+  "5f_goals_in_ucl_finals": [
+    {
+      "rank": 1,
+      "player": "Alfredo Di Stéfano",
+      "country": "Argentina / Spain",
+      "value": 7,
+      "secondary": "one goal in each final 1956–1959, three in 1960",
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo",
+      "also_source": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 1,
+      "player": "Ferenc Puskás",
+      "country": "Hungary / Spain",
+      "value": 7,
+      "secondary": "four in 1960, three in 1962",
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo",
+      "also_source": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 3,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 4,
+      "secondary": "2008 (1), 2014 (1), 2017 (2); UCL-era record",
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo",
+      "also_source": "https://en.wikipedia.org/wiki/European_Cup_and_UEFA_Champions_League_records_and_statistics"
+    },
+    {
+      "rank": 4,
+      "player": "Gareth Bale",
+      "country": "Wales",
+      "value": 3,
+      "secondary": null,
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo"
+    },
+    {
+      "rank": 4,
+      "player": "Eusébio",
+      "country": "Portugal",
+      "value": 3,
+      "secondary": null,
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo"
+    },
+    {
+      "rank": 4,
+      "player": "Gerd Müller",
+      "country": "West Germany",
+      "value": 3,
+      "secondary": null,
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo"
+    },
+    {
+      "rank": 4,
+      "player": "Sandro Mazzola",
+      "country": "Italy",
+      "value": 3,
+      "secondary": null,
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo"
+    },
+    {
+      "rank": 4,
+      "player": "Pierino Prati",
+      "country": "Italy",
+      "value": 3,
+      "secondary": null,
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo"
+    },
+    {
+      "rank": 4,
+      "player": "Héctor Rial",
+      "country": "Argentina / Spain",
+      "value": 3,
+      "secondary": null,
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo"
+    },
+    {
+      "rank": 10,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 2,
+      "secondary": "2009, 2011; one of 12 players on 2 in the source list",
+      "as_of": "2026-05-30",
+      "source_url": "https://www.planetfootball.com/champions-league/top-european-cup-champions-league-final-goalscorers-all-time-messi-ronaldo"
+    }
+  ],
+  "5g_career_goals_iffhs_method_top10": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 985,
+      "secondary": "608 / 57 / 174 / 146",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+      "status": "active",
+      "note": "984 if the SPL-credited 2026-10-23 goal is counted as an own goal (Opta etc.)"
+    },
+    {
+      "rank": 2,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 936,
+      "secondary": "578 / 71 / 161 / 126",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+      "status": "active (club)"
+    },
+    {
+      "rank": 3,
+      "player": "Pelé",
+      "country": "Brazil",
+      "value": 762,
+      "secondary": "604 / 49 / 26 / 83",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals"
+    },
+    {
+      "rank": 4,
+      "player": "Romário",
+      "country": "Brazil",
+      "value": 756,
+      "secondary": "545 / 93 / 54 / 64",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals"
+    },
+    {
+      "rank": 5,
+      "player": "Ferenc Puskás",
+      "country": "Hungary / Spain",
+      "value": 725,
+      "secondary": "516 / 69 / 56 / 84",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals"
+    },
+    {
+      "rank": 6,
+      "player": "Josef Bican",
+      "country": "Austria / Czechoslovakia",
+      "value": 722,
+      "secondary": "515 / 137 / 38 / 32",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals"
+    },
+    {
+      "rank": 7,
+      "player": "Robert Lewandowski",
+      "country": "Poland",
+      "value": 707,
+      "secondary": "433 / 62 / 120 / 92",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals",
+      "status": "active"
+    },
+    {
+      "rank": 8,
+      "player": "Jimmy Jones",
+      "country": "Northern Ireland",
+      "value": 639,
+      "secondary": "330 / 286 / 14 / 9",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals"
+    },
+    {
+      "rank": 9,
+      "player": "Gerd Müller",
+      "country": "West Germany",
+      "value": 634,
+      "secondary": "405 / 92 / 69 / 68",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals"
+    },
+    {
+      "rank": 10,
+      "player": "Joe Bambrick",
+      "country": "Northern Ireland",
+      "value": 626,
+      "secondary": "347 / 253 / 5 / 21",
+      "as_of": "2026-10-29",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_footballers_with_500_or_more_goals"
+    }
+  ],
+  "5g_career_goals_rsssf_official_top_level_top10": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 978,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html",
+      "status": "active"
+    },
+    {
+      "rank": 2,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 921,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html",
+      "status": "active (club)"
+    },
+    {
+      "rank": 3,
+      "player": "Pelé",
+      "country": "Brazil",
+      "value": 770,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 4,
+      "player": "Romário",
+      "country": "Brazil",
+      "value": 761,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 5,
+      "player": "Ferenc Puskás",
+      "country": "Hungary / Spain",
+      "value": 760,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 6,
+      "player": "Josef Bican",
+      "country": "Austria / Czechoslovakia",
+      "value": 743,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 7,
+      "player": "Robert Lewandowski",
+      "country": "Poland",
+      "value": 697,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html",
+      "status": "active"
+    },
+    {
+      "rank": 8,
+      "player": "Jimmy Jones",
+      "country": "Northern Ireland",
+      "value": 659,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 9,
+      "player": "Abe Lenstra",
+      "country": "Netherlands",
+      "value": 645,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 10,
+      "player": "Gerd Müller",
+      "country": "West Germany",
+      "value": 640,
+      "secondary": null,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    }
+  ],
+  "5g_career_goals_rsssf_official_all_levels_top10": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 994,
+      "secondary": 1366,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 2,
+      "player": "Erwin Helmchen",
+      "country": "Germany",
+      "value": "989+",
+      "secondary": 582,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 3,
+      "player": "Josef Bican",
+      "country": "Austria / Czechoslovakia",
+      "value": "950+",
+      "secondary": 624,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 4,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 948,
+      "secondary": 1220,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 5,
+      "player": "Ronald Rooke",
+      "country": "England",
+      "value": "940+",
+      "secondary": 1035,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 6,
+      "player": "Jimmy Jones",
+      "country": "Northern Ireland",
+      "value": "840+",
+      "secondary": 760,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 7,
+      "player": "Ferenc Puskás",
+      "country": "Hungary / Spain",
+      "value": 802,
+      "secondary": 792,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 8,
+      "player": "Ferenc Deák",
+      "country": "Hungary",
+      "value": "795+",
+      "secondary": 515,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 9,
+      "player": "Abe Lenstra",
+      "country": "Netherlands",
+      "value": "790+",
+      "secondary": 850,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 10,
+      "player": "Romário",
+      "country": "Brazil",
+      "value": 785,
+      "secondary": 1003,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html"
+    },
+    {
+      "rank": 11,
+      "player": "Pelé",
+      "country": "Brazil",
+      "value": 778,
+      "secondary": 851,
+      "as_of": "2026-07-19",
+      "source_url": "https://www.rsssf.org/players/prolific.html",
+      "note": "shown for the disputed-totals comparison"
+    }
+  ],
+  "5g_career_goals_guinness": [
+    {
+      "rank": 1,
+      "player": "Pelé",
+      "country": "Brazil",
+      "value": 1279,
+      "secondary": 1363,
+      "as_of": "undated (read 2026-10-30)",
+      "source_url": "https://www.guinnessworldrecords.com/world-records/most-career-goals-(football)",
+      "note": "'Most career goals', 7 Sep 1956 – 1 Oct 1977; page also mentions Friedenreich's undocumented 1,329"
+    }
+  ],
+  "5h_most_world_cups_scored_in": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 6,
+      "secondary": "11 goals / 27 matches (2006, 2010, 2014, 2018, 2022, 2026)",
+      "as_of": "2026-07-19",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers",
+      "also_source": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-portugal-goal-record"
+    },
+    {
+      "rank": 2,
+      "player": "Lionel Messi",
+      "country": "Argentina",
+      "value": 5,
+      "secondary": "21 goals / 34 matches (2006, 2014, 2018, 2022, 2026)",
+      "as_of": "2026-07-19",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Uwe Seeler",
+      "country": "West Germany",
+      "value": 4,
+      "secondary": "9 goals / 21 matches (1958–1970)",
+      "as_of": "2026-07-19",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Pelé",
+      "country": "Brazil",
+      "value": 4,
+      "secondary": "12 goals / 14 matches (1958–1970)",
+      "as_of": "2026-07-19",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Miroslav Klose",
+      "country": "Germany",
+      "value": 4,
+      "secondary": "16 goals / 24 matches (2002–2014)",
+      "as_of": "2026-07-19",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Ivan Perišić",
+      "country": "Croatia",
+      "value": 4,
+      "secondary": "7 goals / 21 matches (2014–2026)",
+      "as_of": "2026-07-19",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Neymar",
+      "country": "Brazil",
+      "value": 4,
+      "secondary": "9 goals / 15 matches (2014–2026)",
+      "as_of": "2026-07-19",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_FIFA_World_Cup_top_goalscorers"
+    }
+  ],
+  "5h_most_euros_scored_in": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 5,
+      "secondary": "14 goals / 30 matches (2004, 2008, 2012, 2016, 2020)",
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers",
+      "also_source": "https://en.wikipedia.org/wiki/UEFA_European_Championship_records_and_statistics"
+    },
+    {
+      "rank": 2,
+      "player": "Robert Lewandowski",
+      "country": "Poland",
+      "value": 4,
+      "secondary": "6 goals / 13 matches (2012, 2016, 2020, 2024)",
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers",
+      "note": "derived from source table tournaments column"
+    },
+    {
+      "rank": 2,
+      "player": "Luka Modrić",
+      "country": "Croatia",
+      "value": 4,
+      "secondary": "4 goals / 16 matches (2008, 2016, 2020, 2024)",
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers",
+      "note": "derived from source table tournaments column"
+    }
+  ],
+  "5i_euro_finals_goals_top5": [
+    {
+      "rank": 1,
+      "player": "Cristiano Ronaldo",
+      "country": "Portugal",
+      "value": 14,
+      "secondary": 30,
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"
+    },
+    {
+      "rank": 2,
+      "player": "Michel Platini",
+      "country": "France",
+      "value": 9,
+      "secondary": 5,
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Alan Shearer",
+      "country": "England",
+      "value": 7,
+      "secondary": 9,
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Antoine Griezmann",
+      "country": "France",
+      "value": 7,
+      "secondary": 17,
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Álvaro Morata",
+      "country": "Spain",
+      "value": 7,
+      "secondary": 17,
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"
+    },
+    {
+      "rank": 3,
+      "player": "Harry Kane",
+      "country": "England",
+      "value": 7,
+      "secondary": 18,
+      "as_of": "through Euro 2024 (read 2026-10-30)",
+      "source_url": "https://en.wikipedia.org/wiki/UEFA_European_Championship_top_goalscorers"
+    }
+  ]
+}
