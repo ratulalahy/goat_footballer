@@ -4,6 +4,8 @@ An interactive dashboard on football's greatest player: 21 legends, from Pelé, 
 
 The whole site is one file, `index.html`, at the root of this repository. It loads D3 from cdnjs and fonts from Google Fonts, and needs no server code.
 
+[goat-footballer.vercel.app](https://goat-footballer.vercel.app/)
+
 ## Hosting
 
 - **GitHub Pages**: Settings → Pages → Build and deployment → Deploy from a branch → `main`, `/ (root)`.
